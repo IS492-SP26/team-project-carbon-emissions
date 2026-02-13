@@ -1,4 +1,4 @@
-# Sources — sust-AI-naible
+# Reflections & Sources — sust-AI-naible
 
 All sources referenced in the CP1 presentation, with links.
 
