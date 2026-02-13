@@ -10,7 +10,7 @@ Use the template below. Focus on **what you learned that changed your design thi
 - **Authors:** Radovanović, A., et al. (Google)
 - **Year:** 2022
 - **Venue:** IEEE Transactions on Power Systems
-- **Reviewed by:** Sarthak Rajen Chandarana
+- **Reviewed by:** Josue Torres
 
 ### Summary
 Google demonstrated 10-40% carbon reduction in their data centers by shifting
@@ -70,7 +70,7 @@ than enterprise facilities (PUE ~1.6).
 - **Authors:** Wu, Q., Bansal, G., Zhang, J., et al. (Microsoft Research)
 - **Year:** 2023
 - **Venue:** arXiv preprint / ICLR 2024
-- **Reviewed by:** Josue Torres
+- **Reviewed by:** Sarthak Rajen Chandarana
 ### Summary
 Framework for building multi-agent systems where LLM-powered agents collaborate
 through conversation. Agents have roles, tool access, and can be composed into
