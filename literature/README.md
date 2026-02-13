@@ -10,7 +10,7 @@ Use the template below. Focus on **what you learned that changed your design thi
 - **Authors:** Radovanović, A., et al. (Google)
 - **Year:** 2022
 - **Venue:** IEEE Transactions on Power Systems
-- **Reviewed by:** [Team Member Name]
+- **Reviewed by:** Sarthak Rajen Chandarana
 
 ### Summary
 Google demonstrated 10-40% carbon reduction in their data centers by shifting
@@ -40,7 +40,7 @@ They used carbon-aware scheduling for delay-tolerant batch workloads.
 - **Authors:** Masanet, E., Shehabi, A., Lei, N., Smith, S., Koomey, J.
 - **Year:** 2020
 - **Venue:** Science, 367(6481), 984-986
-- **Reviewed by:** [Team Member Name]
+- **Reviewed by:** Pooja Sahu
 
 ### Summary
 Authoritative estimate that data centers consumed ~1% of global electricity in 2018
@@ -70,8 +70,7 @@ than enterprise facilities (PUE ~1.6).
 - **Authors:** Wu, Q., Bansal, G., Zhang, J., et al. (Microsoft Research)
 - **Year:** 2023
 - **Venue:** arXiv preprint / ICLR 2024
-- **Reviewed by:** [Team Member Name]
-
+- **Reviewed by:** Josue Torres
 ### Summary
 Framework for building multi-agent systems where LLM-powered agents collaborate
 through conversation. Agents have roles, tool access, and can be composed into
@@ -101,7 +100,7 @@ and auditable AI systems.
 - **Authors:** WRI / WBCSD
 - **Year:** 2004 (revised 2015)
 - **Venue:** Greenhouse Gas Protocol
-- **Reviewed by:** [Team Member Name]
+- **Reviewed by:** Pooja Sahu
 
 ### Summary
 The de facto global standard for corporate greenhouse gas accounting. Defines Scope 1
@@ -129,7 +128,7 @@ falls under Scope 2 (location-based) and Scope 3 (market-based) for most organiz
 
 ## Tool Review 1: Cloud Carbon Footprint (Thoughtworks, OSS)
 - **URL:** cloudcarbonfootprint.org
-- **Reviewed by:** [Team Member Name]
+- **Reviewed by:** Josue
 
 ### What it does well
 - Multi-cloud support (AWS, GCP, Azure) in one tool
@@ -153,7 +152,7 @@ falls under Scope 2 (location-based) and Scope 3 (market-based) for most organiz
 
 ## Tool Review 2: Electricity Maps
 - **URL:** electricitymaps.com
-- **Reviewed by:** [Team Member Name]
+- **Reviewed by:** Sarthak Rajen Chandarana
 
 ### What it does well
 - Real-time grid carbon intensity for 200+ zones worldwide
