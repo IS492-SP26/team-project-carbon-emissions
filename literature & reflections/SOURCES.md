@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+# Sources — sust-AI-naible
+=======
 # Reflections & Sources — sust-AI-naible
+>>>>>>> a10e153f3b0809eb11c9c8b94b940b3bf83cc846
 
 All sources referenced in the CP1 presentation, with links.
 
