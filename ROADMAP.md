@@ -129,7 +129,7 @@ Then RE-RUN the simulation applying those recommendations → compare baseline v
 
 ---
 
-## Phase 4: The Verifier (Week 5-7) ← THIS IS YOUR DIFFERENTIATOR
+## Phase 4: The Verifier (Week 5-7)
 
 ### What to build:
 ```
@@ -193,7 +193,7 @@ This ordering means you always have something working, and the LLM is additive.
 
 ---
 
-## The Tech Stack (Keep It Simple)
+## The Tech Stack
 
 | Component | Tool | Why |
 |-----------|------|-----|
@@ -208,28 +208,3 @@ This ordering means you always have something working, and the LLM is additive.
 
 ---
 
-## What to Do TODAY
-
-1. Create the project structure (directories, README, requirements.txt)
-2. Write workload_generator.py — get 1000 fake jobs generated
-3. Write carbon_intensity.py — get hourly intensity for 5 regions
-4. Compute baseline emissions for those 1000 jobs
-5. Make one chart: "emissions by region"
-
-If you do that today, you have momentum. Everything else builds on this.
-
----
-
-## What "Done" Looks Like (Week 10)
-
-A demo where you can say:
-
-> "Here's a simulated month of cloud workloads for a 100-developer org.
-> Our system identified 340 workloads that could shift to cleaner regions.
-> After optimization, we reduced emissions by 21% — from 450 to 356 kgCO₂e/month.
-> Every claimed reduction has a verified counterfactual with confidence intervals.
-> Here's the evidence chain for one specific recommendation. [click]
-> The system auto-approved 280 low-risk changes and flagged 60 for human review.
-> Here's the Pareto frontier showing the cost-carbon-latency trade-off."
-
-That's an A+ project.
