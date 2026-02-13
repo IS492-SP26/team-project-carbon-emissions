@@ -16,6 +16,8 @@ All sources referenced in the CP1 presentation, with links.
 - **PDF:** https://datacenters.lbl.gov/sites/default/files/Masanet_et_al_Science_2020.full_.pdf
 - **Key claim we use:** Data centers account for ~1% of global electricity use (~205 TWh in 2018)
 
+**Reflection:** This paper provided crucial context for understanding the scale of the problem we're addressing. While 1% may seem small, it represents a significant and growing portion of global emissions, especially as cloud computing continues to expand. The paper's methodology for recalibrating estimates highlighted the importance of accurate measurement—a principle we've tried to embed in our system through uncertainty quantification and verification mechanisms. The fact that this was published in *Science* also validated that data center emissions are a legitimate scientific concern, not just a niche technical issue.
+
 ---
 
 ### 2. Radovanović et al. (2022) — Carbon-aware computing at Google
@@ -27,6 +29,8 @@ All sources referenced in the CP1 presentation, with links.
 - **Link (IEEE):** https://ieeexplore.ieee.org/document/9770383
 - **Link (arXiv):** https://arxiv.org/abs/2106.11750
 - **Key claim we use:** Google achieved 10-40% carbon reduction by shifting flexible workloads temporally and spatially. No public verification methodology published.
+
+**Reflection:** This paper was both inspiring and frustrating. On one hand, it demonstrated that carbon-aware computing is not just theoretical—Google has achieved real, substantial reductions. The 10-40% range showed us what's possible with proper load shifting strategies. However, the lack of public verification methodology was a key gap we identified. This directly informed our design decision to include verification and uncertainty quantification as core features. We wanted to build a system where claims could be independently verified, addressing the transparency issue we saw in industry implementations. The paper also reinforced the importance of temporal and spatial flexibility, which became central to our executor agent's decision-making logic.
 
 ---
 
@@ -40,6 +44,8 @@ All sources referenced in the CP1 presentation, with links.
 - **Link (arXiv):** https://arxiv.org/abs/2308.08155
 - **Key claim we use:** Multi-agent systems with role specialization outperform monolithic approaches for complex multi-step tasks
 
+**Reflection:** This paper fundamentally shaped our architecture. The multi-agent paradigm resonated perfectly with our problem domain—carbon optimization requires planning, execution, accounting, verification, and governance, each with distinct expertise. Rather than building one monolithic system trying to do everything, we designed specialized agents (Planner, Executor, Carbon Accountant, Governance, Copilot) that collaborate through structured conversations. This approach not only improved modularity and maintainability but also allowed each agent to focus on its core competency. The paper's emphasis on conversation protocols influenced how we designed agent interactions, ensuring clear communication and accountability. While we didn't use AutoGen directly, its principles guided our agent design patterns.
+
 ---
 
 ### 4. Hanafy et al. (2023) — CarbonScaler
@@ -52,6 +58,8 @@ All sources referenced in the CP1 presentation, with links.
 - **Link (arXiv):** https://arxiv.org/abs/2302.08681
 - **GitHub:** https://github.com/umassos/CarbonScaler
 - **Key claim we use:** 51% carbon savings over carbon-agnostic execution; demonstrates need for multi-objective optimization (carbon + cost + completion time)
+
+**Reflection:** This paper was a critical reality check. While carbon reduction is important, real-world deployments can't ignore cost and performance. CarbonScaler's demonstration that carbon-only optimization can lead to cost spikes (sometimes 2-3x) validated our decision to implement multi-objective optimization from the start. The paper's focus on workload elasticity also informed our executor agent's strategies—we designed it to consider not just when and where to run workloads, but also how to scale them dynamically based on carbon intensity, cost, and deadlines. The 51% savings figure gave us a benchmark to aim for, though we recognize that actual results depend heavily on workload characteristics and regional grid mixes. The open-source nature of CarbonScaler also inspired us to make our system transparent and verifiable.
 
 ---
 
