@@ -128,7 +128,7 @@ falls under Scope 2 (location-based) and Scope 3 (market-based) for most organiz
 
 ## Tool Review 1: Cloud Carbon Footprint (Thoughtworks, OSS)
 - **URL:** cloudcarbonfootprint.org
-- **Reviewed by:** Josue
+- **Reviewed by:** Josue Torres
 
 ### What it does well
 - Multi-cloud support (AWS, GCP, Azure) in one tool
