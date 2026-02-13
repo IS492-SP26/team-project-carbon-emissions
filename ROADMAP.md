@@ -10,7 +10,7 @@
 
 ## Phase 0: Understand What You're Actually Building (Day 1)
 
-You're building **5 things that talk to each other**:
+We're building **5 things that talk to each other**:
 
 ```
 FAKE CLOUD        →  MEASURE IT  →  PLAN BETTER  →  DO IT  →  PROVE IT WORKED
