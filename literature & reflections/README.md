@@ -1,9 +1,5 @@
 # Literature Review — sust-AI-naible
 
-<<<<<<< HEAD
-## How to use this folder
-Each team member should add 2-3 papers/tools with structured notes.
-Use the template below. Focus on **what you learned that changed your design thinking**.
 
 ---
 
@@ -11,7 +7,7 @@ Use the template below. Focus on **what you learned that changed your design thi
 - **Authors:** Radovanović, A., et al. (Google)
 - **Year:** 2022
 - **Venue:** IEEE Transactions on Power Systems
-- **Reviewed by:** [Team Member Name]
+- **Reviewed by:** Sarthak
 
 ### Summary
 Google demonstrated 10-40% carbon reduction in their data centers by shifting
@@ -41,7 +37,7 @@ They used carbon-aware scheduling for delay-tolerant batch workloads.
 - **Authors:** Masanet, E., Shehabi, A., Lei, N., Smith, S., Koomey, J.
 - **Year:** 2020
 - **Venue:** Science, 367(6481), 984-986
-- **Reviewed by:** [Team Member Name]
+- **Reviewed by:** Josue
 
 ### Summary
 Authoritative estimate that data centers consumed ~1% of global electricity in 2018
@@ -71,7 +67,7 @@ than enterprise facilities (PUE ~1.6).
 - **Authors:** Wu, Q., Bansal, G., Zhang, J., et al. (Microsoft Research)
 - **Year:** 2023
 - **Venue:** arXiv preprint / ICLR 2024
-- **Reviewed by:** [Team Member Name]
+- **Reviewed by:** Pooja
 
 ### Summary
 Framework for building multi-agent systems where LLM-powered agents collaborate
@@ -102,7 +98,7 @@ and auditable AI systems.
 - **Authors:** WRI / WBCSD
 - **Year:** 2004 (revised 2015)
 - **Venue:** Greenhouse Gas Protocol
-- **Reviewed by:** [Team Member Name]
+- **Reviewed by:** Sarthak
 
 ### Summary
 The de facto global standard for corporate greenhouse gas accounting. Defines Scope 1
@@ -130,7 +126,7 @@ falls under Scope 2 (location-based) and Scope 3 (market-based) for most organiz
 
 ## Tool Review 1: Cloud Carbon Footprint (Thoughtworks, OSS)
 - **URL:** cloudcarbonfootprint.org
-- **Reviewed by:** [Team Member Name]
+- **Reviewed by:** Sarthak
 
 ### What it does well
 - Multi-cloud support (AWS, GCP, Azure) in one tool
@@ -154,7 +150,7 @@ falls under Scope 2 (location-based) and Scope 3 (market-based) for most organiz
 
 ## Tool Review 2: Electricity Maps
 - **URL:** electricitymaps.com
-- **Reviewed by:** [Team Member Name]
+- **Reviewed by:** Pooja
 
 ### What it does well
 - Real-time grid carbon intensity for 200+ zones worldwide
@@ -388,5 +384,3 @@ confidence intervals are not credible.
 ### 4. Agent architectures match this problem's structure.
 The problem has natural role decomposition (measure, plan, approve, execute, verify).
 Multi-agent systems handle this better than monolithic approaches.
-
->>>>>>> a10e153f3b0809eb11c9c8b94b940b3bf83cc846
