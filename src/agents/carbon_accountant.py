@@ -7,14 +7,22 @@ This is STRICTLY DETERMINISTIC — no LLM in the calculation path.
 Every output is reproducible given the same inputs.
 
 Formula:
-  kgCO₂e = vCPUs × duration_hrs × TDP_per_vCPU × PUE × grid_intensity_kgCO₂_per_kWh
+  kgCO₂e = vCPUs × duration_hrs × TDP_per_vCPU × cpu_utilization × PUE × grid_intensity_kgCO₂_per_kWh
          + gpu_count × duration_hrs × GPU_TDP × PUE × grid_intensity_kgCO₂_per_kWh
 
 Assumptions:
   - TDP per vCPU: 0.005 kW (Assumption — ~200W server / 40 vCPUs)
+  - CPU utilization: 0.50 (Assumption — typical hyperscaler average; TDP alone overstates power)
   - GPU TDP: 0.300 kW (Assumption — NVIDIA A100 = 300W)
   - PUE: 1.1 (Assumption — hyperscaler average per Google/AWS sustainability reports)
   - Uncertainty: propagated from grid intensity bounds (±20%)
+
+Note on CPU utilization:
+  Using raw TDP without a utilization factor assumes 100% CPU load, which is unrealistic
+  for typical cloud workloads and leads to a systematic overestimate of emissions.
+  Cloud Carbon Footprint and similar tools use min/max watt curves; we approximate this
+  with a single average utilization factor of 0.50, consistent with hyperscaler benchmarks
+  (Google, AWS) showing ~50% average server utilization.
 
 What this agent is NOT allowed to do:
   - Modify any activity records
@@ -33,9 +41,10 @@ from src.simulator.carbon_intensity import get_intensity_at
 
 
 # ── Physical constants (Assumptions) ──────────────────────────────────
-TDP_PER_VCPU_KW = 0.005    # kW per vCPU (Assumption)
-GPU_TDP_KW = 0.300          # kW per GPU (Assumption — A100 class)
-PUE = 1.1                   # Power Usage Effectiveness (Assumption — hyperscaler avg)
+TDP_PER_VCPU_KW = 0.005         # kW per vCPU (Assumption — max TDP)
+AVERAGE_CPU_UTILIZATION = 0.50  # Fraction of TDP actually used (Assumption — hyperscaler avg)
+GPU_TDP_KW = 0.300              # kW per GPU (Assumption — A100 class)
+PUE = 1.1                       # Power Usage Effectiveness (Assumption — hyperscaler avg)
 METHODOLOGY = "location_based_v1"
 
 
@@ -86,7 +95,7 @@ def compute_emissions_batch(
         merged.loc[mask, "intensity_upper"] = profile["base_intensity"] * 1.2
 
     # Vectorized emissions calculation
-    merged["power_kw"] = (merged["vcpus"] * TDP_PER_VCPU_KW + merged["gpu_count"] * GPU_TDP_KW) * PUE
+    merged["power_kw"] = (merged["vcpus"] * TDP_PER_VCPU_KW * AVERAGE_CPU_UTILIZATION + merged["gpu_count"] * GPU_TDP_KW) * PUE
     merged["energy_kwh"] = merged["power_kw"] * merged["duration_hours"]
     merged["kgco2e"] = merged["energy_kwh"] * (merged["intensity_gco2_kwh"] / 1000)
     merged["kgco2e_lower"] = merged["energy_kwh"] * (merged["intensity_lower"] / 1000)
@@ -124,7 +133,7 @@ def compute_emissions_single(
     intensity_lower_kg = intensity_data["lower"] / 1000
     intensity_upper_kg = intensity_data["upper"] / 1000
 
-    cpu_power = job.vcpus * TDP_PER_VCPU_KW
+    cpu_power = job.vcpus * TDP_PER_VCPU_KW * AVERAGE_CPU_UTILIZATION
     gpu_power = job.gpu_count * GPU_TDP_KW
     total_power = (cpu_power + gpu_power) * PUE
     energy_kwh = total_power * job.duration_hours
@@ -180,7 +189,7 @@ def compute_emissions_for_config(
     intensity_lower_kg = intensity_data["lower"] / 1000
     intensity_upper_kg = intensity_data["upper"] / 1000
 
-    total_power = (vcpus * TDP_PER_VCPU_KW + gpu_count * GPU_TDP_KW) * PUE
+    total_power = (vcpus * TDP_PER_VCPU_KW * AVERAGE_CPU_UTILIZATION + gpu_count * GPU_TDP_KW) * PUE
     energy_kwh = total_power * duration_hours
 
     return {
