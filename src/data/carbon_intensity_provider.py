@@ -7,7 +7,7 @@ Fallback: synthetic generator with loud warning
 import requests
 import pandas as pd
 import logging
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 logger = logging.getLogger(__name__)
@@ -17,7 +17,7 @@ CACHE_PATH = Path("data/real_carbon_intensity.csv")
 
 def fetch_uk_carbon_intensity(hours: int = 48) -> pd.DataFrame:
     """Fetch real GB grid carbon intensity. Free, no API key needed."""
-    end = datetime.utcnow()
+    end = datetime.now(timezone.utc)
     start = end - timedelta(hours=hours)
     url = f"{UK_API}/intensity/{start.strftime('%Y-%m-%dT%H:%MZ')}/{end.strftime('%Y-%m-%dT%H:%MZ')}"
     try:
@@ -46,7 +46,7 @@ def fetch_uk_carbon_intensity(hours: int = 48) -> pd.DataFrame:
 def _synthetic_fallback(hours: int) -> pd.DataFrame:
     import numpy as np
     logger.warning("WARNING: Using SYNTHETIC carbon intensity data. Results are NOT real-world validated.")
-    timestamps = [datetime.utcnow() - timedelta(minutes=30*i) for i in range(hours*2)]
+    timestamps = [datetime.now(timezone.utc) - timedelta(minutes=30*i) for i in range(hours*2)]
     return pd.DataFrame({
         "timestamp": timestamps,
         "carbon_intensity_gco2_kwh": np.random.normal(250, 80, len(timestamps)).clip(50, 600),
@@ -59,8 +59,9 @@ def get_carbon_intensity(hours: int = 48) -> pd.DataFrame:
     """Main entry point. Returns real data if available, synthetic if not."""
     if CACHE_PATH.exists():
         df = pd.read_csv(CACHE_PATH)
-        latest = pd.to_datetime(df["timestamp"]).max()
-        if datetime.utcnow() - latest.to_pydatetime() < timedelta(hours=6):
+        latest = pd.to_datetime(df["timestamp"], utc=True).max()
+        now = datetime.now(timezone.utc)
+        if now - latest < timedelta(hours=6):
             logger.info("Using cached real carbon intensity data.")
             return df
     return fetch_uk_carbon_intensity(hours)
