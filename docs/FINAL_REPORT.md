@@ -70,7 +70,7 @@ SENSE → MODEL → DECIDE → ACT → VERIFY → LEARN
 
 Each stage is handled by a specialized agent, all managed by an Orchestrator that enforces message passing and lifecycle rules.
 
-**Ingestor (SENSE):** Generates or ingests 30 days of cloud workload data. In real-data mode (`REAL_DATA_ONLY=true`), workloads are drawn from the Azure Public Dataset VM Traces 2019. In simulation mode, a synthetic workload generator produces ~24,000 jobs with realistic statistical properties (Poisson arrivals, log-normal durations, region and team assignments).
+**Ingestor (SENSE):** Generates or ingests 30 days of cloud workload data. In real-data mode (`REAL_DATA_ONLY=true`). Workloads are drawn from the Azure Public Dataset VM Traces 2019. The synthetic generator is available for offline development but was not used in the primary evaluation.
 
 **Carbon Accountant (MODEL):** Calculates kgCO₂e per job using the formula:
 
@@ -78,7 +78,7 @@ Each stage is handled by a specialized agent, all managed by an Orchestrator tha
 kgCO₂e = vCPUs × duration_hours × 0.005 kW/vCPU × PUE × grid_intensity_kgCO₂/kWh
 ```
 
-Grid intensity is drawn from real-time Electricity Maps API data (with EIA and ENTSO-E fallbacks), or from synthetic sine-wave models per region in simulation mode. Uncertainty bounds of ±20% are propagated through all downstream calculations. Emission factors follow IPCC AR6 Annex III and EPA eGRID 2023.
+Grid intensity is drawn from live EIA API data for us-east-1 (PJM Interconnection) and us-west-2 (BPAT), and from Ember Climate 2023 annual averages for ap-south-1. EU regions (eu-north-1, eu-west-1) use synthetic sinusoidal fallbacks calibrated to published grid averages from Swedish Energy Agency and EirGrid 2023 respectively, due to unavailable ENTSOE and ElectricityMaps API tokens during evaluation.
 
 **Planner Agent (DECIDE):** Generates multi-objective optimization recommendations by evaluating region shifts and time shifts for each flexible workload. The objective function is:
 
@@ -165,7 +165,7 @@ Our evaluation combines two complementary methods: (1) a **user study** assessin
 
 ### 5.1 System Performance
 
-Running the full pipeline on 30 days of synthetic workload data (24,274 jobs, baseline: 373.8 kgCO₂e, $8,591.19 cloud spend) produced the following results:
+Running the full pipeline on 30 days of Azure Public Dataset VM Traces 2019 with real-time carbon intensity data for 3 of 5 regions (EIA API for US regions, Ember Climate for India) and synthetic fallbacks for EU regions produced the following results:
 
 **Optimization outcomes:**
 - Planner generated 5,478 recommendations from 12,895 flexible jobs considered
@@ -259,7 +259,7 @@ The large quality gap between v1 (2.9/5) and v3 (4.4/5) demonstrates that prompt
 
 ### 7.1 Limitations
 
-**Synthetic workload.** The primary evaluation uses synthetic workload data rather than real cloud provider traces. While we calibrate distributions to match Azure Public Dataset characteristics, real workloads have dependencies, SLA constraints, and organizational politics that the simulation cannot capture. Results may not generalize directly to production environments.
+**Synthetic workload.** Partial real carbon intensity data. Two of five evaluated regions (eu-north-1, eu-west-1) use synthetic sinusoidal carbon intensity curves calibrated to published grid averages rather than live API data, due to missing ENTSOE and ElectricityMaps API tokens. US and India regions use real-time sources. Results for EU regions should be interpreted with this caveat. Adding an ElectricityMaps or ENTSOE API token would make all five regions fully real
 
 **Carbon intensity model.** In simulation mode, carbon intensity follows sine-wave models calibrated to regional averages. Real grid intensity is highly variable and influenced by weather, demand spikes, and energy market events. The ElectricityMaps integration addresses this for real-data mode, but simulation-mode results should be treated as illustrative.
 
@@ -274,6 +274,8 @@ The large quality gap between v1 (2.9/5) and v3 (4.4/5) demonstrates that prompt
 **Carbon intensity data quality.** All savings calculations depend on the accuracy of grid carbon intensity data. Electricity Maps provides high-quality real-time data for most regions, but coverage is incomplete in some areas (parts of Asia, Africa, and South America). Systems deployed in regions with poor coverage should use wider uncertainty bounds.
 
 **LLM reliability.** Rationale quality depends on LLM availability and output consistency. The mock LLM fallback ensures the pipeline runs, but mock rationales are less informative than real LLM outputs. The AI+determinism boundary means numerical results are always correct, but narrative quality degrades gracefully rather than failing hard.
+
+**Data Source Transparency .** Synthetic fallback regions are clearly labeled in all outputs. No output misrepresents synthetic data as live data. However, consumers of the system should verify data source labels before using results in compliance filings.
 
 ### 7.3 Ethical Considerations
 
@@ -424,17 +426,3 @@ Grid intensity delta: {source_intensity} → {target_intensity} gCO₂/kWh
 ```
 
 ---
-
-## Appendix C: System Screenshots
-
-*Screenshots of the following dashboard pages are available in `docs/screenshots/`:*
-
-- Overview page with pipeline summary metrics
-- Carbon Analysis — emissions by region heat map
-- Optimization Results — recommendation table with risk breakdown
-- Verification (MRV) — counterfactual savings with confidence intervals
-- Evidence Explorer — expanded evidence chain for a single verification
-- The Debate — Planner↔Governance negotiation transcript
-- The Impact — carbon savings as real-world equivalencies
-- Architecture Comparison — multi-agent vs. single-model results
-- Ask the Agent — interactive chat session example
