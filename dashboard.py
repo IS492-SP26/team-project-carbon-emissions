@@ -1204,23 +1204,94 @@ It has the full pipeline context loaded: real run numbers, actual recommendation
     else:
         st.success(f"✅ **Live mode** — using {llm_provider} for responses.")
 
+    # ── Build enriched system prompt with real agent reasoning ───────
+    def _build_agent_context() -> str:
+        parts = []
+
+        # Agent reasoning traces
+        traces = data.get("agent_traces", {})
+        for agent_key, label in [("planner", "Planner Agent"), ("governance", "Governance Agent")]:
+            agent = traces.get(agent_key, {})
+            purpose = agent.get("purpose", "")
+            steps = agent.get("memory", {}).get("reasoning_trace", [])
+            if isinstance(steps, str):
+                try:
+                    steps = json.loads(steps)
+                except Exception:
+                    steps = []
+            if purpose or steps:
+                parts.append(f"\n{label} — {purpose}")
+                for s in steps[:4]:
+                    content = str(s.get("content", "")).strip()[:300]
+                    parts.append(f"  [{s.get('step','')}] {content}")
+
+        # Governance decisions — show a sample of approved + any rejected
+        gov = data.get("governance")
+        if gov is not None and not gov.empty:
+            sample_cols = [c for c in ["final_risk_level", "decision", "reason", "llm_reasoning"]
+                           if c in gov.columns]
+            rejected = gov[gov["decision"] == "rejected"] if "decision" in gov.columns else gov.iloc[0:0]
+            approved_sample = gov[gov["decision"] == "approved"].head(3) if "decision" in gov.columns else gov.head(3)
+            combined = pd.concat([rejected, approved_sample]).head(6)
+            parts.append("\nGovernance decisions (sample):")
+            for _, row in combined.iterrows():
+                risk = row.get("final_risk_level", "?")
+                dec = row.get("decision", "?")
+                reason = str(row.get("llm_reasoning") or row.get("reason", ""))[:200]
+                parts.append(f"  [{risk.upper()} → {dec.upper()}] {reason}")
+
+        # Negotiation dialogue — topic + key messages
+        dialogues_path = f"{DATA_DIR}/agent_dialogues.json"
+        if os.path.exists(dialogues_path):
+            try:
+                dialogues = json.load(open(dialogues_path))
+                for dlg in dialogues[:1]:
+                    parts.append(f"\nNegotiation dialogue: {dlg.get('topic','?')} "
+                                  f"— {dlg.get('total_rounds',0)} rounds, outcome: {dlg.get('outcome','?')}")
+                    for msg in dlg.get("messages", [])[:4]:
+                        content = str(msg.get("content", "")).strip()[:250]
+                        parts.append(f"  [{msg.get('from','?')} / {msg.get('type','?')}] {content}")
+            except Exception:
+                pass
+
+        # Top recommendations with rationales
+        recs = data.get("recommendations")
+        if recs is not None and not recs.empty and "rationale" in recs.columns:
+            parts.append("\nTop recommendations (by carbon savings):")
+            top_recs = recs.nsmallest(5, "est_carbon_delta_kg")
+            for _, r in top_recs.iterrows():
+                rationale = str(r.get("rationale", "")).strip()[:200]
+                parts.append(
+                    f"  {r.get('action_type','?')}: {r.get('current_region','?')} → "
+                    f"{r.get('proposed_region','?')} | "
+                    f"{r.get('est_carbon_delta_kg',0)*1000:.1f} gCO₂e | {rationale}"
+                )
+
+        return "\n".join(parts)
+
+    _agent_ctx = _build_agent_context()
+
     sys_prompt = (
-        "You are the sust-AI-naible Carbon Optimization Assistant, an expert AI that helps "
-        "engineering teams understand and reduce their cloud carbon footprint.\n\n"
-        "Latest pipeline run context — reference these exact numbers when answering:\n"
+        "You are the sust-AI-naible Carbon Optimization Assistant. You have full access to "
+        "the agent reasoning traces, governance decisions, and negotiation dialogues from the "
+        "real pipeline run. Use this context to explain specific agent decisions in detail.\n\n"
+        "=== PIPELINE SUMMARY ===\n"
         f"- Simulation: {summary['simulation_days']} days, {summary['total_jobs']:,} jobs\n"
-        f"- Baseline emissions: {summary['baseline']['total_emissions_kgco2e']:.1f} kgCO₂e\n"
-        f"- Optimized emissions: {summary['optimized']['total_emissions_kgco2e']:.1f} kgCO₂e\n"
-        f"- Reduction: {summary['improvement']['emissions_reduction_pct']:.1f}% "
-        f"({summary['improvement']['emissions_reduction_kgco2e']:.1f} kgCO₂e)\n"
+        f"- Baseline: {summary['baseline']['total_emissions_kgco2e']:.1f} kgCO₂e → "
+        f"Optimized: {summary['optimized']['total_emissions_kgco2e']:.1f} kgCO₂e "
+        f"({summary['improvement']['emissions_reduction_pct']:.1f}% reduction)\n"
         f"- Recommendations: {summary['pipeline']['recommendations_generated']:,} generated, "
-        f"{summary['pipeline']['recommendations_approved']:,} approved\n"
-        f"- Executed: {summary['pipeline']['recommendations_executed']:,}, "
-        f"Verified: {summary['pipeline']['verifications_completed']:,}\n"
-        f"- Baseline cost: ${summary['baseline']['total_cost_usd']:,.2f} → "
-        f"Optimized: ${summary['optimized']['total_cost_usd']:,.2f} "
+        f"{summary['pipeline']['recommendations_approved']:,} approved, "
+        f"{summary['pipeline']['recommendations_executed']:,} executed, "
+        f"{summary['pipeline']['verifications_completed']:,} verified\n"
+        f"- Cost: ${summary['baseline']['total_cost_usd']:,.2f} → "
+        f"${summary['optimized']['total_cost_usd']:,.2f} "
         f"(change: ${summary['improvement']['cost_change_usd']:+,.2f})\n\n"
-        "Be concise (3-5 sentences). Reference specific numbers when relevant."
+        "=== AGENT REASONING & DECISIONS ===\n"
+        f"{_agent_ctx}\n\n"
+        "Answer questions about WHY specific decisions were made, HOW agents reasoned, "
+        "and WHAT the numbers mean. Be specific — cite agent names, risk levels, and "
+        "reasoning steps. Keep answers to 3-6 sentences unless more detail is asked for."
     )
 
     if "chat_history" not in st.session_state:
@@ -1272,12 +1343,12 @@ It has the full pipeline context loaded: real run numbers, actual recommendation
     if not st.session_state.chat_history and not _pending_q:
         st.markdown("#### 💡 Try asking:")
         _suggestions = [
-            "What drove the most carbon savings?",
-            "How does the verification work?",
-            "Did the optimization cost us anything?",
-            "How does the Governance agent decide what to reject?",
-            "Explain the counterfactual MRV methodology.",
-            "Which team saved the most carbon?",
+            "Why did the Governance agent reject those recommendations?",
+            "What did the Planner agent reason about region shifts?",
+            "Walk me through the negotiation between Planner and Governance.",
+            "Which recommendation saved the most carbon and why?",
+            "How does the verification work — what is a counterfactual?",
+            "Did the optimization cost us anything extra?",
         ]
         _s_cols = st.columns(2)
         for _i, _q in enumerate(_suggestions):
