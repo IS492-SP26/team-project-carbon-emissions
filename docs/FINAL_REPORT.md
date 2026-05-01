@@ -133,7 +133,7 @@ Our evaluation combines two complementary methods: (1) a **user study** assessin
 
 ### 4.2 User Study
 
-**Participants.** We recruited participants from three target groups: cloud engineers, university researchers who use cloud computing for academic workloads (including professors and graduate students), and IS492 classmates with technical backgrounds. Recruitment was via in-class announcement and direct outreach through the University of Illinois Urbana-Champaign computing research community.
+**Participants.** We had 4 participants across three target groups: Dr. Martin Burke (faculty evaluator,UIUC), Matt Berry (research computing systems engineer, NCSA, UIUC), Vinit Agraharkar (industry data engineer), and Derek Hoiem (Professor of Computer Science). This sample aims to surface both deep technical feedback and entry-level usability issues.
 
 **Task Set.** Each participant completed five structured tasks on a pre-loaded dashboard instance:
 
