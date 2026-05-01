@@ -205,30 +205,33 @@ with st.sidebar:
         label_visibility="collapsed",
     )
 
-    st.divider()
-    if st.button("🔄 Re-run Pipeline", use_container_width=True):
-        with st.spinner("Running pipeline... this may take a minute."):
-            result = subprocess.run(
-                [sys.executable, "run_pipeline.py"], capture_output=True, text=True, timeout=300,
-            )
-            if result.returncode == 0:
-                st.success("Pipeline complete! Refreshing...")
-                st.cache_data.clear()
-                st.rerun()
-            else:
-                st.error(f"Pipeline failed:\n{result.stderr[-500:]}")
+    # Run buttons only shown in local development (not on Streamlit Cloud)
+    is_local = not os.environ.get("STREAMLIT_SHARING_MODE") and not os.environ.get("HOME", "").startswith("/home/appuser")
+    if is_local:
+        st.divider()
+        if st.button("🔄 Re-run Pipeline", use_container_width=True):
+            with st.spinner("Running pipeline... this may take a minute."):
+                result = subprocess.run(
+                    [sys.executable, "run_pipeline.py"], capture_output=True, text=True, timeout=300,
+                )
+                if result.returncode == 0:
+                    st.success("Pipeline complete! Refreshing...")
+                    st.cache_data.clear()
+                    st.rerun()
+                else:
+                    st.error(f"Pipeline failed:\n{result.stderr[-500:]}")
 
-    if st.button("🔥 Run Stress Test", use_container_width=True):
-        with st.spinner("Running stress test (~60s)..."):
-            result = subprocess.run(
-                [sys.executable, "run_stress_test.py", "--sim-days", "5", "--seed", "99"],
-                capture_output=True, text=True, timeout=300,
-            )
-            if result.returncode == 0:
-                st.cache_data.clear()
-                st.rerun()
-            else:
-                st.error(result.stderr[-500:])
+        if st.button("🔥 Run Stress Test", use_container_width=True):
+            with st.spinner("Running stress test (~60s)..."):
+                result = subprocess.run(
+                    [sys.executable, "run_stress_test.py", "--sim-days", "5", "--seed", "99"],
+                    capture_output=True, text=True, timeout=300,
+                )
+                if result.returncode == 0:
+                    st.cache_data.clear()
+                    st.rerun()
+                else:
+                    st.error(result.stderr[-500:])
 
 
 # ══════════════════════════════════════════════════════════════════════
