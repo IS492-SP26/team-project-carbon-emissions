@@ -3,6 +3,7 @@
 **Course:** IS492 — AI Application Development  
 **Semester:** Spring 2026  
 **Team:** Sarthak Chandarana, Pooja Sahu, Josue Torres
+
 **Repository:** github.com/team-project-carbon-emissions  
 **Deployed Dashboard:** https://sustainable-demo.streamlit.app
 
@@ -133,7 +134,7 @@ Our evaluation combines two complementary methods: (1) a **user study** assessin
 
 ### 4.2 User Study
 
-**Participants.** We had 4 participants across three target groups: Dr. Martin Burke (faculty evaluator,UIUC), Matt Berry (research computing systems engineer, NCSA, UIUC), Vinit Agraharkar (industry data engineer), and Derek Hoiem (Professor of Computer Science). This sample aims to surface both deep technical feedback and entry-level usability issues.
+**Participants.** We had 4 participants across three target groups: Particpant 1 (faculty evaluator,UIUC), Participant 2 (research computing systems engineer, NCSA, UIUC), Participant 3 (industry data engineer), Participant 4 (Professor of Computer Science). This sample aims to surface both deep technical feedback and entry-level usability issues.
 
 **Task Set.** Each participant completed five structured tasks on a pre-loaded dashboard instance:
 
@@ -209,25 +210,25 @@ Inter-rater reliability (Cohen's κ) was 0.71, indicating substantial agreement.
 
 | Participant         | Role              | SUS Score |
 |--------------------|-------------------|----------|
-| Dr. Martin Burke   | Faculty           | 84       |
-| Matt Berry         | UIUC/NCSA         | 90       |
-| Vinit Agraharkar   | Industry Engineer | 71       |
-| Derek Hoiem        | Faculty           | 58       |
+| Participant 1      | Faculty           | 84       |
+| Participant 2      | UIUC/NCSA         | 90       |
+| Participant 3      | Industry Engineer | 71       |
+| Participant 4      | Faculty           | 58       |
 | **Mean**           |                   | **75.75 ≈ 76** |
 
 ### Qualitative Insights
 
 **Usefulness:**
 
-Dr. Burke noted the counterfactual verification was the most rigorous feature — *"Most student projects just say they saved carbon with no proof. You actually show the math."* Matt Berry appreciated the agent role separation and asked whether the Governance approval could be exposed as a REST API for integration with NCSA's HPC schedulers. Vinit confirmed the multi-objective framing was critical for industry adoption: *"Your tool answers whether it costs more and whether it breaks anything — which is actually more than I expected."*
+Participant 1 noted the counterfactual verification was the most rigorous feature — *"Most student projects just say they saved carbon with no proof. You actually show the math."* Participant 2 appreciated the agent role separation and asked whether the Governance approval could be exposed as a REST API for integration with NCSA's HPC schedulers. Participant 3 confirmed the multi-objective framing was critical for industry adoption: *"Your tool answers whether it costs more and whether it breaks anything — which is actually more than I expected."*
 
 **Trust in AI rationales:**
 
-Trust correlated with technical background. Matt (SUS 90) and Dr. Burke (SUS 84) both explored the Evidence Explorer in depth and expressed high trust. Vinit noted the LLM rationales sounded *"too polished"* — *"If it sounded more like a Jira ticket I'd trust it more."* Derek did not engage with the rationales at all, which we attribute to low prior familiarity with carbon accounting rather than a trust issue per se.
+Trust correlated with technical background. Participant 2 (SUS 90) and Participant 1  (SUS 84) both explored the Evidence Explorer in depth and expressed high trust. Participant 3 noted the LLM rationales sounded *"too polished"* — *"If it sounded more like a Jira ticket I'd trust it more."* Participant 4 did not engage with the rationales at all, which we attribute to low prior familiarity with carbon accounting rather than a trust issue per se.
 
 **Frustrations:**
 
-The most consistent frustration across all four participants was the CLI setup requirement before the dashboard populates. Dr. Burke stated *"if someone outside this class tried to run this, they'd give up before they got to the dashboard."* Derek was additionally confused by the 10-tab dashboard with no clear starting point. Vinit's primary reservation was the absence of real AWS/GCP data integration: *"Until this connects to real AWS data, it's a simulator, not a tool."*
+The most consistent frustration across all four participants was the CLI setup requirement before the dashboard populates. Participant 1 stated *"if someone outside this class tried to run this, they'd give up before they got to the dashboard."* Derek was additionally confused by the 10-tab dashboard with no clear starting point. Participant 3's primary reservation was the absence of real AWS/GCP data integration: *"Until this connects to real AWS data, it's a simulator, not a tool."*
 
 ---
 
@@ -245,7 +246,7 @@ Our result (16.6% verified reduction, 62 kgCO₂e over 30 days on a simulated wo
 
 The multi-objective result is particularly noteworthy: cost decreased by 3.6% alongside the carbon reduction. This challenges the common assumption that carbon optimization necessarily conflicts with cost optimization. The key insight, consistent with CarbonScaler, is that the cleanest regions are often also cheaper (Pacific Northwest hydro in the US, Nordic hydro in Europe), so shifting to cleaner regions frequently reduces both emissions and cost simultaneously.
 
-The 32-point spread in SUS scores (Matt Berry 90, Derek 58) reflects the system's current optimization for technically literate users. The Evidence Explorer, consistently praised by Dr. Burke, Matt, and Vinit presupposes familiarity with concepts like carbon intensity and counterfactual reasoning. Derek's lower score and incomplete task set (he missed the Ask the Agent task entirely) suggests onboarding improvements are a higher priority than feature additions for broadening the user base.
+The 32-point spread in SUS scores (Participant 2 90, Participant 4 58) reflects the system's current optimization for technically literate users. The Evidence Explorer, consistently praised by Participant 1, Participant 2, and Participant 3 presupposes familiarity with concepts like carbon intensity and counterfactual reasoning. Derek's lower score and incomplete task set (he missed the Ask the Agent task entirely) suggests onboarding improvements are a higher priority than feature additions for broadening the user base.
 
 ### 6.3 User Study Interpretation
 
@@ -343,7 +344,7 @@ Wu, Q., Bansal, G., Zhang, J., Wu, Y., Zhang, S., Zhu, E., Li, B., Jiang, L., Zh
 > **Purpose:** We are evaluating the usability and usefulness of a research prototype for cloud carbon optimization.  
 > **What you'll do:** Complete 5 structured tasks using the dashboard (~20 min), then answer a short survey and interview (~10 min).  
 > **Data collected:** Task completion times, survey responses, interview notes.  
-> **Confidentiality:** Names were retained but no PII
+> **Confidentiality:** Names were retained but were censored
 > **Voluntary:** Participation is entirely voluntary. You may stop at any time.
 
 ### A.2 Task Sheet (given to participants)
