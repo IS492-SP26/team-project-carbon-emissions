@@ -908,15 +908,27 @@ elif page == "⚖️ Multi-Agent vs Single":
                     f"Single-model has no audit trail."
                 )
 
-            # Show the rejected recs table (real data from stress test CSV)
+            # Show the rejected recs table (real data from stress test CSV + dialogue reasoning)
             st.divider()
             st.subheader("What multi-agent rejected (and why)")
             gov_csv_path = "data/stress_test/multi_agent/governance_decisions.csv"
+            dialogues_path = "data/stress_test/multi_agent/agent_dialogues.json"
             if os.path.exists(gov_csv_path):
                 gov_df_full = pd.read_csv(gov_csv_path)
-                rejected_df = gov_df_full[gov_df_full["decision"] == "rejected"]
+                rejected_df = gov_df_full[gov_df_full["decision"] == "rejected"].copy()
                 if not rejected_df.empty:
-                    display_cols = [c for c in ["recommendation_id", "final_risk_level", "reason", "decided_by"]
+                    # Pull the governance challenge reasoning from dialogues
+                    gov_reasoning = ""
+                    if os.path.exists(dialogues_path):
+                        with open(dialogues_path) as f:
+                            dialogues = json.load(f)
+                        for dlg in dialogues:
+                            for msg in dlg.get("messages", []):
+                                if msg.get("type") == "challenge" and msg.get("from", "").startswith("Governance"):
+                                    gov_reasoning = msg.get("content", "")
+                                    break
+                    rejected_df["governance_reasoning"] = gov_reasoning if gov_reasoning else rejected_df.get("reason", "")
+                    display_cols = [c for c in ["recommendation_id", "final_risk_level", "governance_reasoning"]
                                     if c in rejected_df.columns]
                     st.dataframe(rejected_df[display_cols], use_container_width=True)
                 else:
