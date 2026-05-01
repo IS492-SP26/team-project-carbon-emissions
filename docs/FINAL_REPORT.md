@@ -145,9 +145,9 @@ Our evaluation combines two complementary methods: (1) a **user study** assessin
 
 **Metrics.** We collected: task success rate (binary), time-on-task (seconds, screen-recorded), error count (number of incorrect navigations or actions), post-session UMUX-Lite score (2 items, 7-point scale), and a qualitative exit interview covering usefulness, trust in AI rationales, and frustrations.
 
-**Protocol.** Sessions were conducted remotely via Zoom screen share. Participants were given a brief orientation (system overview, no task hints) and asked to think aloud during tasks. After all five tasks, participants completed the UMUX-Lite survey and a 5-minute semi-structured interview. Sessions lasted approximately 30–40 minutes. No personally identifiable information was collected beyond a participant ID. All data is stored in `data/user_study/`.
+**Protocol.** Sessions were conducted remotely via Zoom screen share. Participants were given a brief orientation (system overview, no task hints) and asked to think aloud during tasks. After all five tasks, participants completed the UMUX-Lite survey and a 5-minute semi-structured interview. Sessions lasted approximately 20–30 minutes. 
 
-**Consent.** Participants were informed that sessions were screen recorded for analysis purposes only, that participation was voluntary, and that they could withdraw at any time. Consent was obtained verbally at the start of each session.
+**Consent.** Participants were informed that sessions were voluntary, and that they could withdraw at any time. Consent was obtained verbally at the start of each session.
 
 ### 4.3 System Evaluation
 
@@ -342,8 +342,8 @@ Wu, Q., Bansal, G., Zhang, J., Wu, Y., Zhang, S., Zhu, E., Li, B., Jiang, L., Zh
 > **Study Title:** Evaluation of sust-AI-naible: A Cloud Carbon Optimization Dashboard  
 > **Purpose:** We are evaluating the usability and usefulness of a research prototype for cloud carbon optimization.  
 > **What you'll do:** Complete 5 structured tasks using the dashboard (~20 min), then answer a short survey and interview (~10 min).  
-> **Data collected:** Screen recording (for analysis only), task completion times, survey responses, interview notes.  
-> **Confidentiality:** All data is stored by participant ID only. No names or identifying information are retained.  
+> **Data collected:** Task completion times, survey responses, interview notes.  
+> **Confidentiality:** Names were retained but no PII
 > **Voluntary:** Participation is entirely voluntary. You may stop at any time.
 
 ### A.2 Task Sheet (given to participants)
