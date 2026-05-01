@@ -10,6 +10,7 @@ Requires: run `python run_pipeline.py` first to generate data.
 import json
 import os
 import subprocess
+import sys
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -208,7 +209,7 @@ with st.sidebar:
     if st.button("🔄 Re-run Pipeline", use_container_width=True):
         with st.spinner("Running pipeline... this may take a minute."):
             result = subprocess.run(
-                ["python", "run_pipeline.py"], capture_output=True, text=True, timeout=300,
+                [sys.executable, "run_pipeline.py"], capture_output=True, text=True, timeout=300,
             )
             if result.returncode == 0:
                 st.success("Pipeline complete! Refreshing...")
@@ -220,7 +221,7 @@ with st.sidebar:
     if st.button("🔥 Run Stress Test", use_container_width=True):
         with st.spinner("Running stress test (~60s)..."):
             result = subprocess.run(
-                ["python", "run_stress_test.py", "--sim-days", "5", "--seed", "99"],
+                [sys.executable, "run_stress_test.py", "--sim-days", "5", "--seed", "99"],
                 capture_output=True, text=True, timeout=300,
             )
             if result.returncode == 0:
