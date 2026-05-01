@@ -74,8 +74,11 @@ src/
 
 ### The one formula you need:
 ```
-kgCO₂e = vCPUs × duration_hours × 0.005 kW/vCPU × 1.1 (PUE) × grid_intensity_kgCO₂/kWh
+kgCO₂e = vCPUs × duration_hours × 0.005 kW/vCPU × 0.50 (utilization) × 1.1 (PUE) × grid_intensity_kgCO₂/kWh
 ```
+
+Note: using raw TDP (0.005 kW) without a utilization factor assumes 100% CPU load, which
+overestimates emissions. The 0.50 factor approximates typical hyperscaler CPU utilization.
 
 ### What it does:
 - Read each job from the activity ledger

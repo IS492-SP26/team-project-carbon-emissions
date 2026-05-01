@@ -159,8 +159,8 @@ Expected output (abridged):
   Generated 24,274 jobs
 ...
   Total cloud spend:    $8,591.19
-  Total emissions:      373.80 kgCO₂e
-  Carbon cost (@$75/t): $28.03
+  Total emissions:      237.57 kgCO₂e
+  Carbon cost (@$75/t): $17.82
 ======================================================================
   NEXT STEP: Build the Planner agent to optimize flexible workloads
 ======================================================================
