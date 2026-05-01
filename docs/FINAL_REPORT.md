@@ -121,7 +121,7 @@ The system supports four LLM backends, selected via `LLM_PROVIDER` environment v
 
 ### 3.4 Architecture A/B Comparison
 
-`run_comparison.py` runs three pipelines on identical inputs — multi-agent, single-model (Groq), and frontier (Claude) — and produces side-by-side comparisons of decision quality, verified savings, approval rate, token usage, and estimated LLM energy consumption. Energy estimates follow Patterson et al. (2021) and Luccioni et al. (2023): 0.05 Wh per 1k prompt tokens and 0.30 Wh per 1k completion tokens, converted via the EPA US-grid average. Dashboard pages "🏛️ Architecture," "⚖️ Verdict," and "🧠 Reasoning Compare" render these artifacts.
+`run_comparison.py` runs three pipelines on identical inputs — multi-agent, single-model (Groq), and frontier (Claude) and produces side-by-side comparisons of decision quality, verified savings, approval rate, token usage, and estimated LLM energy consumption. Energy estimates follow Patterson et al. (2021) and Luccioni et al. (2023): 0.05 Wh per 1k prompt tokens and 0.30 Wh per 1k completion tokens, converted via the EPA US-grid average. Dashboard pages "🏛️ Architecture," "⚖️ Verdict," and "🧠 Reasoning Compare" render these artifacts.
 
 ---
 
@@ -235,7 +235,7 @@ The most consistent frustration across all four participants was the CLI setup r
 
 ### 6.1 Does the Multi-Agent Approach Work?
 
-The LLM comparison strongly supports the multi-agent architecture. The 12.6 percentage point improvement in approval rate over the single-model baseline reflects the Governance agent's ability to challenge Planner recommendations that exceed risk thresholds — a check that the single-model approach cannot replicate without explicit role separation. This finding is consistent with Wu et al. (2023), who demonstrated that conversational role specialization reduces error rates on complex multi-step tasks.
+The LLM comparison strongly supports the multi-agent architecture. The 12.6 percentage point improvement in approval rate over the single-model baseline reflects the Governance agent's ability to challenge Planner recommendations that exceed risk thresholds, a check that the single-model approach cannot replicate without explicit role separation. This finding is consistent with Wu et al. (2023), who demonstrated that conversational role specialization reduces error rates on complex multi-step tasks.
 
 Interestingly, the multi-agent system used 25% fewer tokens than the single-model baseline despite producing better outcomes. We attribute this to the structured message-passing protocol: each agent receives only the information relevant to its role, reducing context window noise and the tendency for large models to hedge or over-explain.
 
@@ -245,7 +245,7 @@ Our result (16.6% verified reduction, 62 kgCO₂e over 30 days on a simulated wo
 
 The multi-objective result is particularly noteworthy: cost decreased by 3.6% alongside the carbon reduction. This challenges the common assumption that carbon optimization necessarily conflicts with cost optimization. The key insight, consistent with CarbonScaler, is that the cleanest regions are often also cheaper (Pacific Northwest hydro in the US, Nordic hydro in Europe), so shifting to cleaner regions frequently reduces both emissions and cost simultaneously.
 
-The 32-point spread in SUS scores (Matt Berry 90, Derek 58) reflects the system's current optimization for technically literate users. The Evidence Explorer — consistently praised by Dr. Burke, Matt, and Vinit — presupposes familiarity with concepts like carbon intensity and counterfactual reasoning. Derek's lower score and incomplete task set (he missed the Ask the Agent task entirely) suggests onboarding improvements are a higher priority than feature additions for broadening the user base.
+The 32-point spread in SUS scores (Matt Berry 90, Derek 58) reflects the system's current optimization for technically literate users. The Evidence Explorer, consistently praised by Dr. Burke, Matt, and Vinit presupposes familiarity with concepts like carbon intensity and counterfactual reasoning. Derek's lower score and incomplete task set (he missed the Ask the Agent task entirely) suggests onboarding improvements are a higher priority than feature additions for broadening the user base.
 
 ### 6.3 User Study Interpretation
 
