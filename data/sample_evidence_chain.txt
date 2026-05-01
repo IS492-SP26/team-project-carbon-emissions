@@ -1,0 +1,52 @@
+=== Evidence Chain for Recommendation aba1759c ===
+Verification Status: CONFIRMED
+Verified Savings: 0.01 gCO₂e [90% CI: 0.00 – 0.02]
+SLA Compliant: Yes
+
+Step 1: input_activity
+  Original job configuration
+    job_id: az-xSV7B5t8SHqXnT8xe9DQyTSsmNkt02zwD6V8q8pDTyxNhGLrvnfF1xjDt69/ZNDj
+    region: us-west-2
+    started_at: 2025-01-12 21:33:57.971753
+    vcpus: 2
+    gpu_count: 0
+    duration_hours: 0.083
+
+Step 2: executed_config
+  Executed (optimized) job configuration
+    region: us-west-2
+    started_at: 2025-01-13 01:33:57.971753
+
+Step 3: energy_computation
+  Energy = (2 × 0.005 + 0 × 0.3) × 1.1 × 0.083h = 0.000913 kWh
+    total_power_kw: 0.011
+    energy_kwh: 0.000913
+
+Step 4: actual_emissions
+  Actual: 0.000913 kWh × 40.4 gCO₂/kWh = 0.04 gCO₂e
+    region: us-west-2
+    timestamp: 2025-01-13 01:33:57.971753
+    grid_intensity_gco2_kwh: 40.4
+    source: EIA API — BPAT
+    kgco2e: 3.7e-05
+
+Step 5: counterfactual_emissions
+  Counterfactual: 0.000913 kWh × 51.4 gCO₂/kWh = 0.05 gCO₂e
+    region: us-west-2
+    timestamp: 2025-01-12 21:33:57.971753
+    grid_intensity_gco2_kwh: 51.4
+    source: EIA API — BPAT
+    kgco2e: 4.7e-05
+
+Step 6: savings_computation
+  Savings: 0.05 - 0.04 = 0.01 gCO₂e
+    verified_savings_kgco2e: 1e-05
+    ci_90_lower: 2e-06
+    ci_90_upper: 1.9e-05
+    verification_status: confirmed
+
+Step 7: integrity
+  Input hash for tamper detection
+    input_hash_sha256: 1114bb664a538eab
+    methodology: counterfactual_diff_v1
+    uncertainty_method: interval_arithmetic

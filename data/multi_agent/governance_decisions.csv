@@ -1,0 +1,297 @@
+decision_id,recommendation_id,original_risk_level,final_risk_level,decision,reason,llm_reasoning,decided_at,decided_by,policy_version
+c340b0f6,c3f3e159,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546154,governance_agent,v1.0
+0973a4d3,4f29e021,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546210,governance_agent,v1.0
+289c9714,359f2106,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546243,governance_agent,v1.0
+b0cead9d,9753fc15,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546266,governance_agent,v1.0
+6da9c97e,8dbd1685,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546283,governance_agent,v1.0
+859a9240,29ce5f40,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546303,governance_agent,v1.0
+fcfa99ac,0960c2dd,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546321,governance_agent,v1.0
+9e967555,bb24f151,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546337,governance_agent,v1.0
+fd7104a0,242ea99e,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546351,governance_agent,v1.0
+056a7055,c01960c6,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546365,governance_agent,v1.0
+4686c0f4,1071df8d,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546382,governance_agent,v1.0
+302112df,c350f60e,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546399,governance_agent,v1.0
+15bf10e2,8fe14bd5,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546416,governance_agent,v1.0
+78b6d544,1de67d18,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546434,governance_agent,v1.0
+deb84aa7,2149a6d7,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546450,governance_agent,v1.0
+f58df45f,1f84d69c,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546463,governance_agent,v1.0
+eaf1a373,13d16543,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546480,governance_agent,v1.0
+bc835ac7,c35c2fd7,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546493,governance_agent,v1.0
+7e63d383,1f507496,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546510,governance_agent,v1.0
+142ceaed,b2fb8927,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546522,governance_agent,v1.0
+15a93698,6dc6b7d7,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546535,governance_agent,v1.0
+84c2eae2,0e4b215b,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546548,governance_agent,v1.0
+c79b2b02,f56ad789,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546560,governance_agent,v1.0
+1df5f3dc,fa94eb5a,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546576,governance_agent,v1.0
+127f3f44,fe7fa8d2,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546592,governance_agent,v1.0
+b23e8080,11f400a2,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546606,governance_agent,v1.0
+ac284ac8,a377b845,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546622,governance_agent,v1.0
+834f0a01,5c01d853,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546639,governance_agent,v1.0
+47c5de0e,e1f9e0c4,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546652,governance_agent,v1.0
+3f22a618,a2cf12eb,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546667,governance_agent,v1.0
+dff231d2,63c86b1b,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546683,governance_agent,v1.0
+d9b3dac6,453736e0,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546696,governance_agent,v1.0
+88bc3e14,305ace2d,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546714,governance_agent,v1.0
+61444d4a,7466790c,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546741,governance_agent,v1.0
+2cc07224,02968e0b,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546751,governance_agent,v1.0
+80c20ad0,d093b5f7,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546761,governance_agent,v1.0
+ecc67a67,8804827c,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546774,governance_agent,v1.0
+5787967f,b8adc234,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546783,governance_agent,v1.0
+8475d5ec,527894fc,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546793,governance_agent,v1.0
+5cda7971,1481f5eb,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546803,governance_agent,v1.0
+5339ce77,d618761b,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546813,governance_agent,v1.0
+d1e9ee38,67edcdf1,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546823,governance_agent,v1.0
+e29f6db9,08a6d7c6,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546833,governance_agent,v1.0
+d59f84d5,e49aa6d3,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546842,governance_agent,v1.0
+1eb08330,619976dc,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546852,governance_agent,v1.0
+6ef978f2,39256192,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546862,governance_agent,v1.0
+d291eaad,aacf426d,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546872,governance_agent,v1.0
+b050436b,acc8ba16,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546881,governance_agent,v1.0
+0bb71143,d7f4bf7a,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546891,governance_agent,v1.0
+2ba34644,70e2b890,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546908,governance_agent,v1.0
+b160339a,be5f03f0,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546918,governance_agent,v1.0
+75d5a50c,922ffe38,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546927,governance_agent,v1.0
+99fc8ebb,5c0745a8,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546937,governance_agent,v1.0
+ed1609b8,87365df0,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546947,governance_agent,v1.0
+6e5b17cf,48c78b73,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546957,governance_agent,v1.0
+e9379be6,8cd06e5e,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546967,governance_agent,v1.0
+9960ca53,26f0fc40,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546977,governance_agent,v1.0
+f8d06d40,001ba7c3,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.546994,governance_agent,v1.0
+e06f10a4,78f6a958,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.547006,governance_agent,v1.0
+41f14083,dffbc065,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.547016,governance_agent,v1.0
+58217da2,ba71f3d4,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.547030,governance_agent,v1.0
+f0d7956c,f26abcad,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.547040,governance_agent,v1.0
+ddbcb0cb,bd589894,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.547050,governance_agent,v1.0
+c76ee023,fbe23b72,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.547060,governance_agent,v1.0
+8ae6f4eb,0da0517b,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.547069,governance_agent,v1.0
+6a8ef755,b57b1eb7,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.547081,governance_agent,v1.0
+e45739ee,3bf76aab,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.547094,governance_agent,v1.0
+99ce6353,949b80c3,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.547104,governance_agent,v1.0
+3897418a,9648cccc,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.547113,governance_agent,v1.0
+75f00280,fcac2205,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.547123,governance_agent,v1.0
+bae6d9b0,7b57fcbf,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.547132,governance_agent,v1.0
+bf071f82,9e6ac79e,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.547142,governance_agent,v1.0
+76846463,87590a67,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.547151,governance_agent,v1.0
+b3f88526,af403ae5,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.547161,governance_agent,v1.0
+65e4551f,6d6c6bcc,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.547173,governance_agent,v1.0
+bf1c7e50,a0f8ccfc,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.547186,governance_agent,v1.0
+ac909c7f,483a8f9e,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.547196,governance_agent,v1.0
+d7c1788e,c4ea056e,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.547207,governance_agent,v1.0
+73c2ce6e,bd5377ca,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.547217,governance_agent,v1.0
+d25b019a,874104e0,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:28.547226,governance_agent,v1.0
+75b4eda5,95bb21ee,medium,medium,approved,Approved after review. Medium risk — team lead notified.,"**Risk Assessment: Medium**
+
+The recommended action of shifting regions from eu-west-1 to us-west-2 and adjusting the time shift is classified as a medium-risk change. This assessment is based on several factors:
+
+1. **Geographical Shift**: The change involves moving from one region (eu-west-1) to another (us-west-2), which could introduce new regulatory, compliance, and latency issues. Although the carbon footprint is expected to decrease by 872.6 gCO₂e, the shift may also lead to changes in data sovereignty, potentially affecting compliance with regional data protection laws.
+
+2. **Time Shift Adjustment**: Adjusting the time shift could impact the timing of automated tasks, backups, and other scheduled operations. If not properly coordinated, this could lead to temporary service disruptions or data inconsistencies, affecting overall system reliability.
+
+3. **Dependency on Confidence Level**: The confidence level of 95% in this recommendation suggests a high degree of certainty in the predicted outcomes. However, the 5% margin of uncertainty leaves room for unforeseen consequences, such as unexpected increases in latency or unforeseen compatibility issues with the new region's infrastructure.
+
+4. **Cost Implications**: While the cost delta is negative ($-1.1960), indicating a potential cost savings, any miscalculations or unforeseen expenses related to the migration (e.g., additional support costs, temporary duplicates of resources during migration) could negate these savings.
+
+5. **Operational Complexity**: The action involves not just a simple shift but also an adjustment in timing, which adds a layer of operational complexity. This complexity increases the risk of human error during the implementation phase, which could lead to downtime or suboptimal performance post-migration.
+
+To mitigate these risks, it's essential to conduct thorough testing, ensure clear communication with stakeholders about potential impacts, and have a rollback plan in place in case unforeseen issues arise during or after the migration.",2026-04-30 11:52:28.547236,governance_agent,v1.0
+6cf2ae89,5b72c907,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:30.899386,governance_agent,v1.0
+75b3717f,d0f15013,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:30.899411,governance_agent,v1.0
+4cc06a44,2f1e003e,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:30.899428,governance_agent,v1.0
+5b1f6b21,990a79e2,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:30.899444,governance_agent,v1.0
+f642a9cc,6a0d98c3,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:30.899458,governance_agent,v1.0
+2ef56c6d,340523c4,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:30.899473,governance_agent,v1.0
+efd78811,aea6d957,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:30.899487,governance_agent,v1.0
+5b4eb66a,b7486610,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:30.899500,governance_agent,v1.0
+091e746a,a9dbf03b,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:30.899514,governance_agent,v1.0
+4bef77a4,5079fd74,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:30.899528,governance_agent,v1.0
+cbe1f888,7a9c9a0a,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:30.899542,governance_agent,v1.0
+42076dae,88ef113b,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:30.899556,governance_agent,v1.0
+a8bb5ead,e8cd4334,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:30.899572,governance_agent,v1.0
+2e37658e,952d4ab0,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:30.899586,governance_agent,v1.0
+3d11c7ab,c45f6ab3,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:30.899599,governance_agent,v1.0
+d265f751,2a854fcd,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:30.899612,governance_agent,v1.0
+fa4d5cfd,5001d907,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:30.899626,governance_agent,v1.0
+bae350bb,88ebed1b,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:30.899639,governance_agent,v1.0
+a2a13a97,550b5e77,medium,medium,approved,Approved after review. Medium risk — team lead notified.,"**Risk Assessment: Medium**
+
+The recommended action involves shifting a workload from the eu-west-1 region to us-west-2, combined with a time shift. This change is assessed as medium risk due to several potential factors:
+
+1. **Data Transfer and Latency**: Shifting regions may introduce additional latency and data transfer costs, potentially impacting application performance. Although the cost delta is negative ($-4.8920), indicating a potential cost savings, the transfer of data between regions could still cause temporary disruptions or increased latency, affecting user experience.
+
+2. **Compliance and Regulatory Issues**: Moving data from one region to another, especially across international borders (from EU to US), may raise compliance and regulatory concerns. Ensuring that the new region (us-west-2) meets all necessary data protection and privacy standards (e.g., GDPR for EU citizen data) is crucial. Non-compliance could lead to legal and reputational risks.
+
+3. **Dependency on Local Resources**: Applications or services might have dependencies on local resources, such as databases, caches, or third-party services, which could be affected by the region shift. Ensuring that all dependencies are properly updated or replicated in the new region is essential to avoid service disruptions.
+
+4. **Network and Security Configurations**: The new region might require adjustments to network and security configurations to maintain the current level of security and access control. Misconfigurations could lead to security vulnerabilities or unauthorized access.
+
+5. **Carbon Footprint Considerations**: While the carbon delta indicates a reduction in carbon footprint (-1745.3 gCO₂e), the overall environmental impact of the shift should be considered, including any potential increases in energy consumption or e-waste generation associated with the change.
+
+Given the confidence level of 95%, it's likely that the analysis has considered these factors to some extent. However, thorough testing, validation, and monitoring post-implementation are necessary to mitigate these risks and ensure a smooth transition.",2026-04-30 11:52:30.899657,governance_agent,v1.0
+f7084593,7ffc5e26,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.968933,governance_agent,v1.0
+a1754f96,83e0b796,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.968974,governance_agent,v1.0
+74db6f25,a4b5a732,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969003,governance_agent,v1.0
+1936f20f,76c9f489,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969019,governance_agent,v1.0
+cb619de2,6b6fe370,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969032,governance_agent,v1.0
+af9207eb,85bf25d9,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969045,governance_agent,v1.0
+3ba0fc23,e428f6cb,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969058,governance_agent,v1.0
+361b8012,f9619111,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969070,governance_agent,v1.0
+ccc111fb,99c160f3,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969083,governance_agent,v1.0
+2968eb43,ce16c11d,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969099,governance_agent,v1.0
+f596b5d5,8d20263d,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969112,governance_agent,v1.0
+863ebbc4,965d7378,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969125,governance_agent,v1.0
+73431ac0,f442308d,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969138,governance_agent,v1.0
+5ee1f000,1c9d5fe3,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969149,governance_agent,v1.0
+5188d577,26f1db11,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969168,governance_agent,v1.0
+bc85c6f6,0e08600e,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969197,governance_agent,v1.0
+b2879e16,8d747c37,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969223,governance_agent,v1.0
+30df03dd,3c62f553,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969256,governance_agent,v1.0
+36a5eccb,bc8540e0,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969271,governance_agent,v1.0
+6515bc5e,e106acb0,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969283,governance_agent,v1.0
+4dab9908,cc801edc,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969296,governance_agent,v1.0
+81f38eb5,123844bd,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969413,governance_agent,v1.0
+22a04b82,3009589b,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969423,governance_agent,v1.0
+15b96eeb,2cc0f5ad,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969431,governance_agent,v1.0
+fa95f109,08b143c1,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969439,governance_agent,v1.0
+21674a50,ec5fba7f,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969446,governance_agent,v1.0
+9a237910,84714646,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969461,governance_agent,v1.0
+9f26b0cf,5e2830e3,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969468,governance_agent,v1.0
+5d7c4004,872d2192,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969476,governance_agent,v1.0
+abc042d5,db87756c,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969487,governance_agent,v1.0
+4c536bbf,7ae80829,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969495,governance_agent,v1.0
+326181f3,e9809bae,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969502,governance_agent,v1.0
+5adc31b1,42887bee,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969510,governance_agent,v1.0
+db7bd871,123359f4,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969517,governance_agent,v1.0
+7473f0da,13b91a25,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969525,governance_agent,v1.0
+334feadf,ed1596a2,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:32.969532,governance_agent,v1.0
+9d6f46f4,a5f2d562,high,high,approved,Human-approved (simulated).,"**High Risk Assessment**
+
+The recommended action of shifting regions from eu-west-1 to us-west-2 and adjusting the time shift is considered high risk due to several potential concerns:
+
+1. **Data Sovereignty and Compliance**: Transferring data from the European Union (eu-west-1) to the United States (us-west-2) may raise data sovereignty and compliance issues, particularly with regards to GDPR and other EU regulations. This could lead to legal and reputational risks if not properly addressed.
+2. **Latency and Performance**: The region shift may introduce latency and performance issues, affecting the overall user experience and system responsiveness. This could be particularly problematic if the application is sensitive to latency or has strict performance requirements.
+3. **Dependence on Local Infrastructure**: The shift may require reconfiguration or replacement of local infrastructure, such as databases, storage, or networking components, which could lead to downtime, errors, or compatibility issues.
+4. **Security and Access Control**: Changing regions may necessitate updates to security groups, access controls, and firewall rules, which, if not done correctly, could expose the system to security risks and vulnerabilities.
+5. **Potential for Downtime**: The region shift and time shift adjustments may require downtime, which could impact business operations, customer satisfaction, and revenue.
+
+While the recommended action promises a significant carbon reduction (-2082.1 gCO₂e) and cost savings ($-8.4236), the potential risks and complexities associated with the region shift and time shift justify a high-risk assessment. It is essential to carefully evaluate and mitigate these risks to ensure a successful and smooth transition.",2026-04-30 11:52:32.969539,human_simulated,v1.0
+17b40316,113c6e66,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834235,governance_agent,v1.0
+79f791aa,16f5cd49,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834260,governance_agent,v1.0
+80af184f,56071c9f,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834278,governance_agent,v1.0
+213f6c6d,987917bb,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834293,governance_agent,v1.0
+319c0762,5dbb9f19,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834307,governance_agent,v1.0
+dfa5566e,a3b3168b,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834321,governance_agent,v1.0
+87307763,f57ee4ad,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834335,governance_agent,v1.0
+bd07cc21,6ac87248,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834349,governance_agent,v1.0
+a69833c6,484d9cf6,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834362,governance_agent,v1.0
+1cf05c35,b2006439,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834375,governance_agent,v1.0
+aa0b23ac,4a9f16b1,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834389,governance_agent,v1.0
+bbdc427b,1f70842c,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834401,governance_agent,v1.0
+acc2e1ea,1b61cbf9,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834416,governance_agent,v1.0
+a2009cba,d98791ee,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834429,governance_agent,v1.0
+3f53aea0,1e6e8c6c,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834450,governance_agent,v1.0
+75ec8cb6,7847839f,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834463,governance_agent,v1.0
+77008c35,9857a000,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834476,governance_agent,v1.0
+b6812d1c,cc6c5850,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834489,governance_agent,v1.0
+2a52630e,920e57aa,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834502,governance_agent,v1.0
+5d4cf74c,dea33ae3,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834515,governance_agent,v1.0
+092b8d57,0f7a46fa,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834532,governance_agent,v1.0
+0c9433ad,6d0f248e,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834551,governance_agent,v1.0
+661293a9,5d6a2d5e,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834569,governance_agent,v1.0
+aae14d4f,f355e980,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834589,governance_agent,v1.0
+09db5394,f109dbb0,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834603,governance_agent,v1.0
+0da0a164,f76436ca,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834617,governance_agent,v1.0
+877e2712,5ec2855a,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834630,governance_agent,v1.0
+bcaf2e0b,c2fa5716,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834647,governance_agent,v1.0
+c549476c,6a9d6afe,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834661,governance_agent,v1.0
+2e4d8884,4917a741,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834675,governance_agent,v1.0
+300cda90,8e61a708,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834689,governance_agent,v1.0
+fa98a42b,10f19c24,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834704,governance_agent,v1.0
+aabd401e,e1cb623f,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834718,governance_agent,v1.0
+9b564491,f35ac231,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834731,governance_agent,v1.0
+97be62cb,b9a9b10e,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834744,governance_agent,v1.0
+d568d7df,ea82dfff,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834757,governance_agent,v1.0
+3d5a0743,7f7c3af4,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834773,governance_agent,v1.0
+55f32e8f,60ef3ac8,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834786,governance_agent,v1.0
+3309b881,0cf21690,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834799,governance_agent,v1.0
+77aeba25,789267d1,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834811,governance_agent,v1.0
+fd2ac023,c1f919ea,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834830,governance_agent,v1.0
+bc5314a1,1811e1a9,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834843,governance_agent,v1.0
+0cd27b6a,1770f1f8,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834856,governance_agent,v1.0
+b8b69fb9,7a254144,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834869,governance_agent,v1.0
+d11d0917,e1e1a7ca,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834882,governance_agent,v1.0
+de851987,ffd6289a,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834895,governance_agent,v1.0
+7f3152d4,91929514,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834908,governance_agent,v1.0
+110671c2,7afe37cb,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834921,governance_agent,v1.0
+5702ac9f,54a8b47c,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834934,governance_agent,v1.0
+93f9a06e,45055de2,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834947,governance_agent,v1.0
+3149a935,2a808852,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834960,governance_agent,v1.0
+cfbac4e6,519a3769,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834972,governance_agent,v1.0
+8ec09fc2,018e9745,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834985,governance_agent,v1.0
+30bfbba7,f67fb66b,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.834998,governance_agent,v1.0
+9353fbcd,a79ba3ce,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835010,governance_agent,v1.0
+bc8a50c5,16470185,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835026,governance_agent,v1.0
+cb8c9f61,a5321513,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835040,governance_agent,v1.0
+fe17e65d,18090598,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835053,governance_agent,v1.0
+91319315,541ed86e,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835066,governance_agent,v1.0
+ca9d4756,9bb2ba21,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835079,governance_agent,v1.0
+041b6bf0,dcaea71b,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835092,governance_agent,v1.0
+accf5642,e831b1e2,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835105,governance_agent,v1.0
+8f20b365,63fb81d5,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835118,governance_agent,v1.0
+f8c7eb04,b3db8438,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835131,governance_agent,v1.0
+c813a067,bc494082,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835144,governance_agent,v1.0
+4d678f00,9266210f,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835157,governance_agent,v1.0
+b3394edd,e10c24de,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835174,governance_agent,v1.0
+bb5b24e3,e58a84f9,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835187,governance_agent,v1.0
+43d0c8ea,4da59eae,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835200,governance_agent,v1.0
+14adca09,887ae6dc,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835212,governance_agent,v1.0
+69a0ae2d,9bfaa0d7,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835225,governance_agent,v1.0
+8ca28795,c476cd5c,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835243,governance_agent,v1.0
+3a37438f,3c667b24,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835273,governance_agent,v1.0
+ede48c48,a721804a,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835284,governance_agent,v1.0
+a5f434bf,c12fa3ae,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835294,governance_agent,v1.0
+add976ef,931cd949,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835304,governance_agent,v1.0
+aae4e08a,3ba21f2c,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835314,governance_agent,v1.0
+a068316e,d4fb2de2,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835323,governance_agent,v1.0
+ec020116,7e45fcdf,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835333,governance_agent,v1.0
+b18f82de,f25e0e88,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835343,governance_agent,v1.0
+0b83b339,e71454f4,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835357,governance_agent,v1.0
+dfbe000d,2129c6e1,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835367,governance_agent,v1.0
+e5d0054e,9292c72d,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835377,governance_agent,v1.0
+c4336b6b,12a7ee09,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835387,governance_agent,v1.0
+da2c1fc3,8ef9a7bd,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835397,governance_agent,v1.0
+61ab8d2e,f7216ea6,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835407,governance_agent,v1.0
+f26b7835,bf0fa62d,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835417,governance_agent,v1.0
+f895893a,bc238759,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835427,governance_agent,v1.0
+32678a71,98a8316f,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835437,governance_agent,v1.0
+da8681ee,5cd9f7c7,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835446,governance_agent,v1.0
+429638ee,0d144d9d,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835456,governance_agent,v1.0
+22721573,f3d8ec65,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835469,governance_agent,v1.0
+9d4764df,e68d7aff,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835479,governance_agent,v1.0
+59c6453a,dc12bba8,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835489,governance_agent,v1.0
+b27c9112,0dc21cea,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835499,governance_agent,v1.0
+f658098a,db7ef37c,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835508,governance_agent,v1.0
+117da3f0,dce3f329,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835520,governance_agent,v1.0
+3bb1bd0c,57939e97,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835530,governance_agent,v1.0
+d48b4633,e7df738c,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835540,governance_agent,v1.0
+bd51bc8f,005ad89a,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835550,governance_agent,v1.0
+988a49d6,c3662904,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835559,governance_agent,v1.0
+8964818d,c97f8bb0,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835569,governance_agent,v1.0
+4bb71e0b,76c69f5e,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835579,governance_agent,v1.0
+1668604e,87206ffd,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835589,governance_agent,v1.0
+5c1e5ab6,a804e8d6,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835598,governance_agent,v1.0
+4d8e90bc,d0539a9c,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835608,governance_agent,v1.0
+c14ba559,451c773d,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835618,governance_agent,v1.0
+fd343d5b,9947d8f1,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835628,governance_agent,v1.0
+19a5c207,3586445a,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835638,governance_agent,v1.0
+bab60129,53d5a227,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835648,governance_agent,v1.0
+c9413b2c,18847207,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835658,governance_agent,v1.0
+f1683ef8,49684932,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835670,governance_agent,v1.0
+bd0f2bb1,258dc9bd,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835680,governance_agent,v1.0
+8685ef68,6d2da8d2,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835693,governance_agent,v1.0
+0ea3decf,c9d96007,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835703,governance_agent,v1.0
+3e95124a,9935febc,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835716,governance_agent,v1.0
+bb69fd90,32365aa2,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835727,governance_agent,v1.0
+c98ddd68,bd82c67e,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835740,governance_agent,v1.0
+8a6cfb90,6d1b7cc8,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835750,governance_agent,v1.0
+847404fa,7d5fb88b,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835760,governance_agent,v1.0
+34c38292,a7a7ee18,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 11:52:34.835771,governance_agent,v1.0

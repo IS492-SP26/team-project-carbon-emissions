@@ -1,0 +1,25 @@
+{
+  "single_model": {
+    "agent": "Single-Model Agent",
+    "purpose": "One LLM call per batch \u2014 combine planner / governance / executor / copilot duties into a single prompt for an architecture A/B.",
+    "memory": {
+      "reasoning_trace": [
+        {
+          "step": "single_model_complete",
+          "content": "50 candidates \u2192 50 approved in 1 LLM calls (9778 tokens).",
+          "timestamp": "2026-04-30T13:20:03.677323"
+        }
+      ],
+      "actions_taken": [
+        {
+          "tool": "llm_batch_call",
+          "inputs": {
+            "batch_size": 50
+          },
+          "output_preview": "```json\n{\n  \"decisions\": [\n    {\n      \"recommendation_id\": \"557319b3\",\n      \"approve\": true,\n      \"rationale\": \"The proposed time shift reduces carbon emissions by 0.200112 kg with no estimated cos",
+          "timestamp": "2026-04-30T13:20:03.672032"
+        }
+      ]
+    }
+  }
+}

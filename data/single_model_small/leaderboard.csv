@@ -1,0 +1,11 @@
+team_id,total_points,total_kgco2e_saved,rank
+analytics,658,6.646173,1
+mobile,465,4.760820999999999,2
+eu-frontend,421,4.271596000000001,3
+ml-team,417,4.209595,4
+platform,401,4.054551,5
+backend-api,233,2.368306,6
+devops,210,2.224787,7
+data-eng,176,1.801966,8
+frontend,171,1.7460339999999999,9
+eu-backend,111,1.131453,10

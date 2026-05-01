@@ -1,0 +1,52 @@
+=== Evidence Chain for Recommendation 45f79e40 ===
+Verification Status: CONFIRMED
+Verified Savings: 0.63 gCO₂e [90% CI: 0.27 – 1.00]
+SLA Compliant: Yes
+
+Step 1: input_activity
+  Original job configuration
+    job_id: az-WgPZpnNYXuY7z2wxaUvahLwcF0KfVgUbaku/jssAIu+ARTmy2izfDvFUHVrtRgGu
+    region: eu-west-1
+    started_at: 2025-01-03 20:31:07.098865
+    vcpus: 4
+    gpu_count: 0
+    duration_hours: 0.136
+
+Step 2: executed_config
+  Executed (optimized) job configuration
+    region: eu-west-1
+    started_at: 2025-01-04 00:31:07.098865
+
+Step 3: energy_computation
+  Energy = (4 × 0.005 + 0 × 0.3) × 1.1 × 0.136h = 0.002992 kWh
+    total_power_kw: 0.022
+    energy_kwh: 0.002992
+
+Step 4: actual_emissions
+  Actual: 0.002992 kWh × 201.7 gCO₂/kWh = 0.60 gCO₂e
+    region: eu-west-1
+    timestamp: 2025-01-04 00:31:07.098865
+    grid_intensity_gco2_kwh: 201.7
+    source: EirGrid 2023 data (synthetic fallback)
+    kgco2e: 0.000603
+
+Step 5: counterfactual_emissions
+  Counterfactual: 0.002992 kWh × 413.7 gCO₂/kWh = 1.24 gCO₂e
+    region: eu-west-1
+    timestamp: 2025-01-03 20:31:07.098865
+    grid_intensity_gco2_kwh: 413.7
+    source: EirGrid 2023 data (synthetic fallback)
+    kgco2e: 0.001238
+
+Step 6: savings_computation
+  Savings: 1.24 - 0.60 = 0.63 gCO₂e
+    verified_savings_kgco2e: 0.000634
+    ci_90_lower: 0.000266
+    ci_90_upper: 0.001002
+    verification_status: confirmed
+
+Step 7: integrity
+  Input hash for tamper detection
+    input_hash_sha256: b51ef393c750bc57
+    methodology: counterfactual_diff_v1
+    uncertainty_method: interval_arithmetic

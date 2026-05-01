@@ -1,0 +1,11 @@
+entry_id,team_id,recommendation_id,verification_id,points,kgco2e_saved,reason,awarded_at
+83228263,platform,08a56423,d4221d40,20,0.200112,Verified savings: 200.1 gCO₂e (confirmed),2026-04-30 13:19:21.910718
+e7be8b0c,eu-backend,58c9af54,e6902a61,10,0.10109,Verified savings: 101.1 gCO₂e (confirmed),2026-04-30 13:19:21.910754
+5bb5ca33,ml-team,34425eea,625bdf73,37,0.374352,Verified savings: 374.4 gCO₂e (confirmed),2026-04-30 13:19:21.910778
+7f67d713,eu-frontend,695fa976,239e883e,3,0.061516,Partial savings: 61.5 gCO₂e (50% credit),2026-04-30 13:19:21.910799
+f5f8be0b,eu-backend,c887d33c,fed9cba0,37,0.374352,Verified savings: 374.4 gCO₂e (confirmed),2026-04-30 13:19:21.910812
+7bb16e44,devops,f8371c28,2b6e859f,20,0.200112,Verified savings: 200.1 gCO₂e (confirmed),2026-04-30 13:19:21.910822
+528fce3d,devops,b38f8e19,75b4060e,149,1.497408,Verified savings: 1497.4 gCO₂e (confirmed),2026-04-30 13:19:21.910830
+b3d66987,backend-api,dcbbd5b5,d79ca8df,2,0.026517,Verified savings: 26.5 gCO₂e (confirmed),2026-04-30 13:19:21.910846
+3eaf6f5c,eu-backend,a5c7da24,9693500f,3,0.037296,Verified savings: 37.3 gCO₂e (confirmed),2026-04-30 13:19:21.910860
+e9909c05,frontend,4791654c,173b808a,1,0.013409,Verified savings: 13.4 gCO₂e (confirmed),2026-04-30 13:19:21.910869

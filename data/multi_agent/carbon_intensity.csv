@@ -1,0 +1,841 @@
+timestamp,region,intensity_gco2_kwh,intensity_lower,intensity_upper,source
+2025-01-01 00:00:00,ap-south-1,662.8,596.5,729.1,Ember Climate 2023 — India annual average
+2025-01-01 00:00:00,eu-north-1,12.9,10.3,15.5,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-01 00:00:00,eu-west-1,266.8,213.4,320.1,EirGrid 2023 data (synthetic fallback)
+2025-01-01 00:00:00,us-east-1,408.4,367.6,449.3,EIA API — PJM
+2025-01-01 00:00:00,us-west-2,48.0,43.2,52.8,EIA API — BPAT
+2025-01-01 01:00:00,ap-south-1,630.9,567.8,694.0,Ember Climate 2023 — India annual average
+2025-01-01 01:00:00,eu-north-1,22.6,18.1,27.2,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-01 01:00:00,eu-west-1,290.1,232.1,348.1,EirGrid 2023 data (synthetic fallback)
+2025-01-01 01:00:00,us-east-1,412.5,371.2,453.7,EIA API — PJM
+2025-01-01 01:00:00,us-west-2,41.6,37.4,45.8,EIA API — BPAT
+2025-01-01 02:00:00,ap-south-1,665.0,598.5,731.5,Ember Climate 2023 — India annual average
+2025-01-01 02:00:00,eu-north-1,35.4,28.3,42.5,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-01 02:00:00,eu-west-1,308.1,246.5,369.7,EirGrid 2023 data (synthetic fallback)
+2025-01-01 02:00:00,us-east-1,417.5,375.7,459.2,EIA API — PJM
+2025-01-01 02:00:00,us-west-2,38.3,34.5,42.2,EIA API — BPAT
+2025-01-01 03:00:00,ap-south-1,670.5,603.5,737.6,Ember Climate 2023 — India annual average
+2025-01-01 03:00:00,eu-north-1,23.9,19.1,28.6,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-01 03:00:00,eu-west-1,260.1,208.1,312.1,EirGrid 2023 data (synthetic fallback)
+2025-01-01 03:00:00,us-east-1,423.6,381.3,466.0,EIA API — PJM
+2025-01-01 03:00:00,us-west-2,39.4,35.4,43.3,EIA API — BPAT
+2025-01-01 04:00:00,ap-south-1,617.7,555.9,679.4,Ember Climate 2023 — India annual average
+2025-01-01 04:00:00,eu-north-1,17.9,14.3,21.5,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-01 04:00:00,eu-west-1,99.2,79.3,119.0,EirGrid 2023 data (synthetic fallback)
+2025-01-01 04:00:00,us-east-1,426.7,384.0,469.3,EIA API — PJM
+2025-01-01 04:00:00,us-west-2,39.9,35.9,43.9,EIA API — BPAT
+2025-01-01 05:00:00,ap-south-1,638.6,574.7,702.5,Ember Climate 2023 — India annual average
+2025-01-01 05:00:00,eu-north-1,22.7,18.1,27.2,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-01 05:00:00,eu-west-1,219.0,175.2,262.8,EirGrid 2023 data (synthetic fallback)
+2025-01-01 05:00:00,us-east-1,379.4,341.5,417.3,EIA API — PJM
+2025-01-01 05:00:00,us-west-2,41.3,37.2,45.4,EIA API — BPAT
+2025-01-01 06:00:00,ap-south-1,677.6,609.8,745.3,Ember Climate 2023 — India annual average
+2025-01-01 06:00:00,eu-north-1,12.9,10.3,15.5,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-01 06:00:00,eu-west-1,203.9,163.2,244.7,EirGrid 2023 data (synthetic fallback)
+2025-01-01 06:00:00,us-east-1,426.6,383.9,469.2,EIA API — PJM
+2025-01-01 06:00:00,us-west-2,43.6,39.2,47.9,EIA API — BPAT
+2025-01-01 07:00:00,ap-south-1,680.7,612.7,748.8,Ember Climate 2023 — India annual average
+2025-01-01 07:00:00,eu-north-1,20.2,16.2,24.2,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-01 07:00:00,eu-west-1,224.4,179.6,269.3,EirGrid 2023 data (synthetic fallback)
+2025-01-01 07:00:00,us-east-1,426.9,384.2,469.6,EIA API — PJM
+2025-01-01 07:00:00,us-west-2,44.9,40.4,49.4,EIA API — BPAT
+2025-01-01 08:00:00,ap-south-1,699.7,629.7,769.6,Ember Climate 2023 — India annual average
+2025-01-01 08:00:00,eu-north-1,23.8,19.0,28.5,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-01 08:00:00,eu-west-1,294.6,235.6,353.5,EirGrid 2023 data (synthetic fallback)
+2025-01-01 08:00:00,us-east-1,427.5,384.8,470.3,EIA API — PJM
+2025-01-01 08:00:00,us-west-2,48.2,43.4,53.1,EIA API — BPAT
+2025-01-01 09:00:00,ap-south-1,695.9,626.3,765.5,Ember Climate 2023 — India annual average
+2025-01-01 09:00:00,eu-north-1,24.9,19.9,29.9,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-01 09:00:00,eu-west-1,126.5,101.2,151.8,EirGrid 2023 data (synthetic fallback)
+2025-01-01 09:00:00,us-east-1,425.2,382.7,467.7,EIA API — PJM
+2025-01-01 09:00:00,us-west-2,57.2,51.5,63.0,EIA API — BPAT
+2025-01-01 10:00:00,ap-south-1,742.6,668.3,816.8,Ember Climate 2023 — India annual average
+2025-01-01 10:00:00,eu-north-1,31.7,25.4,38.1,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-01 10:00:00,eu-west-1,220.8,176.6,264.9,EirGrid 2023 data (synthetic fallback)
+2025-01-01 10:00:00,us-east-1,429.0,386.1,471.9,EIA API — PJM
+2025-01-01 10:00:00,us-west-2,58.4,52.6,64.3,EIA API — BPAT
+2025-01-01 11:00:00,ap-south-1,750.9,675.8,826.0,Ember Climate 2023 — India annual average
+2025-01-01 11:00:00,eu-north-1,32.1,25.7,38.5,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-01 11:00:00,eu-west-1,304.0,243.2,364.8,EirGrid 2023 data (synthetic fallback)
+2025-01-01 11:00:00,us-east-1,416.2,374.6,457.9,EIA API — PJM
+2025-01-01 11:00:00,us-west-2,58.0,52.2,63.8,EIA API — BPAT
+2025-01-01 12:00:00,ap-south-1,744.6,670.2,819.1,Ember Climate 2023 — India annual average
+2025-01-01 12:00:00,eu-north-1,36.3,29.0,43.5,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-01 12:00:00,eu-west-1,221.3,177.0,265.5,EirGrid 2023 data (synthetic fallback)
+2025-01-01 12:00:00,us-east-1,418.9,377.0,460.8,EIA API — PJM
+2025-01-01 12:00:00,us-west-2,57.2,51.5,63.0,EIA API — BPAT
+2025-01-01 13:00:00,ap-south-1,770.8,693.8,847.9,Ember Climate 2023 — India annual average
+2025-01-01 13:00:00,eu-north-1,31.9,25.5,38.3,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-01 13:00:00,eu-west-1,400.0,320.0,480.0,EirGrid 2023 data (synthetic fallback)
+2025-01-01 13:00:00,us-east-1,418.6,376.8,460.5,EIA API — PJM
+2025-01-01 13:00:00,us-west-2,53.7,48.3,59.1,EIA API — BPAT
+2025-01-01 14:00:00,ap-south-1,759.4,683.4,835.3,Ember Climate 2023 — India annual average
+2025-01-01 14:00:00,eu-north-1,41.9,33.5,50.3,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-01 14:00:00,eu-west-1,368.8,295.0,442.5,EirGrid 2023 data (synthetic fallback)
+2025-01-01 14:00:00,us-east-1,415.2,373.7,456.7,EIA API — PJM
+2025-01-01 14:00:00,us-west-2,44.2,39.8,48.6,EIA API — BPAT
+2025-01-01 15:00:00,ap-south-1,731.1,658.0,804.2,Ember Climate 2023 — India annual average
+2025-01-01 15:00:00,eu-north-1,47.1,37.7,56.6,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-01 15:00:00,eu-west-1,413.4,330.7,496.1,EirGrid 2023 data (synthetic fallback)
+2025-01-01 15:00:00,us-east-1,423.1,380.8,465.4,EIA API — PJM
+2025-01-01 15:00:00,us-west-2,31.7,28.5,34.8,EIA API — BPAT
+2025-01-01 16:00:00,ap-south-1,750.7,675.6,825.7,Ember Climate 2023 — India annual average
+2025-01-01 16:00:00,eu-north-1,35.2,28.1,42.2,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-01 16:00:00,eu-west-1,358.4,286.7,430.1,EirGrid 2023 data (synthetic fallback)
+2025-01-01 16:00:00,us-east-1,420.0,378.0,462.0,EIA API — PJM
+2025-01-01 16:00:00,us-west-2,30.7,27.6,33.8,EIA API — BPAT
+2025-01-01 17:00:00,ap-south-1,716.2,644.6,787.8,Ember Climate 2023 — India annual average
+2025-01-01 17:00:00,eu-north-1,35.9,28.7,43.1,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-01 17:00:00,eu-west-1,437.6,350.1,525.2,EirGrid 2023 data (synthetic fallback)
+2025-01-01 17:00:00,us-east-1,418.0,376.2,459.8,EIA API — PJM
+2025-01-01 17:00:00,us-west-2,31.3,28.1,34.4,EIA API — BPAT
+2025-01-01 18:00:00,ap-south-1,742.6,668.3,816.8,Ember Climate 2023 — India annual average
+2025-01-01 18:00:00,eu-north-1,46.7,37.3,56.0,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-01 18:00:00,eu-west-1,453.8,363.0,544.5,EirGrid 2023 data (synthetic fallback)
+2025-01-01 18:00:00,us-east-1,415.5,373.9,457.0,EIA API — PJM
+2025-01-01 18:00:00,us-west-2,32.3,29.1,35.5,EIA API — BPAT
+2025-01-01 19:00:00,ap-south-1,711.9,640.7,783.1,Ember Climate 2023 — India annual average
+2025-01-01 19:00:00,eu-north-1,38.0,30.4,45.7,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-01 19:00:00,eu-west-1,408.6,326.9,490.3,EirGrid 2023 data (synthetic fallback)
+2025-01-01 19:00:00,us-east-1,413.0,371.7,454.3,EIA API — PJM
+2025-01-01 19:00:00,us-west-2,34.1,30.7,37.6,EIA API — BPAT
+2025-01-01 20:00:00,ap-south-1,696.3,626.7,765.9,Ember Climate 2023 — India annual average
+2025-01-01 20:00:00,eu-north-1,44.4,35.5,53.3,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-01 20:00:00,eu-west-1,398.7,318.9,478.4,EirGrid 2023 data (synthetic fallback)
+2025-01-01 20:00:00,us-east-1,414.0,372.6,455.4,EIA API — PJM
+2025-01-01 20:00:00,us-west-2,35.0,31.5,38.5,EIA API — BPAT
+2025-01-01 21:00:00,ap-south-1,673.4,606.1,740.8,Ember Climate 2023 — India annual average
+2025-01-01 21:00:00,eu-north-1,33.1,26.5,39.8,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-01 21:00:00,eu-west-1,384.6,307.7,461.5,EirGrid 2023 data (synthetic fallback)
+2025-01-01 21:00:00,us-east-1,424.8,382.3,467.2,EIA API — PJM
+2025-01-01 21:00:00,us-west-2,35.6,32.0,39.2,EIA API — BPAT
+2025-01-01 22:00:00,ap-south-1,699.5,629.5,769.4,Ember Climate 2023 — India annual average
+2025-01-01 22:00:00,eu-north-1,40.2,32.2,48.2,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-01 22:00:00,eu-west-1,307.2,245.7,368.6,EirGrid 2023 data (synthetic fallback)
+2025-01-01 22:00:00,us-east-1,420.6,378.6,462.7,EIA API — PJM
+2025-01-01 22:00:00,us-west-2,37.3,33.6,41.0,EIA API — BPAT
+2025-01-01 23:00:00,ap-south-1,661.6,595.4,727.7,Ember Climate 2023 — India annual average
+2025-01-01 23:00:00,eu-north-1,31.0,24.8,37.2,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-01 23:00:00,eu-west-1,318.8,255.1,382.6,EirGrid 2023 data (synthetic fallback)
+2025-01-01 23:00:00,us-east-1,419.5,377.6,461.5,EIA API — PJM
+2025-01-01 23:00:00,us-west-2,42.9,38.6,47.2,EIA API — BPAT
+2025-01-02 00:00:00,ap-south-1,648.1,583.3,712.9,Ember Climate 2023 — India annual average
+2025-01-02 00:00:00,eu-north-1,29.4,23.5,35.3,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-02 00:00:00,eu-west-1,293.1,234.4,351.7,EirGrid 2023 data (synthetic fallback)
+2025-01-02 00:00:00,us-east-1,419.9,377.9,461.9,EIA API — PJM
+2025-01-02 00:00:00,us-west-2,41.7,37.5,45.8,EIA API — BPAT
+2025-01-02 01:00:00,ap-south-1,644.7,580.2,709.1,Ember Climate 2023 — India annual average
+2025-01-02 01:00:00,eu-north-1,33.5,26.8,40.2,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-02 01:00:00,eu-west-1,294.0,235.2,352.8,EirGrid 2023 data (synthetic fallback)
+2025-01-02 01:00:00,us-east-1,408.4,367.6,449.3,EIA API — PJM
+2025-01-02 01:00:00,us-west-2,48.0,43.2,52.8,EIA API — BPAT
+2025-01-02 02:00:00,ap-south-1,660.6,594.6,726.7,Ember Climate 2023 — India annual average
+2025-01-02 02:00:00,eu-north-1,21.8,17.4,26.2,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-02 02:00:00,eu-west-1,300.7,240.5,360.8,EirGrid 2023 data (synthetic fallback)
+2025-01-02 02:00:00,us-east-1,412.5,371.2,453.7,EIA API — PJM
+2025-01-02 02:00:00,us-west-2,41.6,37.4,45.8,EIA API — BPAT
+2025-01-02 03:00:00,ap-south-1,659.0,593.1,724.9,Ember Climate 2023 — India annual average
+2025-01-02 03:00:00,eu-north-1,17.3,13.9,20.8,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-02 03:00:00,eu-west-1,177.1,141.6,212.5,EirGrid 2023 data (synthetic fallback)
+2025-01-02 03:00:00,us-east-1,417.5,375.7,459.2,EIA API — PJM
+2025-01-02 03:00:00,us-west-2,38.3,34.5,42.2,EIA API — BPAT
+2025-01-02 04:00:00,ap-south-1,665.0,598.5,731.4,Ember Climate 2023 — India annual average
+2025-01-02 04:00:00,eu-north-1,18.8,15.0,22.5,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-02 04:00:00,eu-west-1,207.8,166.3,249.4,EirGrid 2023 data (synthetic fallback)
+2025-01-02 04:00:00,us-east-1,423.6,381.3,466.0,EIA API — PJM
+2025-01-02 04:00:00,us-west-2,39.4,35.4,43.3,EIA API — BPAT
+2025-01-02 05:00:00,ap-south-1,673.3,605.9,740.6,Ember Climate 2023 — India annual average
+2025-01-02 05:00:00,eu-north-1,23.0,18.4,27.5,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-02 05:00:00,eu-west-1,278.2,222.5,333.8,EirGrid 2023 data (synthetic fallback)
+2025-01-02 05:00:00,us-east-1,426.7,384.0,469.3,EIA API — PJM
+2025-01-02 05:00:00,us-west-2,39.9,35.9,43.9,EIA API — BPAT
+2025-01-02 06:00:00,ap-south-1,717.8,646.0,789.6,Ember Climate 2023 — India annual average
+2025-01-02 06:00:00,eu-north-1,13.2,10.6,15.8,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-02 06:00:00,eu-west-1,163.5,130.8,196.2,EirGrid 2023 data (synthetic fallback)
+2025-01-02 06:00:00,us-east-1,379.4,341.5,417.3,EIA API — PJM
+2025-01-02 06:00:00,us-west-2,41.3,37.2,45.4,EIA API — BPAT
+2025-01-02 07:00:00,ap-south-1,678.9,611.0,746.8,Ember Climate 2023 — India annual average
+2025-01-02 07:00:00,eu-north-1,25.2,20.2,30.3,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-02 07:00:00,eu-west-1,163.0,130.4,195.6,EirGrid 2023 data (synthetic fallback)
+2025-01-02 07:00:00,us-east-1,426.6,383.9,469.2,EIA API — PJM
+2025-01-02 07:00:00,us-west-2,43.6,39.2,47.9,EIA API — BPAT
+2025-01-02 08:00:00,ap-south-1,689.8,620.8,758.7,Ember Climate 2023 — India annual average
+2025-01-02 08:00:00,eu-north-1,20.9,16.7,25.1,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-02 08:00:00,eu-west-1,224.2,179.4,269.0,EirGrid 2023 data (synthetic fallback)
+2025-01-02 08:00:00,us-east-1,426.9,384.2,469.6,EIA API — PJM
+2025-01-02 08:00:00,us-west-2,44.9,40.4,49.4,EIA API — BPAT
+2025-01-02 09:00:00,ap-south-1,696.7,627.0,766.3,Ember Climate 2023 — India annual average
+2025-01-02 09:00:00,eu-north-1,31.4,25.1,37.7,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-02 09:00:00,eu-west-1,272.2,217.8,326.6,EirGrid 2023 data (synthetic fallback)
+2025-01-02 09:00:00,us-east-1,427.5,384.8,470.3,EIA API — PJM
+2025-01-02 09:00:00,us-west-2,48.2,43.4,53.1,EIA API — BPAT
+2025-01-02 10:00:00,ap-south-1,737.3,663.6,811.1,Ember Climate 2023 — India annual average
+2025-01-02 10:00:00,eu-north-1,16.1,12.9,19.4,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-02 10:00:00,eu-west-1,251.3,201.0,301.5,EirGrid 2023 data (synthetic fallback)
+2025-01-02 10:00:00,us-east-1,425.2,382.7,467.7,EIA API — PJM
+2025-01-02 10:00:00,us-west-2,57.2,51.5,63.0,EIA API — BPAT
+2025-01-02 11:00:00,ap-south-1,757.9,682.1,833.7,Ember Climate 2023 — India annual average
+2025-01-02 11:00:00,eu-north-1,26.8,21.4,32.1,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-02 11:00:00,eu-west-1,341.3,273.0,409.5,EirGrid 2023 data (synthetic fallback)
+2025-01-02 11:00:00,us-east-1,429.0,386.1,471.9,EIA API — PJM
+2025-01-02 11:00:00,us-west-2,58.4,52.6,64.3,EIA API — BPAT
+2025-01-02 12:00:00,ap-south-1,741.0,666.9,815.1,Ember Climate 2023 — India annual average
+2025-01-02 12:00:00,eu-north-1,24.8,19.9,29.8,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-02 12:00:00,eu-west-1,343.5,274.8,412.2,EirGrid 2023 data (synthetic fallback)
+2025-01-02 12:00:00,us-east-1,416.2,374.6,457.9,EIA API — PJM
+2025-01-02 12:00:00,us-west-2,58.0,52.2,63.8,EIA API — BPAT
+2025-01-02 13:00:00,ap-south-1,731.5,658.3,804.6,Ember Climate 2023 — India annual average
+2025-01-02 13:00:00,eu-north-1,31.6,25.2,37.9,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-02 13:00:00,eu-west-1,368.7,294.9,442.4,EirGrid 2023 data (synthetic fallback)
+2025-01-02 13:00:00,us-east-1,418.9,377.0,460.8,EIA API — PJM
+2025-01-02 13:00:00,us-west-2,57.2,51.5,63.0,EIA API — BPAT
+2025-01-02 14:00:00,ap-south-1,733.5,660.2,806.9,Ember Climate 2023 — India annual average
+2025-01-02 14:00:00,eu-north-1,39.0,31.2,46.8,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-02 14:00:00,eu-west-1,378.4,302.7,454.1,EirGrid 2023 data (synthetic fallback)
+2025-01-02 14:00:00,us-east-1,418.6,376.8,460.5,EIA API — PJM
+2025-01-02 14:00:00,us-west-2,53.7,48.3,59.1,EIA API — BPAT
+2025-01-02 15:00:00,ap-south-1,761.3,685.2,837.4,Ember Climate 2023 — India annual average
+2025-01-02 15:00:00,eu-north-1,38.5,30.8,46.1,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-02 15:00:00,eu-west-1,487.8,390.2,585.3,EirGrid 2023 data (synthetic fallback)
+2025-01-02 15:00:00,us-east-1,415.2,373.7,456.7,EIA API — PJM
+2025-01-02 15:00:00,us-west-2,44.2,39.8,48.6,EIA API — BPAT
+2025-01-02 16:00:00,ap-south-1,758.2,682.3,834.0,Ember Climate 2023 — India annual average
+2025-01-02 16:00:00,eu-north-1,39.1,31.3,46.9,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-02 16:00:00,eu-west-1,377.0,301.6,452.4,EirGrid 2023 data (synthetic fallback)
+2025-01-02 16:00:00,us-east-1,423.1,380.8,465.4,EIA API — PJM
+2025-01-02 16:00:00,us-west-2,31.7,28.5,34.8,EIA API — BPAT
+2025-01-02 17:00:00,ap-south-1,746.2,671.6,820.8,Ember Climate 2023 — India annual average
+2025-01-02 17:00:00,eu-north-1,39.9,31.9,47.9,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-02 17:00:00,eu-west-1,297.1,237.7,356.5,EirGrid 2023 data (synthetic fallback)
+2025-01-02 17:00:00,us-east-1,420.0,378.0,462.0,EIA API — PJM
+2025-01-02 17:00:00,us-west-2,30.7,27.6,33.8,EIA API — BPAT
+2025-01-02 18:00:00,ap-south-1,711.7,640.5,782.9,Ember Climate 2023 — India annual average
+2025-01-02 18:00:00,eu-north-1,41.4,33.1,49.6,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-02 18:00:00,eu-west-1,480.9,384.7,577.1,EirGrid 2023 data (synthetic fallback)
+2025-01-02 18:00:00,us-east-1,418.0,376.2,459.8,EIA API — PJM
+2025-01-02 18:00:00,us-west-2,31.3,28.1,34.4,EIA API — BPAT
+2025-01-02 19:00:00,ap-south-1,717.6,645.8,789.3,Ember Climate 2023 — India annual average
+2025-01-02 19:00:00,eu-north-1,34.3,27.4,41.2,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-02 19:00:00,eu-west-1,374.4,299.5,449.3,EirGrid 2023 data (synthetic fallback)
+2025-01-02 19:00:00,us-east-1,415.5,373.9,457.0,EIA API — PJM
+2025-01-02 19:00:00,us-west-2,32.3,29.1,35.5,EIA API — BPAT
+2025-01-02 20:00:00,ap-south-1,702.3,632.1,772.6,Ember Climate 2023 — India annual average
+2025-01-02 20:00:00,eu-north-1,41.3,33.0,49.6,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-02 20:00:00,eu-west-1,392.7,314.1,471.2,EirGrid 2023 data (synthetic fallback)
+2025-01-02 20:00:00,us-east-1,413.0,371.7,454.3,EIA API — PJM
+2025-01-02 20:00:00,us-west-2,34.1,30.7,37.6,EIA API — BPAT
+2025-01-02 21:00:00,ap-south-1,691.4,622.3,760.6,Ember Climate 2023 — India annual average
+2025-01-02 21:00:00,eu-north-1,39.0,31.2,46.8,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-02 21:00:00,eu-west-1,436.9,349.5,524.3,EirGrid 2023 data (synthetic fallback)
+2025-01-02 21:00:00,us-east-1,414.0,372.6,455.4,EIA API — PJM
+2025-01-02 21:00:00,us-west-2,35.0,31.5,38.5,EIA API — BPAT
+2025-01-02 22:00:00,ap-south-1,692.4,623.2,761.7,Ember Climate 2023 — India annual average
+2025-01-02 22:00:00,eu-north-1,35.2,28.2,42.2,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-02 22:00:00,eu-west-1,270.6,216.5,324.7,EirGrid 2023 data (synthetic fallback)
+2025-01-02 22:00:00,us-east-1,424.8,382.3,467.2,EIA API — PJM
+2025-01-02 22:00:00,us-west-2,35.6,32.0,39.2,EIA API — BPAT
+2025-01-02 23:00:00,ap-south-1,669.1,602.2,736.0,Ember Climate 2023 — India annual average
+2025-01-02 23:00:00,eu-north-1,33.5,26.8,40.2,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-02 23:00:00,eu-west-1,264.0,211.2,316.8,EirGrid 2023 data (synthetic fallback)
+2025-01-02 23:00:00,us-east-1,420.6,378.6,462.7,EIA API — PJM
+2025-01-02 23:00:00,us-west-2,37.3,33.6,41.0,EIA API — BPAT
+2025-01-03 00:00:00,ap-south-1,670.3,603.2,737.3,Ember Climate 2023 — India annual average
+2025-01-03 00:00:00,eu-north-1,29.9,23.9,35.9,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-03 00:00:00,eu-west-1,221.0,176.8,265.2,EirGrid 2023 data (synthetic fallback)
+2025-01-03 00:00:00,us-east-1,419.5,377.6,461.5,EIA API — PJM
+2025-01-03 00:00:00,us-west-2,42.9,38.6,47.2,EIA API — BPAT
+2025-01-03 01:00:00,ap-south-1,653.1,587.7,718.4,Ember Climate 2023 — India annual average
+2025-01-03 01:00:00,eu-north-1,36.2,29.0,43.4,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-03 01:00:00,eu-west-1,235.4,188.4,282.5,EirGrid 2023 data (synthetic fallback)
+2025-01-03 01:00:00,us-east-1,419.9,377.9,461.9,EIA API — PJM
+2025-01-03 01:00:00,us-west-2,41.7,37.5,45.8,EIA API — BPAT
+2025-01-03 02:00:00,ap-south-1,655.8,590.2,721.4,Ember Climate 2023 — India annual average
+2025-01-03 02:00:00,eu-north-1,23.5,18.8,28.2,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-03 02:00:00,eu-west-1,273.0,218.4,327.6,EirGrid 2023 data (synthetic fallback)
+2025-01-03 02:00:00,us-east-1,408.4,367.6,449.3,EIA API — PJM
+2025-01-03 02:00:00,us-west-2,48.0,43.2,52.8,EIA API — BPAT
+2025-01-03 03:00:00,ap-south-1,664.3,597.9,730.8,Ember Climate 2023 — India annual average
+2025-01-03 03:00:00,eu-north-1,20.8,16.7,25.0,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-03 03:00:00,eu-west-1,256.5,205.2,307.8,EirGrid 2023 data (synthetic fallback)
+2025-01-03 03:00:00,us-east-1,412.5,371.2,453.7,EIA API — PJM
+2025-01-03 03:00:00,us-west-2,41.6,37.4,45.8,EIA API — BPAT
+2025-01-03 04:00:00,ap-south-1,627.6,564.8,690.3,Ember Climate 2023 — India annual average
+2025-01-03 04:00:00,eu-north-1,17.6,14.1,21.1,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-03 04:00:00,eu-west-1,228.2,182.6,273.9,EirGrid 2023 data (synthetic fallback)
+2025-01-03 04:00:00,us-east-1,417.5,375.7,459.2,EIA API — PJM
+2025-01-03 04:00:00,us-west-2,38.3,34.5,42.2,EIA API — BPAT
+2025-01-03 05:00:00,ap-south-1,658.3,592.4,724.1,Ember Climate 2023 — India annual average
+2025-01-03 05:00:00,eu-north-1,15.9,12.7,19.0,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-03 05:00:00,eu-west-1,133.8,107.0,160.6,EirGrid 2023 data (synthetic fallback)
+2025-01-03 05:00:00,us-east-1,423.6,381.3,466.0,EIA API — PJM
+2025-01-03 05:00:00,us-west-2,39.4,35.4,43.3,EIA API — BPAT
+2025-01-03 06:00:00,ap-south-1,665.6,599.0,732.2,Ember Climate 2023 — India annual average
+2025-01-03 06:00:00,eu-north-1,15.2,12.1,18.2,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-03 06:00:00,eu-west-1,85.5,68.4,102.6,EirGrid 2023 data (synthetic fallback)
+2025-01-03 06:00:00,us-east-1,426.7,384.0,469.3,EIA API — PJM
+2025-01-03 06:00:00,us-west-2,39.9,35.9,43.9,EIA API — BPAT
+2025-01-03 07:00:00,ap-south-1,674.3,606.9,741.7,Ember Climate 2023 — India annual average
+2025-01-03 07:00:00,eu-north-1,17.9,14.3,21.5,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-03 07:00:00,eu-west-1,207.2,165.7,248.6,EirGrid 2023 data (synthetic fallback)
+2025-01-03 07:00:00,us-east-1,379.4,341.5,417.3,EIA API — PJM
+2025-01-03 07:00:00,us-west-2,41.3,37.2,45.4,EIA API — BPAT
+2025-01-03 08:00:00,ap-south-1,694.5,625.0,763.9,Ember Climate 2023 — India annual average
+2025-01-03 08:00:00,eu-north-1,23.6,18.9,28.3,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-03 08:00:00,eu-west-1,190.8,152.7,229.0,EirGrid 2023 data (synthetic fallback)
+2025-01-03 08:00:00,us-east-1,426.6,383.9,469.2,EIA API — PJM
+2025-01-03 08:00:00,us-west-2,43.6,39.2,47.9,EIA API — BPAT
+2025-01-03 09:00:00,ap-south-1,742.8,668.6,817.1,Ember Climate 2023 — India annual average
+2025-01-03 09:00:00,eu-north-1,27.7,22.2,33.2,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-03 09:00:00,eu-west-1,253.3,202.6,303.9,EirGrid 2023 data (synthetic fallback)
+2025-01-03 09:00:00,us-east-1,426.9,384.2,469.6,EIA API — PJM
+2025-01-03 09:00:00,us-west-2,44.9,40.4,49.4,EIA API — BPAT
+2025-01-03 10:00:00,ap-south-1,707.7,636.9,778.5,Ember Climate 2023 — India annual average
+2025-01-03 10:00:00,eu-north-1,28.7,23.0,34.4,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-03 10:00:00,eu-west-1,286.1,228.9,343.4,EirGrid 2023 data (synthetic fallback)
+2025-01-03 10:00:00,us-east-1,427.5,384.8,470.3,EIA API — PJM
+2025-01-03 10:00:00,us-west-2,48.2,43.4,53.1,EIA API — BPAT
+2025-01-03 11:00:00,ap-south-1,754.7,679.2,830.2,Ember Climate 2023 — India annual average
+2025-01-03 11:00:00,eu-north-1,27.2,21.8,32.6,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-03 11:00:00,eu-west-1,282.1,225.7,338.5,EirGrid 2023 data (synthetic fallback)
+2025-01-03 11:00:00,us-east-1,425.2,382.7,467.7,EIA API — PJM
+2025-01-03 11:00:00,us-west-2,57.2,51.5,63.0,EIA API — BPAT
+2025-01-03 12:00:00,ap-south-1,709.6,638.7,780.6,Ember Climate 2023 — India annual average
+2025-01-03 12:00:00,eu-north-1,38.1,30.5,45.7,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-03 12:00:00,eu-west-1,339.0,271.2,406.8,EirGrid 2023 data (synthetic fallback)
+2025-01-03 12:00:00,us-east-1,429.0,386.1,471.9,EIA API — PJM
+2025-01-03 12:00:00,us-west-2,58.4,52.6,64.3,EIA API — BPAT
+2025-01-03 13:00:00,ap-south-1,741.6,667.4,815.8,Ember Climate 2023 — India annual average
+2025-01-03 13:00:00,eu-north-1,39.7,31.8,47.7,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-03 13:00:00,eu-west-1,338.4,270.7,406.0,EirGrid 2023 data (synthetic fallback)
+2025-01-03 13:00:00,us-east-1,416.2,374.6,457.9,EIA API — PJM
+2025-01-03 13:00:00,us-west-2,58.0,52.2,63.8,EIA API — BPAT
+2025-01-03 14:00:00,ap-south-1,753.3,677.9,828.6,Ember Climate 2023 — India annual average
+2025-01-03 14:00:00,eu-north-1,37.3,29.8,44.8,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-03 14:00:00,eu-west-1,377.5,302.0,453.0,EirGrid 2023 data (synthetic fallback)
+2025-01-03 14:00:00,us-east-1,418.9,377.0,460.8,EIA API — PJM
+2025-01-03 14:00:00,us-west-2,57.2,51.5,63.0,EIA API — BPAT
+2025-01-03 15:00:00,ap-south-1,760.0,684.0,836.0,Ember Climate 2023 — India annual average
+2025-01-03 15:00:00,eu-north-1,36.4,29.1,43.7,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-03 15:00:00,eu-west-1,336.5,269.2,403.8,EirGrid 2023 data (synthetic fallback)
+2025-01-03 15:00:00,us-east-1,418.6,376.8,460.5,EIA API — PJM
+2025-01-03 15:00:00,us-west-2,53.7,48.3,59.1,EIA API — BPAT
+2025-01-03 16:00:00,ap-south-1,757.5,681.8,833.3,Ember Climate 2023 — India annual average
+2025-01-03 16:00:00,eu-north-1,43.4,34.7,52.1,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-03 16:00:00,eu-west-1,378.7,302.9,454.4,EirGrid 2023 data (synthetic fallback)
+2025-01-03 16:00:00,us-east-1,415.2,373.7,456.7,EIA API — PJM
+2025-01-03 16:00:00,us-west-2,44.2,39.8,48.6,EIA API — BPAT
+2025-01-03 17:00:00,ap-south-1,751.2,676.1,826.3,Ember Climate 2023 — India annual average
+2025-01-03 17:00:00,eu-north-1,42.0,33.6,50.4,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-03 17:00:00,eu-west-1,407.5,326.0,489.0,EirGrid 2023 data (synthetic fallback)
+2025-01-03 17:00:00,us-east-1,423.1,380.8,465.4,EIA API — PJM
+2025-01-03 17:00:00,us-west-2,31.7,28.5,34.8,EIA API — BPAT
+2025-01-03 18:00:00,ap-south-1,718.0,646.2,789.8,Ember Climate 2023 — India annual average
+2025-01-03 18:00:00,eu-north-1,33.5,26.8,40.1,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-03 18:00:00,eu-west-1,442.1,353.6,530.5,EirGrid 2023 data (synthetic fallback)
+2025-01-03 18:00:00,us-east-1,420.0,378.0,462.0,EIA API — PJM
+2025-01-03 18:00:00,us-west-2,30.7,27.6,33.8,EIA API — BPAT
+2025-01-03 19:00:00,ap-south-1,703.7,633.3,774.1,Ember Climate 2023 — India annual average
+2025-01-03 19:00:00,eu-north-1,39.4,31.5,47.2,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-03 19:00:00,eu-west-1,377.9,302.4,453.5,EirGrid 2023 data (synthetic fallback)
+2025-01-03 19:00:00,us-east-1,418.0,376.2,459.8,EIA API — PJM
+2025-01-03 19:00:00,us-west-2,31.3,28.1,34.4,EIA API — BPAT
+2025-01-03 20:00:00,ap-south-1,717.2,645.4,788.9,Ember Climate 2023 — India annual average
+2025-01-03 20:00:00,eu-north-1,39.4,31.5,47.3,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-03 20:00:00,eu-west-1,413.7,331.0,496.4,EirGrid 2023 data (synthetic fallback)
+2025-01-03 20:00:00,us-east-1,415.5,373.9,457.0,EIA API — PJM
+2025-01-03 20:00:00,us-west-2,32.3,29.1,35.5,EIA API — BPAT
+2025-01-03 21:00:00,ap-south-1,683.2,614.9,751.6,Ember Climate 2023 — India annual average
+2025-01-03 21:00:00,eu-north-1,31.5,25.2,37.8,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-03 21:00:00,eu-west-1,358.5,286.8,430.1,EirGrid 2023 data (synthetic fallback)
+2025-01-03 21:00:00,us-east-1,413.0,371.7,454.3,EIA API — PJM
+2025-01-03 21:00:00,us-west-2,34.1,30.7,37.6,EIA API — BPAT
+2025-01-03 22:00:00,ap-south-1,649.5,584.5,714.4,Ember Climate 2023 — India annual average
+2025-01-03 22:00:00,eu-north-1,34.6,27.7,41.5,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-03 22:00:00,eu-west-1,345.2,276.1,414.2,EirGrid 2023 data (synthetic fallback)
+2025-01-03 22:00:00,us-east-1,414.0,372.6,455.4,EIA API — PJM
+2025-01-03 22:00:00,us-west-2,35.0,31.5,38.5,EIA API — BPAT
+2025-01-03 23:00:00,ap-south-1,642.0,577.8,706.2,Ember Climate 2023 — India annual average
+2025-01-03 23:00:00,eu-north-1,23.8,19.0,28.5,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-03 23:00:00,eu-west-1,368.4,294.7,442.1,EirGrid 2023 data (synthetic fallback)
+2025-01-03 23:00:00,us-east-1,424.8,382.3,467.2,EIA API — PJM
+2025-01-03 23:00:00,us-west-2,35.6,32.0,39.2,EIA API — BPAT
+2025-01-04 00:00:00,ap-south-1,638.3,574.5,702.1,Ember Climate 2023 — India annual average
+2025-01-04 00:00:00,eu-north-1,35.5,28.4,42.6,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-04 00:00:00,eu-west-1,201.7,161.4,242.1,EirGrid 2023 data (synthetic fallback)
+2025-01-04 00:00:00,us-east-1,420.6,378.6,462.7,EIA API — PJM
+2025-01-04 00:00:00,us-west-2,37.3,33.6,41.0,EIA API — BPAT
+2025-01-04 01:00:00,ap-south-1,661.6,595.5,727.8,Ember Climate 2023 — India annual average
+2025-01-04 01:00:00,eu-north-1,32.6,26.1,39.1,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-04 01:00:00,eu-west-1,210.7,168.5,252.8,EirGrid 2023 data (synthetic fallback)
+2025-01-04 01:00:00,us-east-1,419.5,377.6,461.5,EIA API — PJM
+2025-01-04 01:00:00,us-west-2,42.9,38.6,47.2,EIA API — BPAT
+2025-01-04 02:00:00,ap-south-1,652.8,587.6,718.1,Ember Climate 2023 — India annual average
+2025-01-04 02:00:00,eu-north-1,23.0,18.4,27.7,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-04 02:00:00,eu-west-1,177.3,141.8,212.7,EirGrid 2023 data (synthetic fallback)
+2025-01-04 02:00:00,us-east-1,419.9,377.9,461.9,EIA API — PJM
+2025-01-04 02:00:00,us-west-2,41.7,37.5,45.8,EIA API — BPAT
+2025-01-04 03:00:00,ap-south-1,665.5,599.0,732.1,Ember Climate 2023 — India annual average
+2025-01-04 03:00:00,eu-north-1,24.5,19.6,29.4,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-04 03:00:00,eu-west-1,114.0,91.2,136.8,EirGrid 2023 data (synthetic fallback)
+2025-01-04 03:00:00,us-east-1,408.4,367.6,449.3,EIA API — PJM
+2025-01-04 03:00:00,us-west-2,48.0,43.2,52.8,EIA API — BPAT
+2025-01-04 04:00:00,ap-south-1,648.2,583.3,713.0,Ember Climate 2023 — India annual average
+2025-01-04 04:00:00,eu-north-1,9.7,7.7,11.6,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-04 04:00:00,eu-west-1,180.9,144.7,217.0,EirGrid 2023 data (synthetic fallback)
+2025-01-04 04:00:00,us-east-1,412.5,371.2,453.7,EIA API — PJM
+2025-01-04 04:00:00,us-west-2,41.6,37.4,45.8,EIA API — BPAT
+2025-01-04 05:00:00,ap-south-1,667.8,601.0,734.6,Ember Climate 2023 — India annual average
+2025-01-04 05:00:00,eu-north-1,15.6,12.5,18.7,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-04 05:00:00,eu-west-1,242.3,193.8,290.7,EirGrid 2023 data (synthetic fallback)
+2025-01-04 05:00:00,us-east-1,417.5,375.7,459.2,EIA API — PJM
+2025-01-04 05:00:00,us-west-2,38.3,34.5,42.2,EIA API — BPAT
+2025-01-04 06:00:00,ap-south-1,687.5,618.8,756.3,Ember Climate 2023 — India annual average
+2025-01-04 06:00:00,eu-north-1,20.2,16.2,24.3,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-04 06:00:00,eu-west-1,187.1,149.7,224.6,EirGrid 2023 data (synthetic fallback)
+2025-01-04 06:00:00,us-east-1,423.6,381.3,466.0,EIA API — PJM
+2025-01-04 06:00:00,us-west-2,39.4,35.4,43.3,EIA API — BPAT
+2025-01-04 07:00:00,ap-south-1,680.9,612.8,749.0,Ember Climate 2023 — India annual average
+2025-01-04 07:00:00,eu-north-1,17.4,13.9,20.8,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-04 07:00:00,eu-west-1,214.7,171.7,257.6,EirGrid 2023 data (synthetic fallback)
+2025-01-04 07:00:00,us-east-1,426.7,384.0,469.3,EIA API — PJM
+2025-01-04 07:00:00,us-west-2,39.9,35.9,43.9,EIA API — BPAT
+2025-01-04 08:00:00,ap-south-1,709.1,638.2,780.0,Ember Climate 2023 — India annual average
+2025-01-04 08:00:00,eu-north-1,27.9,22.3,33.5,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-04 08:00:00,eu-west-1,269.2,215.4,323.1,EirGrid 2023 data (synthetic fallback)
+2025-01-04 08:00:00,us-east-1,379.4,341.5,417.3,EIA API — PJM
+2025-01-04 08:00:00,us-west-2,41.3,37.2,45.4,EIA API — BPAT
+2025-01-04 09:00:00,ap-south-1,699.7,629.7,769.7,Ember Climate 2023 — India annual average
+2025-01-04 09:00:00,eu-north-1,36.4,29.1,43.6,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-04 09:00:00,eu-west-1,297.0,237.6,356.5,EirGrid 2023 data (synthetic fallback)
+2025-01-04 09:00:00,us-east-1,426.6,383.9,469.2,EIA API — PJM
+2025-01-04 09:00:00,us-west-2,43.6,39.2,47.9,EIA API — BPAT
+2025-01-04 10:00:00,ap-south-1,717.7,646.0,789.5,Ember Climate 2023 — India annual average
+2025-01-04 10:00:00,eu-north-1,22.9,18.3,27.5,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-04 10:00:00,eu-west-1,247.9,198.3,297.5,EirGrid 2023 data (synthetic fallback)
+2025-01-04 10:00:00,us-east-1,426.9,384.2,469.6,EIA API — PJM
+2025-01-04 10:00:00,us-west-2,44.9,40.4,49.4,EIA API — BPAT
+2025-01-04 11:00:00,ap-south-1,727.7,654.9,800.5,Ember Climate 2023 — India annual average
+2025-01-04 11:00:00,eu-north-1,27.2,21.8,32.6,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-04 11:00:00,eu-west-1,343.2,274.5,411.8,EirGrid 2023 data (synthetic fallback)
+2025-01-04 11:00:00,us-east-1,427.5,384.8,470.3,EIA API — PJM
+2025-01-04 11:00:00,us-west-2,48.2,43.4,53.1,EIA API — BPAT
+2025-01-04 12:00:00,ap-south-1,719.4,647.4,791.3,Ember Climate 2023 — India annual average
+2025-01-04 12:00:00,eu-north-1,35.1,28.1,42.2,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-04 12:00:00,eu-west-1,306.0,244.8,367.2,EirGrid 2023 data (synthetic fallback)
+2025-01-04 12:00:00,us-east-1,425.2,382.7,467.7,EIA API — PJM
+2025-01-04 12:00:00,us-west-2,57.2,51.5,63.0,EIA API — BPAT
+2025-01-04 13:00:00,ap-south-1,758.0,682.2,833.8,Ember Climate 2023 — India annual average
+2025-01-04 13:00:00,eu-north-1,44.4,35.5,53.3,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-04 13:00:00,eu-west-1,285.4,228.3,342.5,EirGrid 2023 data (synthetic fallback)
+2025-01-04 13:00:00,us-east-1,429.0,386.1,471.9,EIA API — PJM
+2025-01-04 13:00:00,us-west-2,58.4,52.6,64.3,EIA API — BPAT
+2025-01-04 14:00:00,ap-south-1,740.6,666.6,814.7,Ember Climate 2023 — India annual average
+2025-01-04 14:00:00,eu-north-1,32.3,25.9,38.8,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-04 14:00:00,eu-west-1,321.7,257.3,386.0,EirGrid 2023 data (synthetic fallback)
+2025-01-04 14:00:00,us-east-1,416.2,374.6,457.9,EIA API — PJM
+2025-01-04 14:00:00,us-west-2,58.0,52.2,63.8,EIA API — BPAT
+2025-01-04 15:00:00,ap-south-1,748.5,673.7,823.4,Ember Climate 2023 — India annual average
+2025-01-04 15:00:00,eu-north-1,41.3,33.0,49.5,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-04 15:00:00,eu-west-1,298.1,238.4,357.7,EirGrid 2023 data (synthetic fallback)
+2025-01-04 15:00:00,us-east-1,418.9,377.0,460.8,EIA API — PJM
+2025-01-04 15:00:00,us-west-2,57.2,51.5,63.0,EIA API — BPAT
+2025-01-04 16:00:00,ap-south-1,752.9,677.6,828.2,Ember Climate 2023 — India annual average
+2025-01-04 16:00:00,eu-north-1,50.1,40.1,60.2,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-04 16:00:00,eu-west-1,343.6,274.9,412.3,EirGrid 2023 data (synthetic fallback)
+2025-01-04 16:00:00,us-east-1,418.6,376.8,460.5,EIA API — PJM
+2025-01-04 16:00:00,us-west-2,53.7,48.3,59.1,EIA API — BPAT
+2025-01-04 17:00:00,ap-south-1,744.3,669.9,818.7,Ember Climate 2023 — India annual average
+2025-01-04 17:00:00,eu-north-1,33.1,26.5,39.7,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-04 17:00:00,eu-west-1,380.1,304.1,456.1,EirGrid 2023 data (synthetic fallback)
+2025-01-04 17:00:00,us-east-1,415.2,373.7,456.7,EIA API — PJM
+2025-01-04 17:00:00,us-west-2,44.2,39.8,48.6,EIA API — BPAT
+2025-01-04 18:00:00,ap-south-1,738.3,664.5,812.1,Ember Climate 2023 — India annual average
+2025-01-04 18:00:00,eu-north-1,34.6,27.7,41.6,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-04 18:00:00,eu-west-1,441.6,353.2,529.9,EirGrid 2023 data (synthetic fallback)
+2025-01-04 18:00:00,us-east-1,423.1,380.8,465.4,EIA API — PJM
+2025-01-04 18:00:00,us-west-2,31.7,28.5,34.8,EIA API — BPAT
+2025-01-04 19:00:00,ap-south-1,711.0,639.9,782.1,Ember Climate 2023 — India annual average
+2025-01-04 19:00:00,eu-north-1,37.9,30.3,45.5,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-04 19:00:00,eu-west-1,484.0,387.2,580.8,EirGrid 2023 data (synthetic fallback)
+2025-01-04 19:00:00,us-east-1,420.0,378.0,462.0,EIA API — PJM
+2025-01-04 19:00:00,us-west-2,30.7,27.6,33.8,EIA API — BPAT
+2025-01-04 20:00:00,ap-south-1,691.5,622.4,760.7,Ember Climate 2023 — India annual average
+2025-01-04 20:00:00,eu-north-1,35.8,28.7,43.0,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-04 20:00:00,eu-west-1,318.9,255.1,382.6,EirGrid 2023 data (synthetic fallback)
+2025-01-04 20:00:00,us-east-1,418.0,376.2,459.8,EIA API — PJM
+2025-01-04 20:00:00,us-west-2,31.3,28.1,34.4,EIA API — BPAT
+2025-01-04 21:00:00,ap-south-1,685.5,616.9,754.0,Ember Climate 2023 — India annual average
+2025-01-04 21:00:00,eu-north-1,40.4,32.4,48.5,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-04 21:00:00,eu-west-1,391.7,313.4,470.1,EirGrid 2023 data (synthetic fallback)
+2025-01-04 21:00:00,us-east-1,415.5,373.9,457.0,EIA API — PJM
+2025-01-04 21:00:00,us-west-2,32.3,29.1,35.5,EIA API — BPAT
+2025-01-04 22:00:00,ap-south-1,641.3,577.1,705.4,Ember Climate 2023 — India annual average
+2025-01-04 22:00:00,eu-north-1,35.2,28.1,42.2,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-04 22:00:00,eu-west-1,299.3,239.5,359.2,EirGrid 2023 data (synthetic fallback)
+2025-01-04 22:00:00,us-east-1,413.0,371.7,454.3,EIA API — PJM
+2025-01-04 22:00:00,us-west-2,34.1,30.7,37.6,EIA API — BPAT
+2025-01-04 23:00:00,ap-south-1,635.7,572.1,699.3,Ember Climate 2023 — India annual average
+2025-01-04 23:00:00,eu-north-1,22.5,18.0,27.0,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-04 23:00:00,eu-west-1,351.0,280.8,421.2,EirGrid 2023 data (synthetic fallback)
+2025-01-04 23:00:00,us-east-1,414.0,372.6,455.4,EIA API — PJM
+2025-01-04 23:00:00,us-west-2,35.0,31.5,38.5,EIA API — BPAT
+2025-01-05 00:00:00,ap-south-1,630.2,567.2,693.3,Ember Climate 2023 — India annual average
+2025-01-05 00:00:00,eu-north-1,31.7,25.4,38.0,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-05 00:00:00,eu-west-1,295.2,236.1,354.2,EirGrid 2023 data (synthetic fallback)
+2025-01-05 00:00:00,us-east-1,424.8,382.3,467.2,EIA API — PJM
+2025-01-05 00:00:00,us-west-2,35.6,32.0,39.2,EIA API — BPAT
+2025-01-05 01:00:00,ap-south-1,631.8,568.6,694.9,Ember Climate 2023 — India annual average
+2025-01-05 01:00:00,eu-north-1,23.8,19.1,28.6,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-05 01:00:00,eu-west-1,184.3,147.4,221.2,EirGrid 2023 data (synthetic fallback)
+2025-01-05 01:00:00,us-east-1,420.6,378.6,462.7,EIA API — PJM
+2025-01-05 01:00:00,us-west-2,37.3,33.6,41.0,EIA API — BPAT
+2025-01-05 02:00:00,ap-south-1,658.0,592.2,723.8,Ember Climate 2023 — India annual average
+2025-01-05 02:00:00,eu-north-1,31.0,24.8,37.2,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-05 02:00:00,eu-west-1,298.1,238.5,357.8,EirGrid 2023 data (synthetic fallback)
+2025-01-05 02:00:00,us-east-1,419.5,377.6,461.5,EIA API — PJM
+2025-01-05 02:00:00,us-west-2,42.9,38.6,47.2,EIA API — BPAT
+2025-01-05 03:00:00,ap-south-1,633.6,570.2,697.0,Ember Climate 2023 — India annual average
+2025-01-05 03:00:00,eu-north-1,19.9,15.9,23.9,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-05 03:00:00,eu-west-1,200.8,160.6,240.9,EirGrid 2023 data (synthetic fallback)
+2025-01-05 03:00:00,us-east-1,419.9,377.9,461.9,EIA API — PJM
+2025-01-05 03:00:00,us-west-2,41.7,37.5,45.8,EIA API — BPAT
+2025-01-05 04:00:00,ap-south-1,649.1,584.2,714.0,Ember Climate 2023 — India annual average
+2025-01-05 04:00:00,eu-north-1,18.9,15.1,22.7,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-05 04:00:00,eu-west-1,188.4,150.7,226.1,EirGrid 2023 data (synthetic fallback)
+2025-01-05 04:00:00,us-east-1,408.4,367.6,449.3,EIA API — PJM
+2025-01-05 04:00:00,us-west-2,48.0,43.2,52.8,EIA API — BPAT
+2025-01-05 05:00:00,ap-south-1,690.6,621.6,759.7,Ember Climate 2023 — India annual average
+2025-01-05 05:00:00,eu-north-1,24.4,19.5,29.3,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-05 05:00:00,eu-west-1,151.6,121.3,182.0,EirGrid 2023 data (synthetic fallback)
+2025-01-05 05:00:00,us-east-1,412.5,371.2,453.7,EIA API — PJM
+2025-01-05 05:00:00,us-west-2,41.6,37.4,45.8,EIA API — BPAT
+2025-01-05 06:00:00,ap-south-1,667.9,601.1,734.7,Ember Climate 2023 — India annual average
+2025-01-05 06:00:00,eu-north-1,25.9,20.7,31.0,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-05 06:00:00,eu-west-1,169.0,135.2,202.8,EirGrid 2023 data (synthetic fallback)
+2025-01-05 06:00:00,us-east-1,417.5,375.7,459.2,EIA API — PJM
+2025-01-05 06:00:00,us-west-2,38.3,34.5,42.2,EIA API — BPAT
+2025-01-05 07:00:00,ap-south-1,701.8,631.6,772.0,Ember Climate 2023 — India annual average
+2025-01-05 07:00:00,eu-north-1,25.3,20.2,30.4,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-05 07:00:00,eu-west-1,226.5,181.2,271.8,EirGrid 2023 data (synthetic fallback)
+2025-01-05 07:00:00,us-east-1,423.6,381.3,466.0,EIA API — PJM
+2025-01-05 07:00:00,us-west-2,39.4,35.4,43.3,EIA API — BPAT
+2025-01-05 08:00:00,ap-south-1,681.3,613.2,749.5,Ember Climate 2023 — India annual average
+2025-01-05 08:00:00,eu-north-1,16.2,13.0,19.5,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-05 08:00:00,eu-west-1,205.7,164.5,246.8,EirGrid 2023 data (synthetic fallback)
+2025-01-05 08:00:00,us-east-1,426.7,384.0,469.3,EIA API — PJM
+2025-01-05 08:00:00,us-west-2,39.9,35.9,43.9,EIA API — BPAT
+2025-01-05 09:00:00,ap-south-1,708.8,637.9,779.7,Ember Climate 2023 — India annual average
+2025-01-05 09:00:00,eu-north-1,29.4,23.5,35.3,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-05 09:00:00,eu-west-1,247.4,198.0,296.9,EirGrid 2023 data (synthetic fallback)
+2025-01-05 09:00:00,us-east-1,379.4,341.5,417.3,EIA API — PJM
+2025-01-05 09:00:00,us-west-2,41.3,37.2,45.4,EIA API — BPAT
+2025-01-05 10:00:00,ap-south-1,706.0,635.4,776.6,Ember Climate 2023 — India annual average
+2025-01-05 10:00:00,eu-north-1,24.0,19.2,28.8,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-05 10:00:00,eu-west-1,269.8,215.9,323.8,EirGrid 2023 data (synthetic fallback)
+2025-01-05 10:00:00,us-east-1,426.6,383.9,469.2,EIA API — PJM
+2025-01-05 10:00:00,us-west-2,43.6,39.2,47.9,EIA API — BPAT
+2025-01-05 11:00:00,ap-south-1,728.6,655.7,801.4,Ember Climate 2023 — India annual average
+2025-01-05 11:00:00,eu-north-1,32.9,26.3,39.5,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-05 11:00:00,eu-west-1,341.9,273.5,410.2,EirGrid 2023 data (synthetic fallback)
+2025-01-05 11:00:00,us-east-1,426.9,384.2,469.6,EIA API — PJM
+2025-01-05 11:00:00,us-west-2,44.9,40.4,49.4,EIA API — BPAT
+2025-01-05 12:00:00,ap-south-1,760.1,684.1,836.1,Ember Climate 2023 — India annual average
+2025-01-05 12:00:00,eu-north-1,27.2,21.8,32.6,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-05 12:00:00,eu-west-1,284.6,227.7,341.5,EirGrid 2023 data (synthetic fallback)
+2025-01-05 12:00:00,us-east-1,427.5,384.8,470.3,EIA API — PJM
+2025-01-05 12:00:00,us-west-2,48.2,43.4,53.1,EIA API — BPAT
+2025-01-05 13:00:00,ap-south-1,713.7,642.4,785.1,Ember Climate 2023 — India annual average
+2025-01-05 13:00:00,eu-north-1,39.0,31.2,46.7,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-05 13:00:00,eu-west-1,253.8,203.0,304.5,EirGrid 2023 data (synthetic fallback)
+2025-01-05 13:00:00,us-east-1,425.2,382.7,467.7,EIA API — PJM
+2025-01-05 13:00:00,us-west-2,57.2,51.5,63.0,EIA API — BPAT
+2025-01-05 14:00:00,ap-south-1,758.7,682.8,834.6,Ember Climate 2023 — India annual average
+2025-01-05 14:00:00,eu-north-1,34.8,27.8,41.7,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-05 14:00:00,eu-west-1,405.1,324.1,486.1,EirGrid 2023 data (synthetic fallback)
+2025-01-05 14:00:00,us-east-1,429.0,386.1,471.9,EIA API — PJM
+2025-01-05 14:00:00,us-west-2,58.4,52.6,64.3,EIA API — BPAT
+2025-01-05 15:00:00,ap-south-1,753.1,677.7,828.4,Ember Climate 2023 — India annual average
+2025-01-05 15:00:00,eu-north-1,34.0,27.2,40.8,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-05 15:00:00,eu-west-1,355.9,284.7,427.0,EirGrid 2023 data (synthetic fallback)
+2025-01-05 15:00:00,us-east-1,416.2,374.6,457.9,EIA API — PJM
+2025-01-05 15:00:00,us-west-2,58.0,52.2,63.8,EIA API — BPAT
+2025-01-05 16:00:00,ap-south-1,731.4,658.3,804.6,Ember Climate 2023 — India annual average
+2025-01-05 16:00:00,eu-north-1,44.9,36.0,53.9,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-05 16:00:00,eu-west-1,444.1,355.2,532.9,EirGrid 2023 data (synthetic fallback)
+2025-01-05 16:00:00,us-east-1,418.9,377.0,460.8,EIA API — PJM
+2025-01-05 16:00:00,us-west-2,57.2,51.5,63.0,EIA API — BPAT
+2025-01-05 17:00:00,ap-south-1,706.4,635.8,777.1,Ember Climate 2023 — India annual average
+2025-01-05 17:00:00,eu-north-1,42.9,34.3,51.5,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-05 17:00:00,eu-west-1,417.5,334.0,501.0,EirGrid 2023 data (synthetic fallback)
+2025-01-05 17:00:00,us-east-1,418.6,376.8,460.5,EIA API — PJM
+2025-01-05 17:00:00,us-west-2,53.7,48.3,59.1,EIA API — BPAT
+2025-01-05 18:00:00,ap-south-1,726.4,653.8,799.1,Ember Climate 2023 — India annual average
+2025-01-05 18:00:00,eu-north-1,38.3,30.6,46.0,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-05 18:00:00,eu-west-1,395.2,316.1,474.2,EirGrid 2023 data (synthetic fallback)
+2025-01-05 18:00:00,us-east-1,415.2,373.7,456.7,EIA API — PJM
+2025-01-05 18:00:00,us-west-2,44.2,39.8,48.6,EIA API — BPAT
+2025-01-05 19:00:00,ap-south-1,702.4,632.1,772.6,Ember Climate 2023 — India annual average
+2025-01-05 19:00:00,eu-north-1,47.6,38.1,57.2,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-05 19:00:00,eu-west-1,415.8,332.6,498.9,EirGrid 2023 data (synthetic fallback)
+2025-01-05 19:00:00,us-east-1,423.1,380.8,465.4,EIA API — PJM
+2025-01-05 19:00:00,us-west-2,31.7,28.5,34.8,EIA API — BPAT
+2025-01-05 20:00:00,ap-south-1,704.7,634.2,775.1,Ember Climate 2023 — India annual average
+2025-01-05 20:00:00,eu-north-1,36.6,29.3,43.9,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-05 20:00:00,eu-west-1,485.9,388.7,583.0,EirGrid 2023 data (synthetic fallback)
+2025-01-05 20:00:00,us-east-1,420.0,378.0,462.0,EIA API — PJM
+2025-01-05 20:00:00,us-west-2,30.7,27.6,33.8,EIA API — BPAT
+2025-01-05 21:00:00,ap-south-1,687.5,618.7,756.2,Ember Climate 2023 — India annual average
+2025-01-05 21:00:00,eu-north-1,36.9,29.5,44.3,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-05 21:00:00,eu-west-1,476.3,381.0,571.5,EirGrid 2023 data (synthetic fallback)
+2025-01-05 21:00:00,us-east-1,418.0,376.2,459.8,EIA API — PJM
+2025-01-05 21:00:00,us-west-2,31.3,28.1,34.4,EIA API — BPAT
+2025-01-05 22:00:00,ap-south-1,707.0,636.3,777.7,Ember Climate 2023 — India annual average
+2025-01-05 22:00:00,eu-north-1,35.7,28.5,42.8,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-05 22:00:00,eu-west-1,355.2,284.2,426.2,EirGrid 2023 data (synthetic fallback)
+2025-01-05 22:00:00,us-east-1,415.5,373.9,457.0,EIA API — PJM
+2025-01-05 22:00:00,us-west-2,32.3,29.1,35.5,EIA API — BPAT
+2025-01-05 23:00:00,ap-south-1,659.9,593.9,725.8,Ember Climate 2023 — India annual average
+2025-01-05 23:00:00,eu-north-1,28.6,22.9,34.3,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-05 23:00:00,eu-west-1,335.6,268.5,402.7,EirGrid 2023 data (synthetic fallback)
+2025-01-05 23:00:00,us-east-1,413.0,371.7,454.3,EIA API — PJM
+2025-01-05 23:00:00,us-west-2,34.1,30.7,37.6,EIA API — BPAT
+2025-01-06 00:00:00,ap-south-1,636.2,572.6,699.9,Ember Climate 2023 — India annual average
+2025-01-06 00:00:00,eu-north-1,31.8,25.5,38.2,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-06 00:00:00,eu-west-1,355.9,284.7,427.0,EirGrid 2023 data (synthetic fallback)
+2025-01-06 00:00:00,us-east-1,414.0,372.6,455.4,EIA API — PJM
+2025-01-06 00:00:00,us-west-2,35.0,31.5,38.5,EIA API — BPAT
+2025-01-06 01:00:00,ap-south-1,655.3,589.8,720.8,Ember Climate 2023 — India annual average
+2025-01-06 01:00:00,eu-north-1,24.4,19.5,29.3,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-06 01:00:00,eu-west-1,233.9,187.1,280.7,EirGrid 2023 data (synthetic fallback)
+2025-01-06 01:00:00,us-east-1,424.8,382.3,467.2,EIA API — PJM
+2025-01-06 01:00:00,us-west-2,35.6,32.0,39.2,EIA API — BPAT
+2025-01-06 02:00:00,ap-south-1,654.4,589.0,719.8,Ember Climate 2023 — India annual average
+2025-01-06 02:00:00,eu-north-1,22.9,18.3,27.5,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-06 02:00:00,eu-west-1,268.7,215.0,322.5,EirGrid 2023 data (synthetic fallback)
+2025-01-06 02:00:00,us-east-1,420.6,378.6,462.7,EIA API — PJM
+2025-01-06 02:00:00,us-west-2,37.3,33.6,41.0,EIA API — BPAT
+2025-01-06 03:00:00,ap-south-1,678.9,611.0,746.8,Ember Climate 2023 — India annual average
+2025-01-06 03:00:00,eu-north-1,30.2,24.2,36.3,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-06 03:00:00,eu-west-1,230.1,184.0,276.1,EirGrid 2023 data (synthetic fallback)
+2025-01-06 03:00:00,us-east-1,419.5,377.6,461.5,EIA API — PJM
+2025-01-06 03:00:00,us-west-2,42.9,38.6,47.2,EIA API — BPAT
+2025-01-06 04:00:00,ap-south-1,673.4,606.1,740.7,Ember Climate 2023 — India annual average
+2025-01-06 04:00:00,eu-north-1,17.2,13.8,20.6,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-06 04:00:00,eu-west-1,231.2,184.9,277.4,EirGrid 2023 data (synthetic fallback)
+2025-01-06 04:00:00,us-east-1,419.9,377.9,461.9,EIA API — PJM
+2025-01-06 04:00:00,us-west-2,41.7,37.5,45.8,EIA API — BPAT
+2025-01-06 05:00:00,ap-south-1,671.8,604.6,739.0,Ember Climate 2023 — India annual average
+2025-01-06 05:00:00,eu-north-1,10.0,8.0,12.0,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-06 05:00:00,eu-west-1,163.8,131.0,196.6,EirGrid 2023 data (synthetic fallback)
+2025-01-06 05:00:00,us-east-1,408.4,367.6,449.3,EIA API — PJM
+2025-01-06 05:00:00,us-west-2,48.0,43.2,52.8,EIA API — BPAT
+2025-01-06 06:00:00,ap-south-1,704.3,633.8,774.7,Ember Climate 2023 — India annual average
+2025-01-06 06:00:00,eu-north-1,30.5,24.4,36.5,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-06 06:00:00,eu-west-1,122.6,98.1,147.1,EirGrid 2023 data (synthetic fallback)
+2025-01-06 06:00:00,us-east-1,412.5,371.2,453.7,EIA API — PJM
+2025-01-06 06:00:00,us-west-2,41.6,37.4,45.8,EIA API — BPAT
+2025-01-06 07:00:00,ap-south-1,663.3,597.0,729.6,Ember Climate 2023 — India annual average
+2025-01-06 07:00:00,eu-north-1,36.1,28.9,43.4,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-06 07:00:00,eu-west-1,101.8,81.5,122.2,EirGrid 2023 data (synthetic fallback)
+2025-01-06 07:00:00,us-east-1,417.5,375.7,459.2,EIA API — PJM
+2025-01-06 07:00:00,us-west-2,38.3,34.5,42.2,EIA API — BPAT
+2025-01-06 08:00:00,ap-south-1,687.2,618.5,755.9,Ember Climate 2023 — India annual average
+2025-01-06 08:00:00,eu-north-1,23.0,18.4,27.6,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-06 08:00:00,eu-west-1,159.6,127.7,191.5,EirGrid 2023 data (synthetic fallback)
+2025-01-06 08:00:00,us-east-1,423.6,381.3,466.0,EIA API — PJM
+2025-01-06 08:00:00,us-west-2,39.4,35.4,43.3,EIA API — BPAT
+2025-01-06 09:00:00,ap-south-1,694.4,625.0,763.9,Ember Climate 2023 — India annual average
+2025-01-06 09:00:00,eu-north-1,17.4,13.9,20.9,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-06 09:00:00,eu-west-1,208.4,166.7,250.1,EirGrid 2023 data (synthetic fallback)
+2025-01-06 09:00:00,us-east-1,426.7,384.0,469.3,EIA API — PJM
+2025-01-06 09:00:00,us-west-2,39.9,35.9,43.9,EIA API — BPAT
+2025-01-06 10:00:00,ap-south-1,717.2,645.5,788.9,Ember Climate 2023 — India annual average
+2025-01-06 10:00:00,eu-north-1,27.9,22.3,33.5,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-06 10:00:00,eu-west-1,237.4,189.9,284.9,EirGrid 2023 data (synthetic fallback)
+2025-01-06 10:00:00,us-east-1,379.4,341.5,417.3,EIA API — PJM
+2025-01-06 10:00:00,us-west-2,41.3,37.2,45.4,EIA API — BPAT
+2025-01-06 11:00:00,ap-south-1,707.8,637.0,778.6,Ember Climate 2023 — India annual average
+2025-01-06 11:00:00,eu-north-1,30.6,24.5,36.8,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-06 11:00:00,eu-west-1,373.0,298.4,447.7,EirGrid 2023 data (synthetic fallback)
+2025-01-06 11:00:00,us-east-1,426.6,383.9,469.2,EIA API — PJM
+2025-01-06 11:00:00,us-west-2,43.6,39.2,47.9,EIA API — BPAT
+2025-01-06 12:00:00,ap-south-1,756.0,680.4,831.6,Ember Climate 2023 — India annual average
+2025-01-06 12:00:00,eu-north-1,33.7,27.0,40.4,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-06 12:00:00,eu-west-1,357.4,285.9,428.8,EirGrid 2023 data (synthetic fallback)
+2025-01-06 12:00:00,us-east-1,426.9,384.2,469.6,EIA API — PJM
+2025-01-06 12:00:00,us-west-2,44.9,40.4,49.4,EIA API — BPAT
+2025-01-06 13:00:00,ap-south-1,743.9,669.5,818.2,Ember Climate 2023 — India annual average
+2025-01-06 13:00:00,eu-north-1,31.5,25.2,37.8,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-06 13:00:00,eu-west-1,279.8,223.9,335.8,EirGrid 2023 data (synthetic fallback)
+2025-01-06 13:00:00,us-east-1,427.5,384.8,470.3,EIA API — PJM
+2025-01-06 13:00:00,us-west-2,48.2,43.4,53.1,EIA API — BPAT
+2025-01-06 14:00:00,ap-south-1,720.6,648.5,792.6,Ember Climate 2023 — India annual average
+2025-01-06 14:00:00,eu-north-1,42.0,33.6,50.4,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-06 14:00:00,eu-west-1,369.4,295.6,443.3,EirGrid 2023 data (synthetic fallback)
+2025-01-06 14:00:00,us-east-1,425.2,382.7,467.7,EIA API — PJM
+2025-01-06 14:00:00,us-west-2,57.2,51.5,63.0,EIA API — BPAT
+2025-01-06 15:00:00,ap-south-1,728.0,655.2,800.8,Ember Climate 2023 — India annual average
+2025-01-06 15:00:00,eu-north-1,43.3,34.7,52.0,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-06 15:00:00,eu-west-1,352.4,281.9,422.9,EirGrid 2023 data (synthetic fallback)
+2025-01-06 15:00:00,us-east-1,429.0,386.1,471.9,EIA API — PJM
+2025-01-06 15:00:00,us-west-2,58.4,52.6,64.3,EIA API — BPAT
+2025-01-06 16:00:00,ap-south-1,749.6,674.6,824.5,Ember Climate 2023 — India annual average
+2025-01-06 16:00:00,eu-north-1,34.2,27.4,41.1,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-06 16:00:00,eu-west-1,374.4,299.6,449.3,EirGrid 2023 data (synthetic fallback)
+2025-01-06 16:00:00,us-east-1,416.2,374.6,457.9,EIA API — PJM
+2025-01-06 16:00:00,us-west-2,58.0,52.2,63.8,EIA API — BPAT
+2025-01-06 17:00:00,ap-south-1,752.1,676.9,827.3,Ember Climate 2023 — India annual average
+2025-01-06 17:00:00,eu-north-1,45.6,36.4,54.7,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-06 17:00:00,eu-west-1,407.9,326.3,489.5,EirGrid 2023 data (synthetic fallback)
+2025-01-06 17:00:00,us-east-1,418.9,377.0,460.8,EIA API — PJM
+2025-01-06 17:00:00,us-west-2,57.2,51.5,63.0,EIA API — BPAT
+2025-01-06 18:00:00,ap-south-1,764.9,688.4,841.4,Ember Climate 2023 — India annual average
+2025-01-06 18:00:00,eu-north-1,52.0,41.6,62.4,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-06 18:00:00,eu-west-1,433.0,346.4,519.6,EirGrid 2023 data (synthetic fallback)
+2025-01-06 18:00:00,us-east-1,418.6,376.8,460.5,EIA API — PJM
+2025-01-06 18:00:00,us-west-2,53.7,48.3,59.1,EIA API — BPAT
+2025-01-06 19:00:00,ap-south-1,771.2,694.1,848.3,Ember Climate 2023 — India annual average
+2025-01-06 19:00:00,eu-north-1,41.6,33.3,49.9,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-06 19:00:00,eu-west-1,381.7,305.4,458.0,EirGrid 2023 data (synthetic fallback)
+2025-01-06 19:00:00,us-east-1,415.2,373.7,456.7,EIA API — PJM
+2025-01-06 19:00:00,us-west-2,44.2,39.8,48.6,EIA API — BPAT
+2025-01-06 20:00:00,ap-south-1,708.3,637.5,779.1,Ember Climate 2023 — India annual average
+2025-01-06 20:00:00,eu-north-1,37.4,30.0,44.9,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-06 20:00:00,eu-west-1,441.9,353.5,530.2,EirGrid 2023 data (synthetic fallback)
+2025-01-06 20:00:00,us-east-1,423.1,380.8,465.4,EIA API — PJM
+2025-01-06 20:00:00,us-west-2,31.7,28.5,34.8,EIA API — BPAT
+2025-01-06 21:00:00,ap-south-1,667.3,600.5,734.0,Ember Climate 2023 — India annual average
+2025-01-06 21:00:00,eu-north-1,36.4,29.1,43.6,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-06 21:00:00,eu-west-1,315.7,252.5,378.8,EirGrid 2023 data (synthetic fallback)
+2025-01-06 21:00:00,us-east-1,420.0,378.0,462.0,EIA API — PJM
+2025-01-06 21:00:00,us-west-2,30.7,27.6,33.8,EIA API — BPAT
+2025-01-06 22:00:00,ap-south-1,632.4,569.1,695.6,Ember Climate 2023 — India annual average
+2025-01-06 22:00:00,eu-north-1,37.7,30.2,45.3,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-06 22:00:00,eu-west-1,352.4,281.9,422.9,EirGrid 2023 data (synthetic fallback)
+2025-01-06 22:00:00,us-east-1,418.0,376.2,459.8,EIA API — PJM
+2025-01-06 22:00:00,us-west-2,31.3,28.1,34.4,EIA API — BPAT
+2025-01-06 23:00:00,ap-south-1,670.0,603.0,737.0,Ember Climate 2023 — India annual average
+2025-01-06 23:00:00,eu-north-1,23.4,18.7,28.1,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-06 23:00:00,eu-west-1,457.8,366.3,549.4,EirGrid 2023 data (synthetic fallback)
+2025-01-06 23:00:00,us-east-1,415.5,373.9,457.0,EIA API — PJM
+2025-01-06 23:00:00,us-west-2,32.3,29.1,35.5,EIA API — BPAT
+2025-01-07 00:00:00,ap-south-1,640.4,576.4,704.5,Ember Climate 2023 — India annual average
+2025-01-07 00:00:00,eu-north-1,30.6,24.5,36.8,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-07 00:00:00,eu-west-1,313.6,250.8,376.3,EirGrid 2023 data (synthetic fallback)
+2025-01-07 00:00:00,us-east-1,413.0,371.7,454.3,EIA API — PJM
+2025-01-07 00:00:00,us-west-2,34.1,30.7,37.6,EIA API — BPAT
+2025-01-07 01:00:00,ap-south-1,643.4,579.1,707.7,Ember Climate 2023 — India annual average
+2025-01-07 01:00:00,eu-north-1,25.5,20.4,30.5,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-07 01:00:00,eu-west-1,348.2,278.5,417.8,EirGrid 2023 data (synthetic fallback)
+2025-01-07 01:00:00,us-east-1,414.0,372.6,455.4,EIA API — PJM
+2025-01-07 01:00:00,us-west-2,35.0,31.5,38.5,EIA API — BPAT
+2025-01-07 02:00:00,ap-south-1,637.8,574.0,701.5,Ember Climate 2023 — India annual average
+2025-01-07 02:00:00,eu-north-1,34.6,27.7,41.5,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-07 02:00:00,eu-west-1,257.0,205.6,308.4,EirGrid 2023 data (synthetic fallback)
+2025-01-07 02:00:00,us-east-1,424.8,382.3,467.2,EIA API — PJM
+2025-01-07 02:00:00,us-west-2,35.6,32.0,39.2,EIA API — BPAT
+2025-01-07 03:00:00,ap-south-1,648.9,584.0,713.8,Ember Climate 2023 — India annual average
+2025-01-07 03:00:00,eu-north-1,22.9,18.3,27.4,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-07 03:00:00,eu-west-1,260.7,208.6,312.9,EirGrid 2023 data (synthetic fallback)
+2025-01-07 03:00:00,us-east-1,420.6,378.6,462.7,EIA API — PJM
+2025-01-07 03:00:00,us-west-2,37.3,33.6,41.0,EIA API — BPAT
+2025-01-07 04:00:00,ap-south-1,678.0,610.2,745.8,Ember Climate 2023 — India annual average
+2025-01-07 04:00:00,eu-north-1,31.1,24.9,37.3,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-07 04:00:00,eu-west-1,213.0,170.4,255.6,EirGrid 2023 data (synthetic fallback)
+2025-01-07 04:00:00,us-east-1,419.5,377.6,461.5,EIA API — PJM
+2025-01-07 04:00:00,us-west-2,42.9,38.6,47.2,EIA API — BPAT
+2025-01-07 05:00:00,ap-south-1,667.8,601.0,734.6,Ember Climate 2023 — India annual average
+2025-01-07 05:00:00,eu-north-1,16.9,13.5,20.3,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-07 05:00:00,eu-west-1,197.3,157.8,236.7,EirGrid 2023 data (synthetic fallback)
+2025-01-07 05:00:00,us-east-1,419.9,377.9,461.9,EIA API — PJM
+2025-01-07 05:00:00,us-west-2,41.7,37.5,45.8,EIA API — BPAT
+2025-01-07 06:00:00,ap-south-1,671.8,604.6,739.0,Ember Climate 2023 — India annual average
+2025-01-07 06:00:00,eu-north-1,25.7,20.5,30.8,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-07 06:00:00,eu-west-1,163.4,130.7,196.1,EirGrid 2023 data (synthetic fallback)
+2025-01-07 06:00:00,us-east-1,408.4,367.6,449.3,EIA API — PJM
+2025-01-07 06:00:00,us-west-2,48.0,43.2,52.8,EIA API — BPAT
+2025-01-07 07:00:00,ap-south-1,666.3,599.7,733.0,Ember Climate 2023 — India annual average
+2025-01-07 07:00:00,eu-north-1,25.3,20.3,30.4,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-07 07:00:00,eu-west-1,227.3,181.9,272.8,EirGrid 2023 data (synthetic fallback)
+2025-01-07 07:00:00,us-east-1,412.5,371.2,453.7,EIA API — PJM
+2025-01-07 07:00:00,us-west-2,41.6,37.4,45.8,EIA API — BPAT
+2025-01-07 08:00:00,ap-south-1,666.5,599.9,733.2,Ember Climate 2023 — India annual average
+2025-01-07 08:00:00,eu-north-1,21.0,16.8,25.2,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-07 08:00:00,eu-west-1,173.2,138.6,207.9,EirGrid 2023 data (synthetic fallback)
+2025-01-07 08:00:00,us-east-1,417.5,375.7,459.2,EIA API — PJM
+2025-01-07 08:00:00,us-west-2,38.3,34.5,42.2,EIA API — BPAT
+2025-01-07 09:00:00,ap-south-1,703.2,632.9,773.5,Ember Climate 2023 — India annual average
+2025-01-07 09:00:00,eu-north-1,28.3,22.6,33.9,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-07 09:00:00,eu-west-1,265.0,212.0,318.0,EirGrid 2023 data (synthetic fallback)
+2025-01-07 09:00:00,us-east-1,423.6,381.3,466.0,EIA API — PJM
+2025-01-07 09:00:00,us-west-2,39.4,35.4,43.3,EIA API — BPAT
+2025-01-07 10:00:00,ap-south-1,723.9,651.5,796.3,Ember Climate 2023 — India annual average
+2025-01-07 10:00:00,eu-north-1,35.9,28.7,43.1,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-07 10:00:00,eu-west-1,306.7,245.3,368.0,EirGrid 2023 data (synthetic fallback)
+2025-01-07 10:00:00,us-east-1,426.7,384.0,469.3,EIA API — PJM
+2025-01-07 10:00:00,us-west-2,39.9,35.9,43.9,EIA API — BPAT
+2025-01-07 11:00:00,ap-south-1,770.7,693.6,847.8,Ember Climate 2023 — India annual average
+2025-01-07 11:00:00,eu-north-1,30.8,24.6,36.9,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-07 11:00:00,eu-west-1,294.8,235.9,353.8,EirGrid 2023 data (synthetic fallback)
+2025-01-07 11:00:00,us-east-1,379.4,341.5,417.3,EIA API — PJM
+2025-01-07 11:00:00,us-west-2,41.3,37.2,45.4,EIA API — BPAT
+2025-01-07 12:00:00,ap-south-1,745.9,671.3,820.5,Ember Climate 2023 — India annual average
+2025-01-07 12:00:00,eu-north-1,26.5,21.2,31.8,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-07 12:00:00,eu-west-1,288.1,230.5,345.7,EirGrid 2023 data (synthetic fallback)
+2025-01-07 12:00:00,us-east-1,426.6,383.9,469.2,EIA API — PJM
+2025-01-07 12:00:00,us-west-2,43.6,39.2,47.9,EIA API — BPAT
+2025-01-07 13:00:00,ap-south-1,768.0,691.2,844.7,Ember Climate 2023 — India annual average
+2025-01-07 13:00:00,eu-north-1,37.3,29.9,44.8,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-07 13:00:00,eu-west-1,351.0,280.8,421.2,EirGrid 2023 data (synthetic fallback)
+2025-01-07 13:00:00,us-east-1,426.9,384.2,469.6,EIA API — PJM
+2025-01-07 13:00:00,us-west-2,44.9,40.4,49.4,EIA API — BPAT
+2025-01-07 14:00:00,ap-south-1,740.0,666.0,814.0,Ember Climate 2023 — India annual average
+2025-01-07 14:00:00,eu-north-1,35.0,28.0,42.0,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-07 14:00:00,eu-west-1,337.0,269.6,404.4,EirGrid 2023 data (synthetic fallback)
+2025-01-07 14:00:00,us-east-1,427.5,384.8,470.3,EIA API — PJM
+2025-01-07 14:00:00,us-west-2,48.2,43.4,53.1,EIA API — BPAT
+2025-01-07 15:00:00,ap-south-1,724.6,652.1,797.1,Ember Climate 2023 — India annual average
+2025-01-07 15:00:00,eu-north-1,39.4,31.5,47.2,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-07 15:00:00,eu-west-1,419.9,335.9,503.9,EirGrid 2023 data (synthetic fallback)
+2025-01-07 15:00:00,us-east-1,425.2,382.7,467.7,EIA API — PJM
+2025-01-07 15:00:00,us-west-2,57.2,51.5,63.0,EIA API — BPAT
+2025-01-07 16:00:00,ap-south-1,724.0,651.6,796.4,Ember Climate 2023 — India annual average
+2025-01-07 16:00:00,eu-north-1,41.7,33.3,50.0,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-07 16:00:00,eu-west-1,297.4,237.9,356.9,EirGrid 2023 data (synthetic fallback)
+2025-01-07 16:00:00,us-east-1,429.0,386.1,471.9,EIA API — PJM
+2025-01-07 16:00:00,us-west-2,58.4,52.6,64.3,EIA API — BPAT
+2025-01-07 17:00:00,ap-south-1,720.9,648.8,792.9,Ember Climate 2023 — India annual average
+2025-01-07 17:00:00,eu-north-1,33.9,27.1,40.7,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-07 17:00:00,eu-west-1,382.2,305.8,458.7,EirGrid 2023 data (synthetic fallback)
+2025-01-07 17:00:00,us-east-1,416.2,374.6,457.9,EIA API — PJM
+2025-01-07 17:00:00,us-west-2,58.0,52.2,63.8,EIA API — BPAT
+2025-01-07 18:00:00,ap-south-1,767.6,690.8,844.3,Ember Climate 2023 — India annual average
+2025-01-07 18:00:00,eu-north-1,34.0,27.2,40.8,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-07 18:00:00,eu-west-1,302.9,242.3,363.4,EirGrid 2023 data (synthetic fallback)
+2025-01-07 18:00:00,us-east-1,418.9,377.0,460.8,EIA API — PJM
+2025-01-07 18:00:00,us-west-2,57.2,51.5,63.0,EIA API — BPAT
+2025-01-07 19:00:00,ap-south-1,696.5,626.9,766.2,Ember Climate 2023 — India annual average
+2025-01-07 19:00:00,eu-north-1,43.5,34.8,52.2,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-07 19:00:00,eu-west-1,324.2,259.4,389.1,EirGrid 2023 data (synthetic fallback)
+2025-01-07 19:00:00,us-east-1,418.6,376.8,460.5,EIA API — PJM
+2025-01-07 19:00:00,us-west-2,53.7,48.3,59.1,EIA API — BPAT
+2025-01-07 20:00:00,ap-south-1,716.8,645.1,788.4,Ember Climate 2023 — India annual average
+2025-01-07 20:00:00,eu-north-1,36.9,29.5,44.2,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-07 20:00:00,eu-west-1,457.2,365.8,548.6,EirGrid 2023 data (synthetic fallback)
+2025-01-07 20:00:00,us-east-1,415.2,373.7,456.7,EIA API — PJM
+2025-01-07 20:00:00,us-west-2,44.2,39.8,48.6,EIA API — BPAT
+2025-01-07 21:00:00,ap-south-1,669.0,602.1,735.9,Ember Climate 2023 — India annual average
+2025-01-07 21:00:00,eu-north-1,24.6,19.7,29.5,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-07 21:00:00,eu-west-1,417.9,334.3,501.4,EirGrid 2023 data (synthetic fallback)
+2025-01-07 21:00:00,us-east-1,423.1,380.8,465.4,EIA API — PJM
+2025-01-07 21:00:00,us-west-2,31.7,28.5,34.8,EIA API — BPAT
+2025-01-07 22:00:00,ap-south-1,693.6,624.3,763.0,Ember Climate 2023 — India annual average
+2025-01-07 22:00:00,eu-north-1,38.9,31.1,46.7,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-07 22:00:00,eu-west-1,316.4,253.1,379.7,EirGrid 2023 data (synthetic fallback)
+2025-01-07 22:00:00,us-east-1,420.0,378.0,462.0,EIA API — PJM
+2025-01-07 22:00:00,us-west-2,30.7,27.6,33.8,EIA API — BPAT
+2025-01-07 23:00:00,ap-south-1,672.3,605.1,739.6,Ember Climate 2023 — India annual average
+2025-01-07 23:00:00,eu-north-1,33.8,27.0,40.5,Swedish Energy Agency 2023 (synthetic fallback)
+2025-01-07 23:00:00,eu-west-1,253.2,202.5,303.8,EirGrid 2023 data (synthetic fallback)
+2025-01-07 23:00:00,us-east-1,418.0,376.2,459.8,EIA API — PJM
+2025-01-07 23:00:00,us-west-2,31.3,28.1,34.4,EIA API — BPAT

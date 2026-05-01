@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-04-30T11:56:54.631386",
+  "runs": [
+    "multi_agent",
+    "single_model_small"
+  ],
+  "decisions": {
+    "multi_agent": {
+      "verified_savings_kgco2e": 33.4899,
+      "emissions_reduction_pct": 28.2,
+      "cost_change_usd": -22.13,
+      "recommendations_generated": 258,
+      "recommendations_approved": 258,
+      "recommendations_executed": 258,
+      "approval_rate": 1.0,
+      "significance_ratio": 0.7441860465116279,
+      "verification_status_counts": {
+        "confirmed": 192,
+        "partial": 66,
+        "refuted": 0
+      },
+      "negotiation_dialogues": 1,
+      "replan_cycles": 0,
+      "total_points_awarded": 3263
+    },
+    "single_model_small": {
+      "verified_savings_kgco2e": 33.4899,
+      "emissions_reduction_pct": 28.2,
+      "cost_change_usd": -22.13,
+      "recommendations_generated": 258,
+      "recommendations_approved": 258,
+      "recommendations_executed": 258,
+      "approval_rate": 1.0,
+      "significance_ratio": 0.7441860465116279,
+      "verification_status_counts": {
+        "confirmed": 192,
+        "partial": 66,
+        "refuted": 0
+      },
+      "negotiation_dialogues": 0,
+      "replan_cycles": 0,
+      "total_points_awarded": 3263
+    }
+  },
+  "headline": {
+    "winner_by_net_savings": "multi_agent",
+    "ranking": [
+      {
+        "label": "multi_agent",
+        "gross_kgco2e_saved": 33.4899,
+        "llm_emissions_kgco2e": 0.00057,
+        "net_kgco2e_saved": 33.4893,
+        "tokens": 8811,
+        "llm_calls": 25,
+        "significance_ratio": 0.7441860465116279
+      },
+      {
+        "label": "single_model_small",
+        "gross_kgco2e_saved": 33.4899,
+        "llm_emissions_kgco2e": 0.001284,
+        "net_kgco2e_saved": 33.4886,
+        "tokens": 51145,
+        "llm_calls": 6,
+        "significance_ratio": 0.7441860465116279
+      }
+    ]
+  }
+}

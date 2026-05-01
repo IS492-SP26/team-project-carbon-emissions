@@ -1,0 +1,167 @@
+{
+  "timestamp": "2026-04-30T11:52:47.300013",
+  "llm_provider": "groq",
+  "simulation_days": 7,
+  "total_jobs": 1500,
+  "baseline": {
+    "total_emissions_kgco2e": 118.5923,
+    "total_cost_usd": 3287.1,
+    "effective_cost_usd": 3295.99
+  },
+  "optimized": {
+    "total_emissions_kgco2e": 85.1024,
+    "total_cost_usd": 3264.97,
+    "effective_cost_usd": 3271.35
+  },
+  "improvement": {
+    "emissions_reduction_kgco2e": 33.4899,
+    "emissions_reduction_pct": 28.2,
+    "cost_change_usd": -22.13
+  },
+  "impact": {
+    "monthly": {
+      "kg_co2e_saved": 33.4899,
+      "tons_co2e_saved": 0.03349,
+      "cost_change_usd": -22.13,
+      "cost_change_pct": -0.6732
+    },
+    "annual_projection": {
+      "kg_co2e_saved": 401.879,
+      "tons_co2e_saved": 0.401879,
+      "cost_change_usd": -265.56
+    },
+    "equivalencies": [
+      {
+        "id": "led_bulb_hours",
+        "label": "LED bulb hours",
+        "value": 6698.0,
+        "unit": "hours",
+        "icon": "\ud83d\udca1"
+      },
+      {
+        "id": "smartphones_charged",
+        "label": "Smartphones charged",
+        "value": 4186.2,
+        "unit": "charges",
+        "icon": "\ud83d\udcf1"
+      },
+      {
+        "id": "miles_not_driven",
+        "label": "Miles not driven",
+        "value": 82.9,
+        "unit": "miles",
+        "icon": "\ud83d\ude97"
+      }
+    ],
+    "carbon_pricing_scenarios": [
+      {
+        "scenario": "Voluntary Market (current)",
+        "usd_per_ton": 15.0,
+        "monthly_value_usd": 0.5,
+        "annual_value_usd": 6.03
+      },
+      {
+        "scenario": "EU ETS 2025",
+        "usd_per_ton": 75.0,
+        "monthly_value_usd": 2.51,
+        "annual_value_usd": 30.14
+      },
+      {
+        "scenario": "EU ETS 2030 (projected)",
+        "usd_per_ton": 150.0,
+        "monthly_value_usd": 5.02,
+        "annual_value_usd": 60.28
+      },
+      {
+        "scenario": "EPA Social Cost of Carbon",
+        "usd_per_ton": 204.0,
+        "monthly_value_usd": 6.83,
+        "annual_value_usd": 81.98
+      }
+    ],
+    "efficiency": {
+      "kg_co2e_per_dollar_extra_cost": null,
+      "break_even_carbon_price_usd_per_ton": null
+    }
+  },
+  "pipeline": {
+    "recommendations_generated": 258,
+    "recommendations_approved": 258,
+    "recommendations_executed": 258,
+    "verifications_completed": 258,
+    "verification_summary": {
+      "count": 258,
+      "total_verified_savings_kgco2e": 33.4899,
+      "total_counterfactual_kgco2e": 39.4916,
+      "total_actual_kgco2e": 6.0016,
+      "aggregate_ci_90": {
+        "lower": 27.3236,
+        "upper": 39.6606
+      },
+      "by_status": {
+        "confirmed": 192,
+        "partial": 66
+      },
+      "sla_violations": 0,
+      "calibration_self_consistency": 100.0
+    },
+    "negotiation_dialogues": 1,
+    "replan_cycles": 0,
+    "final_significance_ratio": 0.7441860465116279
+  },
+  "gamification": {
+    "total_points_awarded": 3263,
+    "teams_with_points": 10,
+    "leaderboard_top3": [
+      {
+        "team_id": "analytics",
+        "total_points": 658,
+        "total_kgco2e_saved": 6.6462,
+        "total_actions": 9,
+        "rank": 1
+      },
+      {
+        "team_id": "mobile",
+        "total_points": 465,
+        "total_kgco2e_saved": 4.7608,
+        "total_actions": 18,
+        "rank": 2
+      },
+      {
+        "team_id": "eu-frontend",
+        "total_points": 421,
+        "total_kgco2e_saved": 4.2716,
+        "total_actions": 8,
+        "rank": 3
+      }
+    ]
+  },
+  "agents": {
+    "planner": {
+      "reasoning_steps": 9,
+      "actions_taken": 0
+    },
+    "governance": {
+      "reasoning_steps": 6,
+      "actions_taken": 0
+    },
+    "executor": {
+      "reasoning_steps": 7,
+      "actions_taken": 0
+    },
+    "copilot": {
+      "reasoning_steps": 12,
+      "actions_taken": 0
+    }
+  },
+  "architecture": "multi_agent",
+  "llm_usage": {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "total_tokens": 8811,
+    "prompt_tokens": 4667,
+    "completion_tokens": 4144,
+    "llm_calls": 25,
+    "wall_clock_seconds": 34.98
+  }
+}

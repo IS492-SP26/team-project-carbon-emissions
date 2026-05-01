@@ -1,0 +1,51 @@
+decision_id,recommendation_id,original_risk_level,final_risk_level,decision,reason,llm_reasoning,decided_at,decided_by,policy_version
+ad16b256,08a56423,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 13:19:16.466907,governance_agent,v1.0
+64d418a1,58c9af54,high,high,approved,Human-approved (simulated).,,2026-04-30 13:19:16.466943,human_simulated,v1.0
+2d4e2f37,1e098c1a,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 13:19:16.466974,governance_agent,v1.0
+283cfd80,5a51949a,high,high,approved,Human-approved (simulated).,,2026-04-30 13:19:16.466989,human_simulated,v1.0
+5dd78242,addd1c2d,high,high,approved,Human-approved (simulated).,,2026-04-30 13:19:16.467006,human_simulated,v1.0
+da2e8d12,86a707ce,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 13:19:16.467022,governance_agent,v1.0
+3e5cc536,167947f8,high,high,rejected,Human-rejected (simulated).,,2026-04-30 13:19:16.467033,human_simulated,v1.0
+09f1a757,518db8d7,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 13:19:16.467047,governance_agent,v1.0
+629e088d,c4e83792,high,high,approved,Human-approved (simulated).,,2026-04-30 13:19:16.467059,human_simulated,v1.0
+7703903b,fad048d7,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 13:19:16.467074,governance_agent,v1.0
+aa1fb85e,34425eea,high,high,approved,Human-approved (simulated).,,2026-04-30 13:19:16.467087,human_simulated,v1.0
+f6a76c94,28c25e45,high,high,approved,Human-approved (simulated).,,2026-04-30 13:19:16.467103,human_simulated,v1.0
+14fc75f5,e0f41754,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 13:19:16.467118,governance_agent,v1.0
+b2695002,1ec75fc0,high,high,approved,Human-approved (simulated).,,2026-04-30 13:19:16.467129,human_simulated,v1.0
+7919bbcf,6afb2479,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 13:19:16.467141,governance_agent,v1.0
+b03d09c0,dff4b549,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 13:19:16.467153,governance_agent,v1.0
+907325f1,fcedab48,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 13:19:16.467164,governance_agent,v1.0
+8462d9b7,ba21614c,high,high,approved,Human-approved (simulated).,,2026-04-30 13:19:16.467176,human_simulated,v1.0
+178ab8e4,d4db084b,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 13:19:16.467190,governance_agent,v1.0
+c6b49e59,aceaeb49,high,high,approved,Human-approved (simulated).,,2026-04-30 13:19:16.467202,human_simulated,v1.0
+835be871,b9ad159a,high,high,rejected,Human-rejected (simulated).,,2026-04-30 13:19:16.467214,human_simulated,v1.0
+bd4a5567,695fa976,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 13:19:16.467226,governance_agent,v1.0
+d0369d87,c359d963,high,high,approved,Human-approved (simulated).,,2026-04-30 13:19:16.467236,human_simulated,v1.0
+44dd07f9,391e5155,high,high,approved,Human-approved (simulated).,,2026-04-30 13:19:16.467249,human_simulated,v1.0
+f3b62d1b,6e4bce30,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 13:19:16.467261,governance_agent,v1.0
+f6777cb2,2f3025bb,high,high,approved,Human-approved (simulated).,,2026-04-30 13:19:16.467271,human_simulated,v1.0
+28bd1cb3,c887d33c,high,high,approved,Human-approved (simulated).,,2026-04-30 13:19:16.467283,human_simulated,v1.0
+793e5f81,f8371c28,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 13:19:16.467295,governance_agent,v1.0
+1d5ec189,b38f8e19,high,high,approved,Human-approved (simulated).,,2026-04-30 13:19:16.467305,human_simulated,v1.0
+fa6dda1c,cdbb7487,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 13:19:16.467317,governance_agent,v1.0
+0576809c,4f02dd35,high,high,rejected,Human-rejected (simulated).,,2026-04-30 13:19:16.467327,human_simulated,v1.0
+ae4523f2,9e584c3b,high,high,approved,Human-approved (simulated).,,2026-04-30 13:19:16.467339,human_simulated,v1.0
+4b4f3574,1b23f040,high,high,approved,Human-approved (simulated).,,2026-04-30 13:19:16.467350,human_simulated,v1.0
+57dde2bb,efdb64f2,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 13:19:16.467364,governance_agent,v1.0
+4d45dc18,dfaf8ef7,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 13:19:16.467375,governance_agent,v1.0
+8746b410,b73ff322,high,high,approved,Human-approved (simulated).,,2026-04-30 13:19:16.467385,human_simulated,v1.0
+4309490c,e8a12578,high,high,approved,Human-approved (simulated).,,2026-04-30 13:19:16.467396,human_simulated,v1.0
+00a10da7,d370c74b,high,high,approved,Human-approved (simulated).,,2026-04-30 13:19:16.467408,human_simulated,v1.0
+89226246,dcbbd5b5,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 13:19:16.467420,governance_agent,v1.0
+a96ad220,91fed341,high,high,approved,Human-approved (simulated).,,2026-04-30 13:19:16.467431,human_simulated,v1.0
+a0456500,623967f3,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 13:19:16.467444,governance_agent,v1.0
+a4be090c,a3e3e3ce,high,high,rejected,Human-rejected (simulated).,,2026-04-30 13:19:16.467455,human_simulated,v1.0
+b07ea589,d76322a5,high,high,approved,Human-approved (simulated).,,2026-04-30 13:19:16.467467,human_simulated,v1.0
+446c7765,755d5f8e,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 13:19:16.467478,governance_agent,v1.0
+a48be471,63b7c856,high,high,approved,Human-approved (simulated).,,2026-04-30 13:19:16.467488,human_simulated,v1.0
+f3191a08,a9a6c2c4,high,high,approved,Human-approved (simulated).,,2026-04-30 13:19:16.467502,human_simulated,v1.0
+0b7c72dc,a5c7da24,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 13:19:16.467514,governance_agent,v1.0
+bba1175c,e5965279,low,low,approved,"Auto-approved: low risk, within policy bounds.",,2026-04-30 13:19:16.467524,governance_agent,v1.0
+b52480f1,4791654c,high,high,approved,Human-approved (simulated).,,2026-04-30 13:19:16.467534,human_simulated,v1.0
+9c38bad6,c76d5ac6,high,high,approved,Human-approved (simulated).,,2026-04-30 13:19:16.467546,human_simulated,v1.0

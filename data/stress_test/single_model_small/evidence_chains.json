@@ -1,0 +1,4002 @@
+[
+  {
+    "verification_id": "e1848da1",
+    "recommendation_id": "557319b3",
+    "verified_savings_kgco2e": 0.200112,
+    "ci_lower": 0.0693,
+    "ci_upper": 0.331056,
+    "verification_status": "confirmed",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-GDYTi1cBuF2d3Gpm6X0f5s1nG9zhvibpG5Vy+Ul0Ga3gJKtNXj9xZtXq8hsb9wN2",
+          "region": "eu-west-1",
+          "started_at": "2025-01-01 00:00:00",
+          "vcpus": 2,
+          "gpu_count": 0,
+          "duration_hours": 120.0
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-01 04:00:00"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (2 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 120.0h = 1.320000 kWh",
+        "data": {
+          "total_power_kw": 0.011,
+          "energy_kwh": 1.32
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 1.320000 kWh \u00d7 172.0 gCO\u2082/kWh = 227.04 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-01 04:00:00",
+          "grid_intensity_gco2_kwh": 172.0,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.22704
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 1.320000 kWh \u00d7 323.6 gCO\u2082/kWh = 427.15 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-01 00:00:00",
+          "grid_intensity_gco2_kwh": 323.6,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.427152
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 427.15 - 227.04 = 200.11 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.200112,
+          "ci_90_lower": 0.0693,
+          "ci_90_upper": 0.331056,
+          "verification_status": "confirmed"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "905069af42f2802d",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "6e2ef3f6",
+    "recommendation_id": "6a37781d",
+    "verified_savings_kgco2e": 0.10109,
+    "ci_lower": 0.088429,
+    "ci_upper": 0.113723,
+    "verification_status": "confirmed",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-ykvcS9XHwbQede7niQ9/rht+tNMip6cm7HfvtSMfgniQ1smJRM92KqS5U/5FqAUb",
+          "region": "us-east-1",
+          "started_at": "2025-01-02 19:52:16.559389",
+          "vcpus": 24,
+          "gpu_count": 0,
+          "duration_hours": 2.195
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "us-west-2",
+          "started_at": "2025-01-02 19:52:16.559389"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (24 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 2.195h = 0.289740 kWh",
+        "data": {
+          "total_power_kw": 0.132,
+          "energy_kwh": 0.28974
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.289740 kWh \u00d7 44.0 gCO\u2082/kWh = 12.75 gCO\u2082e",
+        "data": {
+          "region": "us-west-2",
+          "timestamp": "2025-01-02 19:52:16.559389",
+          "grid_intensity_gco2_kwh": 44.0,
+          "source": "EIA API \u2014 BPAT",
+          "kgco2e": 0.012749
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.289740 kWh \u00d7 392.9 gCO\u2082/kWh = 113.84 gCO\u2082e",
+        "data": {
+          "region": "us-east-1",
+          "timestamp": "2025-01-02 19:52:16.559389",
+          "grid_intensity_gco2_kwh": 392.9,
+          "source": "EIA API \u2014 PJM",
+          "kgco2e": 0.113839
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 113.84 - 12.75 = 101.09 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.10109,
+          "ci_90_lower": 0.088429,
+          "ci_90_upper": 0.113723,
+          "verification_status": "confirmed"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "7fc8d681bcb3c40e",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "5c8432e8",
+    "recommendation_id": "57e9d5f8",
+    "verified_savings_kgco2e": 0.000458,
+    "ci_lower": 9e-05,
+    "ci_upper": 0.000826,
+    "verification_status": "confirmed",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-C/N/AKIkdNvS+ho82LxWqVKEVqsldmvyai7Ot5TxrlTG6DNpHvK6oFun3cKzRDgc",
+          "region": "eu-west-1",
+          "started_at": "2025-01-02 21:17:17.740218",
+          "vcpus": 4,
+          "gpu_count": 0,
+          "duration_hours": 0.125
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-03 01:17:17.740218"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (4 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 0.125h = 0.002750 kWh",
+        "data": {
+          "total_power_kw": 0.022,
+          "energy_kwh": 0.00275
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.002750 kWh \u00d7 251.3 gCO\u2082/kWh = 0.69 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-03 01:17:17.740218",
+          "grid_intensity_gco2_kwh": 251.3,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.000691
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.002750 kWh \u00d7 418.0 gCO\u2082/kWh = 1.15 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-02 21:17:17.740218",
+          "grid_intensity_gco2_kwh": 418.0,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.00115
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 1.15 - 0.69 = 0.46 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.000458,
+          "ci_90_lower": 9e-05,
+          "ci_90_upper": 0.000826,
+          "verification_status": "confirmed"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "6d834c1904c4ee22",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "ddc0fbb6",
+    "recommendation_id": "d5eebf6b",
+    "verified_savings_kgco2e": 0.0004,
+    "ci_lower": -0.000619,
+    "ci_upper": 0.001417,
+    "verification_status": "partial",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-pFOj96zqIZaWxNPEYq2qWjYOZezHOojX9tktG/5XnBnJTfcK06jjAT+V4Rmy4Qpk",
+          "region": "us-east-1",
+          "started_at": "2025-01-05 22:14:58.541329",
+          "vcpus": 2,
+          "gpu_count": 0,
+          "duration_hours": 0.847
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "us-east-1",
+          "started_at": "2025-01-06 02:14:58.541329"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (2 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 0.847h = 0.009317 kWh",
+        "data": {
+          "total_power_kw": 0.011,
+          "energy_kwh": 0.009317
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.009317 kWh \u00d7 350.0 gCO\u2082/kWh = 3.26 gCO\u2082e",
+        "data": {
+          "region": "us-east-1",
+          "timestamp": "2025-01-06 02:14:58.541329",
+          "grid_intensity_gco2_kwh": 350,
+          "source": "EPA eGRID 2022 \u2014 PJM region (fallback \u2014 no exact match)",
+          "kgco2e": 0.003261
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.009317 kWh \u00d7 392.9 gCO\u2082/kWh = 3.66 gCO\u2082e",
+        "data": {
+          "region": "us-east-1",
+          "timestamp": "2025-01-05 22:14:58.541329",
+          "grid_intensity_gco2_kwh": 392.9,
+          "source": "EIA API \u2014 PJM",
+          "kgco2e": 0.003661
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 3.66 - 3.26 = 0.40 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.0004,
+          "ci_90_lower": -0.000619,
+          "ci_90_upper": 0.001417,
+          "verification_status": "partial"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "b093d6b00c7713be",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "526f82d4",
+    "recommendation_id": "c6fca58e",
+    "verified_savings_kgco2e": 7.4e-05,
+    "ci_lower": -7.8e-05,
+    "ci_upper": 0.000225,
+    "verification_status": "partial",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-iChB+IYFxzJJoCqQ5rQ9tQxwYFAyDUMWhPJbF0uYUbzdlA8Q2ew13sav0Z2MhPmy",
+          "region": "us-east-1",
+          "started_at": "2025-01-05 23:34:09.641121",
+          "vcpus": 2,
+          "gpu_count": 0,
+          "duration_hours": 0.125
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "us-east-1",
+          "started_at": "2025-01-06 03:34:09.641121"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (2 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 0.125h = 0.001375 kWh",
+        "data": {
+          "total_power_kw": 0.011,
+          "energy_kwh": 0.001375
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.001375 kWh \u00d7 350.0 gCO\u2082/kWh = 0.48 gCO\u2082e",
+        "data": {
+          "region": "us-east-1",
+          "timestamp": "2025-01-06 03:34:09.641121",
+          "grid_intensity_gco2_kwh": 350,
+          "source": "EPA eGRID 2022 \u2014 PJM region (fallback \u2014 no exact match)",
+          "kgco2e": 0.000481
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.001375 kWh \u00d7 403.6 gCO\u2082/kWh = 0.55 gCO\u2082e",
+        "data": {
+          "region": "us-east-1",
+          "timestamp": "2025-01-05 23:34:09.641121",
+          "grid_intensity_gco2_kwh": 403.6,
+          "source": "EIA API \u2014 PJM",
+          "kgco2e": 0.000555
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 0.55 - 0.48 = 0.07 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 7.4e-05,
+          "ci_90_lower": -7.8e-05,
+          "ci_90_upper": 0.000225,
+          "verification_status": "partial"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "97027034d1f6cf64",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "abcb6c7f",
+    "recommendation_id": "41e8865c",
+    "verified_savings_kgco2e": 0.000805,
+    "ci_lower": -0.001346,
+    "ci_upper": 0.002953,
+    "verification_status": "partial",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-gdELcBkyTlJWtu1ZqbqM7wJcpd1dFoD/RNxbMwsZrSbnjk13pDxz6s/lZMWE6J/P",
+          "region": "eu-west-1",
+          "started_at": "2025-01-01 03:10:02.639500",
+          "vcpus": 2,
+          "gpu_count": 0,
+          "duration_hours": 2.237
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-01 07:10:02.639500"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (2 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 2.237h = 0.024607 kWh",
+        "data": {
+          "total_power_kw": 0.011,
+          "energy_kwh": 0.024607
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.024607 kWh \u00d7 202.0 gCO\u2082/kWh = 4.97 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-01 07:10:02.639500",
+          "grid_intensity_gco2_kwh": 202.0,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.004971
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.024607 kWh \u00d7 234.7 gCO\u2082/kWh = 5.78 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-01 03:10:02.639500",
+          "grid_intensity_gco2_kwh": 234.7,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.005775
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 5.78 - 4.97 = 0.80 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.000805,
+          "ci_90_lower": -0.001346,
+          "ci_90_upper": 0.002953,
+          "verification_status": "partial"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "dcf40793630bed58",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "c5199b70",
+    "recommendation_id": "2a1b64e6",
+    "verified_savings_kgco2e": 0.374352,
+    "ci_lower": 0.283668,
+    "ci_upper": 0.465168,
+    "verification_status": "confirmed",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-3vwftBXTSuYise1QxErB4ItBASXgrc+EoeULyp/FnGpyJwJ/ANV/tDrYRDzMMtSW",
+          "region": "eu-west-1",
+          "started_at": "2025-01-01 00:00:00",
+          "vcpus": 2,
+          "gpu_count": 0,
+          "duration_hours": 120.0
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "us-west-2",
+          "started_at": "2025-01-01 04:00:00"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (2 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 120.0h = 1.320000 kWh",
+        "data": {
+          "total_power_kw": 0.011,
+          "energy_kwh": 1.32
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 1.320000 kWh \u00d7 40.0 gCO\u2082/kWh = 52.80 gCO\u2082e",
+        "data": {
+          "region": "us-west-2",
+          "timestamp": "2025-01-01 04:00:00",
+          "grid_intensity_gco2_kwh": 40.0,
+          "source": "EIA API \u2014 BPAT",
+          "kgco2e": 0.0528
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 1.320000 kWh \u00d7 323.6 gCO\u2082/kWh = 427.15 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-01 00:00:00",
+          "grid_intensity_gco2_kwh": 323.6,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.427152
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 427.15 - 52.80 = 374.35 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.374352,
+          "ci_90_lower": 0.283668,
+          "ci_90_upper": 0.465168,
+          "verification_status": "confirmed"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "55708ee24f83dad0",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "7d1eaea4",
+    "recommendation_id": "90c65e99",
+    "verified_savings_kgco2e": 3.3e-05,
+    "ci_lower": -3.5e-05,
+    "ci_upper": 0.000101,
+    "verification_status": "partial",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-pdpBOAqX8GhJYRUG2GrcF4izPkXSJB53qP3vUfhT8oUM5dCOZYOwGvDam0Yl6TFk",
+          "region": "us-east-1",
+          "started_at": "2025-01-05 23:55:49.942116",
+          "vcpus": 2,
+          "gpu_count": 0,
+          "duration_hours": 0.056
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "us-east-1",
+          "started_at": "2025-01-06 03:55:49.942116"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (2 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 0.056h = 0.000616 kWh",
+        "data": {
+          "total_power_kw": 0.011,
+          "energy_kwh": 0.000616
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.000616 kWh \u00d7 350.0 gCO\u2082/kWh = 0.22 gCO\u2082e",
+        "data": {
+          "region": "us-east-1",
+          "timestamp": "2025-01-06 03:55:49.942116",
+          "grid_intensity_gco2_kwh": 350,
+          "source": "EPA eGRID 2022 \u2014 PJM region (fallback \u2014 no exact match)",
+          "kgco2e": 0.000216
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.000616 kWh \u00d7 403.6 gCO\u2082/kWh = 0.25 gCO\u2082e",
+        "data": {
+          "region": "us-east-1",
+          "timestamp": "2025-01-05 23:55:49.942116",
+          "grid_intensity_gco2_kwh": 403.6,
+          "source": "EIA API \u2014 PJM",
+          "kgco2e": 0.000249
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 0.25 - 0.22 = 0.03 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 3.3e-05,
+          "ci_90_lower": -3.5e-05,
+          "ci_90_upper": 0.000101,
+          "verification_status": "partial"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "b4e9f723760fbafb",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "d99d2ebe",
+    "recommendation_id": "673499f5",
+    "verified_savings_kgco2e": 0.000166,
+    "ci_lower": 5.5e-05,
+    "ci_upper": 0.000277,
+    "verification_status": "confirmed",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-4HQq1hs1Uo4ZZeTsByYQYsvPHy8Lku4IHSRtL1I7svC9N4ByOXs8Ej6TSYgphYPw",
+          "region": "eu-west-1",
+          "started_at": "2025-01-01 01:36:41.342903",
+          "vcpus": 2,
+          "gpu_count": 0,
+          "duration_hours": 0.125
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-01 05:36:41.342903"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (2 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 0.125h = 0.001375 kWh",
+        "data": {
+          "total_power_kw": 0.011,
+          "energy_kwh": 0.001375
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.001375 kWh \u00d7 141.3 gCO\u2082/kWh = 0.19 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-01 05:36:41.342903",
+          "grid_intensity_gco2_kwh": 141.3,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.000194
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.001375 kWh \u00d7 262.1 gCO\u2082/kWh = 0.36 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-01 01:36:41.342903",
+          "grid_intensity_gco2_kwh": 262.1,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.00036
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 0.36 - 0.19 = 0.17 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.000166,
+          "ci_90_lower": 5.5e-05,
+          "ci_90_upper": 0.000277,
+          "verification_status": "confirmed"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "fbe2b6381c7088d0",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "8598ea20",
+    "recommendation_id": "094e70fb",
+    "verified_savings_kgco2e": 0.000474,
+    "ci_lower": -0.000386,
+    "ci_upper": 0.001335,
+    "verification_status": "partial",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-4HKZWo7rcEvkCxamgEpS6w4UId51Vo23WtJxualyh87s6SyylEC8vfY0ItBBXGbk",
+          "region": "eu-west-1",
+          "started_at": "2025-01-04 02:02:41.704098",
+          "vcpus": 8,
+          "gpu_count": 0,
+          "duration_hours": 0.25
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-04 06:02:41.704098"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (8 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 0.25h = 0.011000 kWh",
+        "data": {
+          "total_power_kw": 0.044,
+          "energy_kwh": 0.011
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.011000 kWh \u00d7 173.9 gCO\u2082/kWh = 1.91 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-04 06:02:41.704098",
+          "grid_intensity_gco2_kwh": 173.9,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.001913
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.011000 kWh \u00d7 217.0 gCO\u2082/kWh = 2.39 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-04 02:02:41.704098",
+          "grid_intensity_gco2_kwh": 217.0,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.002387
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 2.39 - 1.91 = 0.47 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.000474,
+          "ci_90_lower": -0.000386,
+          "ci_90_upper": 0.001335,
+          "verification_status": "partial"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "7c62777d0b75bd9f",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "ada2157b",
+    "recommendation_id": "dd5b63a9",
+    "verified_savings_kgco2e": 0.374352,
+    "ci_lower": 0.283668,
+    "ci_upper": 0.465168,
+    "verification_status": "confirmed",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-tnuW/JeMZ3zBEplHSlgQXcwY7K/mpT9sSGtpSIpuRv6nnzurbkuK8KgWgHYcS6ps",
+          "region": "eu-west-1",
+          "started_at": "2025-01-01 00:00:00",
+          "vcpus": 2,
+          "gpu_count": 0,
+          "duration_hours": 120.0
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "us-west-2",
+          "started_at": "2025-01-01 04:00:00"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (2 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 120.0h = 1.320000 kWh",
+        "data": {
+          "total_power_kw": 0.011,
+          "energy_kwh": 1.32
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 1.320000 kWh \u00d7 40.0 gCO\u2082/kWh = 52.80 gCO\u2082e",
+        "data": {
+          "region": "us-west-2",
+          "timestamp": "2025-01-01 04:00:00",
+          "grid_intensity_gco2_kwh": 40.0,
+          "source": "EIA API \u2014 BPAT",
+          "kgco2e": 0.0528
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 1.320000 kWh \u00d7 323.6 gCO\u2082/kWh = 427.15 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-01 00:00:00",
+          "grid_intensity_gco2_kwh": 323.6,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.427152
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 427.15 - 52.80 = 374.35 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.374352,
+          "ci_90_lower": 0.283668,
+          "ci_90_upper": 0.465168,
+          "verification_status": "confirmed"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "28682dc65832c284",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "09b57599",
+    "recommendation_id": "b55afe05",
+    "verified_savings_kgco2e": 1.2e-05,
+    "ci_lower": -2e-05,
+    "ci_upper": 4.4e-05,
+    "verification_status": "partial",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-d4ABcAsK0BEq36TQXY+McJZLoRobp1QGXDVoVsdbetwXn7Jb1Vq3DFfRjhWxYa8C",
+          "region": "eu-west-1",
+          "started_at": "2025-01-01 03:19:12.766844",
+          "vcpus": 2,
+          "gpu_count": 0,
+          "duration_hours": 0.033
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-01 07:19:12.766844"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (2 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 0.033h = 0.000363 kWh",
+        "data": {
+          "total_power_kw": 0.011,
+          "energy_kwh": 0.000363
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.000363 kWh \u00d7 202.0 gCO\u2082/kWh = 0.07 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-01 07:19:12.766844",
+          "grid_intensity_gco2_kwh": 202.0,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 7.3e-05
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.000363 kWh \u00d7 234.7 gCO\u2082/kWh = 0.09 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-01 03:19:12.766844",
+          "grid_intensity_gco2_kwh": 234.7,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 8.5e-05
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 0.09 - 0.07 = 0.01 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 1.2e-05,
+          "ci_90_lower": -2e-05,
+          "ci_90_upper": 4.4e-05,
+          "verification_status": "partial"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "ff49c5335393c487",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "e7084af7",
+    "recommendation_id": "173fdfad",
+    "verified_savings_kgco2e": 0.000137,
+    "ci_lower": -0.000214,
+    "ci_upper": 0.000488,
+    "verification_status": "partial",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-wa7zrDNZ99A6GR4gB9lrFiNSJ4vsCyTwsDwWKaBkTLN8w4r+lfV13VnIF1D/N7bH",
+          "region": "eu-west-1",
+          "started_at": "2025-01-01 19:25:16.184302",
+          "vcpus": 4,
+          "gpu_count": 0,
+          "duration_hours": 0.097
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-01 23:25:16.184302"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (4 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 0.097h = 0.002134 kWh",
+        "data": {
+          "total_power_kw": 0.022,
+          "energy_kwh": 0.002134
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.002134 kWh \u00d7 379.5 gCO\u2082/kWh = 0.81 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-01 23:25:16.184302",
+          "grid_intensity_gco2_kwh": 379.5,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.00081
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.002134 kWh \u00d7 443.8 gCO\u2082/kWh = 0.95 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-01 19:25:16.184302",
+          "grid_intensity_gco2_kwh": 443.8,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.000947
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 0.95 - 0.81 = 0.14 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.000137,
+          "ci_90_lower": -0.000214,
+          "ci_90_upper": 0.000488,
+          "verification_status": "partial"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "a2c054532ed9486e",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "2faab8b0",
+    "recommendation_id": "9629f664",
+    "verified_savings_kgco2e": 0.000696,
+    "ci_lower": -0.001478,
+    "ci_upper": 0.002872,
+    "verification_status": "partial",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-LJ6clTcfrfqTZiUFnYFFcNv4/Yl54MnQ02iHhpYdxpJ1uEHGQIQO5yiYaDIqiaZY",
+          "region": "eu-west-1",
+          "started_at": "2025-01-05 09:29:47.913869",
+          "vcpus": 2,
+          "gpu_count": 0,
+          "duration_hours": 1.959
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-05 13:29:47.913869"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (2 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 1.959h = 0.021549 kWh",
+        "data": {
+          "total_power_kw": 0.011,
+          "energy_kwh": 0.021549
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.021549 kWh \u00d7 236.3 gCO\u2082/kWh = 5.09 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-05 13:29:47.913869",
+          "grid_intensity_gco2_kwh": 236.3,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.005092
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.021549 kWh \u00d7 268.6 gCO\u2082/kWh = 5.79 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-05 09:29:47.913869",
+          "grid_intensity_gco2_kwh": 268.6,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.005788
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 5.79 - 5.09 = 0.70 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.000696,
+          "ci_90_lower": -0.001478,
+          "ci_90_upper": 0.002872,
+          "verification_status": "partial"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "e81d42c8f2fdf4bf",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "0855e09c",
+    "recommendation_id": "d75a4c2e",
+    "verified_savings_kgco2e": 0.00012,
+    "ci_lower": 1.1e-05,
+    "ci_upper": 0.000229,
+    "verification_status": "confirmed",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-/kvYGnu708FRVCnfet4JaEs4hjs8at5vpm+M4r+jlzlYtfC1ZghgMER+vlTLkpAr",
+          "region": "eu-west-1",
+          "started_at": "2025-01-02 23:01:29.187312",
+          "vcpus": 2,
+          "gpu_count": 0,
+          "duration_hours": 0.083
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-03 03:01:29.187312"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (2 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 0.083h = 0.000913 kWh",
+        "data": {
+          "total_power_kw": 0.011,
+          "energy_kwh": 0.000913
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.000913 kWh \u00d7 231.9 gCO\u2082/kWh = 0.21 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-03 03:01:29.187312",
+          "grid_intensity_gco2_kwh": 231.9,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.000212
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.000913 kWh \u00d7 363.5 gCO\u2082/kWh = 0.33 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-02 23:01:29.187312",
+          "grid_intensity_gco2_kwh": 363.5,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.000332
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 0.33 - 0.21 = 0.12 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.00012,
+          "ci_90_lower": 1.1e-05,
+          "ci_90_upper": 0.000229,
+          "verification_status": "confirmed"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "960c9efa6d7fb925",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "70285c01",
+    "recommendation_id": "8d783615",
+    "verified_savings_kgco2e": 0.000118,
+    "ci_lower": 8.2e-05,
+    "ci_upper": 0.000155,
+    "verification_status": "confirmed",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-j0eO9cI6ikpE0JrXjmOkMMQlXCm5iBVzGLzF/5TEv9FfqggfDytXr455wV676JWa",
+          "region": "eu-west-1",
+          "started_at": "2025-01-02 02:47:52.331558",
+          "vcpus": 4,
+          "gpu_count": 0,
+          "duration_hours": 0.033
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-02 06:47:52.331558"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (4 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 0.033h = 0.000726 kWh",
+        "data": {
+          "total_power_kw": 0.022,
+          "energy_kwh": 0.000726
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.000726 kWh \u00d7 43.2 gCO\u2082/kWh = 0.03 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-02 06:47:52.331558",
+          "grid_intensity_gco2_kwh": 43.2,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 3.1e-05
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.000726 kWh \u00d7 206.3 gCO\u2082/kWh = 0.15 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-02 02:47:52.331558",
+          "grid_intensity_gco2_kwh": 206.3,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.00015
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 0.15 - 0.03 = 0.12 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.000118,
+          "ci_90_lower": 8.2e-05,
+          "ci_90_upper": 0.000155,
+          "verification_status": "confirmed"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "be38366f6f0af2a6",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "4da68fc2",
+    "recommendation_id": "077b59e3",
+    "verified_savings_kgco2e": 0.006071,
+    "ci_lower": -0.010156,
+    "ci_upper": 0.02228,
+    "verification_status": "partial",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-kjyIrfwHnYfZ/Kkn6B/p6NBEzm3tI7vrWwfg7YuX0ldU9Xax4xxP91cdmxTDVVBK",
+          "region": "eu-west-1",
+          "started_at": "2025-01-01 03:29:12.905765",
+          "vcpus": 2,
+          "gpu_count": 0,
+          "duration_hours": 16.879
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-01 07:29:12.905765"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (2 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 16.879h = 0.185669 kWh",
+        "data": {
+          "total_power_kw": 0.011,
+          "energy_kwh": 0.185669
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.185669 kWh \u00d7 202.0 gCO\u2082/kWh = 37.51 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-01 07:29:12.905765",
+          "grid_intensity_gco2_kwh": 202.0,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.037505
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.185669 kWh \u00d7 234.7 gCO\u2082/kWh = 43.58 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-01 03:29:12.905765",
+          "grid_intensity_gco2_kwh": 234.7,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.043577
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 43.58 - 37.51 = 6.07 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.006071,
+          "ci_90_lower": -0.010156,
+          "ci_90_upper": 0.02228,
+          "verification_status": "partial"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "a8945a5ae54d471f",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "cff34fd8",
+    "recommendation_id": "9893a0b1",
+    "verified_savings_kgco2e": 0.001136,
+    "ci_lower": 0.000393,
+    "ci_upper": 0.001879,
+    "verification_status": "confirmed",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-fyLXtWTofJwvLIkr2IgMzf9Zs9BVa6P4ZrJmp+nU5FeqILzsOHbkH4i3yoaOev4q",
+          "region": "eu-west-1",
+          "started_at": "2025-01-01 00:00:00",
+          "vcpus": 2,
+          "gpu_count": 0,
+          "duration_hours": 0.681
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-01 04:00:00"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (2 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 0.681h = 0.007491 kWh",
+        "data": {
+          "total_power_kw": 0.011,
+          "energy_kwh": 0.007491
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.007491 kWh \u00d7 172.0 gCO\u2082/kWh = 1.29 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-01 04:00:00",
+          "grid_intensity_gco2_kwh": 172.0,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.001288
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.007491 kWh \u00d7 323.6 gCO\u2082/kWh = 2.42 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-01 00:00:00",
+          "grid_intensity_gco2_kwh": 323.6,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.002424
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 2.42 - 1.29 = 1.14 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.001136,
+          "ci_90_lower": 0.000393,
+          "ci_90_upper": 0.001879,
+          "verification_status": "confirmed"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "223db0c7966128b8",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "7da6a8b6",
+    "recommendation_id": "7fc340af",
+    "verified_savings_kgco2e": 0.004024,
+    "ci_lower": 0.001336,
+    "ci_upper": 0.006708,
+    "verification_status": "confirmed",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-6wS3gRWQGNBgu/Gvb1wSnVzWjJHk+ALwoNGFYJOhgO3XEe1eaQaTuzwEp2Zd8+Ek",
+          "region": "eu-west-1",
+          "started_at": "2025-01-01 01:47:31.493401",
+          "vcpus": 4,
+          "gpu_count": 0,
+          "duration_hours": 1.514
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-01 05:47:31.493401"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (4 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 1.514h = 0.033308 kWh",
+        "data": {
+          "total_power_kw": 0.022,
+          "energy_kwh": 0.033308
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.033308 kWh \u00d7 141.3 gCO\u2082/kWh = 4.71 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-01 05:47:31.493401",
+          "grid_intensity_gco2_kwh": 141.3,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.004706
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.033308 kWh \u00d7 262.1 gCO\u2082/kWh = 8.73 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-01 01:47:31.493401",
+          "grid_intensity_gco2_kwh": 262.1,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.00873
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 8.73 - 4.71 = 4.02 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.004024,
+          "ci_90_lower": 0.001336,
+          "ci_90_upper": 0.006708,
+          "verification_status": "confirmed"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "7ee8dee1364c034a",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "d3edf9f7",
+    "recommendation_id": "688bf77e",
+    "verified_savings_kgco2e": 0.001237,
+    "ci_lower": -0.000953,
+    "ci_upper": 0.003427,
+    "verification_status": "partial",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-bCzAGv3XfMjpshQHT9PK9TV88eBNc1skBjivPMQ7usXgpcpPhm8q/OIroQSitb01",
+          "region": "ap-south-1",
+          "started_at": "2025-01-03 14:45:52.303774",
+          "vcpus": 2,
+          "gpu_count": 0,
+          "duration_hours": 1.348
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "ap-south-1",
+          "started_at": "2025-01-03 18:45:52.303774"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (2 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 1.348h = 0.014828 kWh",
+        "data": {
+          "total_power_kw": 0.011,
+          "energy_kwh": 0.014828
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.014828 kWh \u00d7 697.0 gCO\u2082/kWh = 10.34 gCO\u2082e",
+        "data": {
+          "region": "ap-south-1",
+          "timestamp": "2025-01-03 18:45:52.303774",
+          "grid_intensity_gco2_kwh": 697.0,
+          "source": "Ember Climate 2023 \u2014 India annual average",
+          "kgco2e": 0.010335
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.014828 kWh \u00d7 780.4 gCO\u2082/kWh = 11.57 gCO\u2082e",
+        "data": {
+          "region": "ap-south-1",
+          "timestamp": "2025-01-03 14:45:52.303774",
+          "grid_intensity_gco2_kwh": 780.4,
+          "source": "Ember Climate 2023 \u2014 India annual average",
+          "kgco2e": 0.011572
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 11.57 - 10.34 = 1.24 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.001237,
+          "ci_90_lower": -0.000953,
+          "ci_90_upper": 0.003427,
+          "verification_status": "partial"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "be88a1ffe39c7c54",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "45b57dfb",
+    "recommendation_id": "85f5b89d",
+    "verified_savings_kgco2e": 0.000984,
+    "ci_lower": 0.000679,
+    "ci_upper": 0.001289,
+    "verification_status": "confirmed",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-x7TB1FpPJUi1So2J1a7lisBDX/Q1AK60ER/9pqb1kaGV1wRa9eVvY7CztF9pnvxr",
+          "region": "eu-west-1",
+          "started_at": "2025-01-03 00:39:00.541792",
+          "vcpus": 24,
+          "gpu_count": 0,
+          "duration_hours": 0.033
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-03 04:39:00.541792"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (24 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 0.033h = 0.004356 kWh",
+        "data": {
+          "total_power_kw": 0.132,
+          "energy_kwh": 0.004356
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.004356 kWh \u00d7 62.3 gCO\u2082/kWh = 0.27 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-03 04:39:00.541792",
+          "grid_intensity_gco2_kwh": 62.3,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.000271
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.004356 kWh \u00d7 288.1 gCO\u2082/kWh = 1.25 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-03 00:39:00.541792",
+          "grid_intensity_gco2_kwh": 288.1,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.001255
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 1.25 - 0.27 = 0.98 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.000984,
+          "ci_90_lower": 0.000679,
+          "ci_90_upper": 0.001289,
+          "verification_status": "confirmed"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "4992cbd4bd61cbe8",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "455d6191",
+    "recommendation_id": "8c0d9fa2",
+    "verified_savings_kgco2e": 0.061516,
+    "ci_lower": -0.031257,
+    "ci_upper": 0.154355,
+    "verification_status": "partial",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-CDuzA6yzgCWjDwjF7tugbNRBDPdBg+PPKf7+LELNcKtRuR2nLU9ln4lHfLBfgoB9",
+          "region": "ap-south-1",
+          "started_at": "2025-01-04 17:46:14.808984",
+          "vcpus": 4,
+          "gpu_count": 0,
+          "duration_hours": 30.229
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "ap-south-1",
+          "started_at": "2025-01-05 01:46:14.808984"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (4 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 30.229h = 0.665038 kWh",
+        "data": {
+          "total_power_kw": 0.022,
+          "energy_kwh": 0.665038
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.665038 kWh \u00d7 651.4 gCO\u2082/kWh = 433.21 gCO\u2082e",
+        "data": {
+          "region": "ap-south-1",
+          "timestamp": "2025-01-05 01:46:14.808984",
+          "grid_intensity_gco2_kwh": 651.4,
+          "source": "Ember Climate 2023 \u2014 India annual average",
+          "kgco2e": 0.433206
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.665038 kWh \u00d7 743.9 gCO\u2082/kWh = 494.72 gCO\u2082e",
+        "data": {
+          "region": "ap-south-1",
+          "timestamp": "2025-01-04 17:46:14.808984",
+          "grid_intensity_gco2_kwh": 743.9,
+          "source": "Ember Climate 2023 \u2014 India annual average",
+          "kgco2e": 0.494722
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 494.72 - 433.21 = 61.52 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.061516,
+          "ci_90_lower": -0.031257,
+          "ci_90_upper": 0.154355,
+          "verification_status": "partial"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "2de535be03dc94ed",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "e11722d7",
+    "recommendation_id": "fb64b883",
+    "verified_savings_kgco2e": 0.001175,
+    "ci_lower": -0.000249,
+    "ci_upper": 0.002599,
+    "verification_status": "partial",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-DxzqhWRaQ2OCXnxqkOeSlTllZstvxdNCXUoiUO7u9yuUogdb/8Lbt425oasZSnMV",
+          "region": "eu-west-1",
+          "started_at": "2025-01-03 01:17:21.074323",
+          "vcpus": 24,
+          "gpu_count": 0,
+          "duration_hours": 0.125
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-03 05:17:21.074323"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (24 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 0.125h = 0.016500 kWh",
+        "data": {
+          "total_power_kw": 0.132,
+          "energy_kwh": 0.0165
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.016500 kWh \u00d7 180.1 gCO\u2082/kWh = 2.97 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-03 05:17:21.074323",
+          "grid_intensity_gco2_kwh": 180.1,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.002972
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.016500 kWh \u00d7 251.3 gCO\u2082/kWh = 4.15 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-03 01:17:21.074323",
+          "grid_intensity_gco2_kwh": 251.3,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.004146
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 4.15 - 2.97 = 1.17 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.001175,
+          "ci_90_lower": -0.000249,
+          "ci_90_upper": 0.002599,
+          "verification_status": "partial"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "4a0504aa721d5a43",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "1f24b3b9",
+    "recommendation_id": "734da1f2",
+    "verified_savings_kgco2e": 0.006806,
+    "ci_lower": 0.002366,
+    "ci_upper": 0.011241,
+    "verification_status": "confirmed",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-uuViZS85Cb0SQYMNNSxhVwnakviIves9amEC38Zmg3MY2DeUjI52jVEqy4sh6KT7",
+          "region": "eu-west-1",
+          "started_at": "2025-01-02 01:41:11.405418",
+          "vcpus": 4,
+          "gpu_count": 0,
+          "duration_hours": 1.848
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-02 05:41:11.405418"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (4 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 1.848h = 0.040656 kWh",
+        "data": {
+          "total_power_kw": 0.022,
+          "energy_kwh": 0.040656
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.040656 kWh \u00d7 189.1 gCO\u2082/kWh = 7.69 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-02 05:41:11.405418",
+          "grid_intensity_gco2_kwh": 189.1,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.007688
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.040656 kWh \u00d7 356.5 gCO\u2082/kWh = 14.49 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-02 01:41:11.405418",
+          "grid_intensity_gco2_kwh": 356.5,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.014494
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 14.49 - 7.69 = 6.81 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.006806,
+          "ci_90_lower": 0.002366,
+          "ci_90_upper": 0.011241,
+          "verification_status": "confirmed"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "43f719827906b941",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "463e872a",
+    "recommendation_id": "42cee6af",
+    "verified_savings_kgco2e": 2.6e-05,
+    "ci_lower": -5e-06,
+    "ci_upper": 5.7e-05,
+    "verification_status": "partial",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-GkMw7oLeACRphqFh3h1VXbeD+MtXHrRL0ZdR/n9gxok4ngtEWDJFS274mBE0ew9L",
+          "region": "eu-west-1",
+          "started_at": "2025-01-03 01:00:40.842788",
+          "vcpus": 2,
+          "gpu_count": 0,
+          "duration_hours": 0.033
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-03 05:00:40.842788"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (2 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 0.033h = 0.000363 kWh",
+        "data": {
+          "total_power_kw": 0.011,
+          "energy_kwh": 0.000363
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.000363 kWh \u00d7 180.1 gCO\u2082/kWh = 0.07 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-03 05:00:40.842788",
+          "grid_intensity_gco2_kwh": 180.1,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 6.5e-05
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.000363 kWh \u00d7 251.3 gCO\u2082/kWh = 0.09 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-03 01:00:40.842788",
+          "grid_intensity_gco2_kwh": 251.3,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 9.1e-05
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 0.09 - 0.07 = 0.03 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 2.6e-05,
+          "ci_90_lower": -5e-06,
+          "ci_90_upper": 5.7e-05,
+          "verification_status": "partial"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "a3814d4a4981714c",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "74d5c052",
+    "recommendation_id": "fd8b8905",
+    "verified_savings_kgco2e": 8.9e-05,
+    "ci_lower": -4e-05,
+    "ci_upper": 0.000218,
+    "verification_status": "partial",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-UXRX3nJHgE/bEzcwupFTbMgqSe/6ikkCi/Sa8zCLkM0axYxQyZjSTg35AvF+UER7",
+          "region": "eu-west-1",
+          "started_at": "2025-01-04 00:47:40.662190",
+          "vcpus": 2,
+          "gpu_count": 0,
+          "duration_hours": 0.153
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-04 04:47:40.662190"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (2 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 0.153h = 0.001683 kWh",
+        "data": {
+          "total_power_kw": 0.011,
+          "energy_kwh": 0.001683
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.001683 kWh \u00d7 165.5 gCO\u2082/kWh = 0.28 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-04 04:47:40.662190",
+          "grid_intensity_gco2_kwh": 165.5,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.000279
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.001683 kWh \u00d7 218.4 gCO\u2082/kWh = 0.37 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-04 00:47:40.662190",
+          "grid_intensity_gco2_kwh": 218.4,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.000368
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 0.37 - 0.28 = 0.09 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 8.9e-05,
+          "ci_90_lower": -4e-05,
+          "ci_90_upper": 0.000218,
+          "verification_status": "partial"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "13a6fb2e5406fbc8",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "ef164af3",
+    "recommendation_id": "f79d76e2",
+    "verified_savings_kgco2e": 0.374352,
+    "ci_lower": 0.283668,
+    "ci_upper": 0.465168,
+    "verification_status": "confirmed",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-TxWJOiRa0QdvIWi/akaNVIpINyTsFYfMvqeP77s8h2SfpnhZTJvzbtIwYoztvhi1",
+          "region": "eu-west-1",
+          "started_at": "2025-01-01 00:00:00",
+          "vcpus": 2,
+          "gpu_count": 0,
+          "duration_hours": 120.0
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "us-west-2",
+          "started_at": "2025-01-01 04:00:00"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (2 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 120.0h = 1.320000 kWh",
+        "data": {
+          "total_power_kw": 0.011,
+          "energy_kwh": 1.32
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 1.320000 kWh \u00d7 40.0 gCO\u2082/kWh = 52.80 gCO\u2082e",
+        "data": {
+          "region": "us-west-2",
+          "timestamp": "2025-01-01 04:00:00",
+          "grid_intensity_gco2_kwh": 40.0,
+          "source": "EIA API \u2014 BPAT",
+          "kgco2e": 0.0528
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 1.320000 kWh \u00d7 323.6 gCO\u2082/kWh = 427.15 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-01 00:00:00",
+          "grid_intensity_gco2_kwh": 323.6,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.427152
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 427.15 - 52.80 = 374.35 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.374352,
+          "ci_90_lower": 0.283668,
+          "ci_90_upper": 0.465168,
+          "verification_status": "confirmed"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "da5115b00c7ab702",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "1ffb2700",
+    "recommendation_id": "1f06e3d8",
+    "verified_savings_kgco2e": 0.200112,
+    "ci_lower": 0.0693,
+    "ci_upper": 0.331056,
+    "verification_status": "confirmed",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-8ohyPwNstyxopQ6o3VB7gl3LyzpLS8dvh8ROuiJjOyLPklpvns0U2PeoSg3s9uru",
+          "region": "eu-west-1",
+          "started_at": "2025-01-01 00:00:00",
+          "vcpus": 2,
+          "gpu_count": 0,
+          "duration_hours": 120.0
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-01 04:00:00"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (2 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 120.0h = 1.320000 kWh",
+        "data": {
+          "total_power_kw": 0.011,
+          "energy_kwh": 1.32
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 1.320000 kWh \u00d7 172.0 gCO\u2082/kWh = 227.04 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-01 04:00:00",
+          "grid_intensity_gco2_kwh": 172.0,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.22704
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 1.320000 kWh \u00d7 323.6 gCO\u2082/kWh = 427.15 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-01 00:00:00",
+          "grid_intensity_gco2_kwh": 323.6,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.427152
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 427.15 - 227.04 = 200.11 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.200112,
+          "ci_90_lower": 0.0693,
+          "ci_90_upper": 0.331056,
+          "verification_status": "confirmed"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "670f6e96ef20d8d8",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "6a40f491",
+    "recommendation_id": "6d48e9fa",
+    "verified_savings_kgco2e": 1.497408,
+    "ci_lower": 1.134672,
+    "ci_upper": 1.860672,
+    "verification_status": "confirmed",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-IspxHb735n5MkO6HRmCAUOXIBiHqkqJg/otD/Sl8/bhzpuCrdfZY7PS3w17p/h+z",
+          "region": "eu-west-1",
+          "started_at": "2025-01-01 00:00:00",
+          "vcpus": 8,
+          "gpu_count": 0,
+          "duration_hours": 120.0
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "us-west-2",
+          "started_at": "2025-01-01 04:00:00"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (8 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 120.0h = 5.280000 kWh",
+        "data": {
+          "total_power_kw": 0.044,
+          "energy_kwh": 5.28
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 5.280000 kWh \u00d7 40.0 gCO\u2082/kWh = 211.20 gCO\u2082e",
+        "data": {
+          "region": "us-west-2",
+          "timestamp": "2025-01-01 04:00:00",
+          "grid_intensity_gco2_kwh": 40.0,
+          "source": "EIA API \u2014 BPAT",
+          "kgco2e": 0.2112
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 5.280000 kWh \u00d7 323.6 gCO\u2082/kWh = 1708.61 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-01 00:00:00",
+          "grid_intensity_gco2_kwh": 323.6,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 1.708608
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 1708.61 - 211.20 = 1497.41 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 1.497408,
+          "ci_90_lower": 1.134672,
+          "ci_90_upper": 1.860672,
+          "verification_status": "confirmed"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "648ecc51c523ca1f",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "c6ca7ce8",
+    "recommendation_id": "9d6f3e5f",
+    "verified_savings_kgco2e": 0.003447,
+    "ci_lower": -0.000601,
+    "ci_upper": 0.007491,
+    "verification_status": "partial",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-MJQGKrMLUme3zRH6uP//rrU4/J7WAJ+AIptS2ZZUHHg05fDfYOvKpDrGlI+Kk1sM",
+          "region": "eu-west-1",
+          "started_at": "2025-01-03 23:41:49.747627",
+          "vcpus": 2,
+          "gpu_count": 0,
+          "duration_hours": 2.987
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-04 03:41:49.747627"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (2 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 2.987h = 0.032857 kWh",
+        "data": {
+          "total_power_kw": 0.011,
+          "energy_kwh": 0.032857
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.032857 kWh \u00d7 255.5 gCO\u2082/kWh = 8.39 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-04 03:41:49.747627",
+          "grid_intensity_gco2_kwh": 255.5,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.008395
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.032857 kWh \u00d7 360.4 gCO\u2082/kWh = 11.84 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-03 23:41:49.747627",
+          "grid_intensity_gco2_kwh": 360.4,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.011842
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 11.84 - 8.39 = 3.45 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.003447,
+          "ci_90_lower": -0.000601,
+          "ci_90_upper": 0.007491,
+          "verification_status": "partial"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "73e86936a82722de",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "543a336c",
+    "recommendation_id": "0cbb654d",
+    "verified_savings_kgco2e": 0.001376,
+    "ci_lower": -0.001061,
+    "ci_upper": 0.003813,
+    "verification_status": "partial",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-5w7ebLnNMDSBkm8nLVbPYmCAVi6Ka9swSF1vlceYkWuF7LvyDTxu9m0jNX2yYOez",
+          "region": "ap-south-1",
+          "started_at": "2025-01-03 14:20:51.956471",
+          "vcpus": 24,
+          "gpu_count": 0,
+          "duration_hours": 0.125
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "ap-south-1",
+          "started_at": "2025-01-03 18:20:51.956471"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (24 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 0.125h = 0.016500 kWh",
+        "data": {
+          "total_power_kw": 0.132,
+          "energy_kwh": 0.0165
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.016500 kWh \u00d7 697.0 gCO\u2082/kWh = 11.50 gCO\u2082e",
+        "data": {
+          "region": "ap-south-1",
+          "timestamp": "2025-01-03 18:20:51.956471",
+          "grid_intensity_gco2_kwh": 697.0,
+          "source": "Ember Climate 2023 \u2014 India annual average",
+          "kgco2e": 0.0115
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.016500 kWh \u00d7 780.4 gCO\u2082/kWh = 12.88 gCO\u2082e",
+        "data": {
+          "region": "ap-south-1",
+          "timestamp": "2025-01-03 14:20:51.956471",
+          "grid_intensity_gco2_kwh": 780.4,
+          "source": "Ember Climate 2023 \u2014 India annual average",
+          "kgco2e": 0.012877
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 12.88 - 11.50 = 1.38 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.001376,
+          "ci_90_lower": -0.001061,
+          "ci_90_upper": 0.003813,
+          "verification_status": "partial"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "7aafc021f055f7d6",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "edf812bc",
+    "recommendation_id": "f73a0e37",
+    "verified_savings_kgco2e": 0.000108,
+    "ci_lower": -2.3e-05,
+    "ci_upper": 0.000239,
+    "verification_status": "partial",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-8RlzMDyyUhEhuwkcy5pd8zesHfFO4BG8WKXY8qMOPVrYVZcctwitfjfFblkFv9bk",
+          "region": "eu-west-1",
+          "started_at": "2025-01-03 01:02:20.865941",
+          "vcpus": 4,
+          "gpu_count": 0,
+          "duration_hours": 0.069
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-03 05:02:20.865941"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (4 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 0.069h = 0.001518 kWh",
+        "data": {
+          "total_power_kw": 0.022,
+          "energy_kwh": 0.001518
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.001518 kWh \u00d7 180.1 gCO\u2082/kWh = 0.27 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-03 05:02:20.865941",
+          "grid_intensity_gco2_kwh": 180.1,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.000273
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.001518 kWh \u00d7 251.3 gCO\u2082/kWh = 0.38 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-03 01:02:20.865941",
+          "grid_intensity_gco2_kwh": 251.3,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.000381
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 0.38 - 0.27 = 0.11 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.000108,
+          "ci_90_lower": -2.3e-05,
+          "ci_90_upper": 0.000239,
+          "verification_status": "partial"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "0fe06cf17b78747b",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "253cb89e",
+    "recommendation_id": "5a9ff7f4",
+    "verified_savings_kgco2e": 2.4e-05,
+    "ci_lower": -1.1e-05,
+    "ci_upper": 6e-05,
+    "verification_status": "partial",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-KuuU9GaMgDvEwNVMSd2U+X3kwA5ybwRhkz8BcwqZu1Wh02FnE7ML5OwiwdN/hcDh",
+          "region": "eu-west-1",
+          "started_at": "2025-01-04 00:02:40.037046",
+          "vcpus": 2,
+          "gpu_count": 0,
+          "duration_hours": 0.042
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-04 04:02:40.037046"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (2 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 0.042h = 0.000462 kWh",
+        "data": {
+          "total_power_kw": 0.011,
+          "energy_kwh": 0.000462
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.000462 kWh \u00d7 165.5 gCO\u2082/kWh = 0.08 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-04 04:02:40.037046",
+          "grid_intensity_gco2_kwh": 165.5,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 7.6e-05
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.000462 kWh \u00d7 218.4 gCO\u2082/kWh = 0.10 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-04 00:02:40.037046",
+          "grid_intensity_gco2_kwh": 218.4,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.000101
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 0.10 - 0.08 = 0.02 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 2.4e-05,
+          "ci_90_lower": -1.1e-05,
+          "ci_90_upper": 6e-05,
+          "verification_status": "partial"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "679ee85078afc4d0",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "931dff5e",
+    "recommendation_id": "b37e7978",
+    "verified_savings_kgco2e": 0.005157,
+    "ci_lower": 0.003984,
+    "ci_upper": 0.006329,
+    "verification_status": "confirmed",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-sffo3dA672mherUD6dLtMp9eJwS671ebYbfcmNmUwTVPafOS0kwHox23aCZARycI",
+          "region": "eu-west-1",
+          "started_at": "2025-01-03 09:13:17.684649",
+          "vcpus": 4,
+          "gpu_count": 0,
+          "duration_hours": 1.0
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-north-1",
+          "started_at": "2025-01-03 09:13:17.684649"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (4 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 1.0h = 0.022000 kWh",
+        "data": {
+          "total_power_kw": 0.022,
+          "energy_kwh": 0.022
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.022000 kWh \u00d7 16.1 gCO\u2082/kWh = 0.35 gCO\u2082e",
+        "data": {
+          "region": "eu-north-1",
+          "timestamp": "2025-01-03 09:13:17.684649",
+          "grid_intensity_gco2_kwh": 16.1,
+          "source": "Swedish Energy Agency 2023 (synthetic fallback)",
+          "kgco2e": 0.000354
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.022000 kWh \u00d7 250.5 gCO\u2082/kWh = 5.51 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-03 09:13:17.684649",
+          "grid_intensity_gco2_kwh": 250.5,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.005511
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 5.51 - 0.35 = 5.16 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.005157,
+          "ci_90_lower": 0.003984,
+          "ci_90_upper": 0.006329,
+          "verification_status": "confirmed"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "bc106bec83115ae6",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "95947ba2",
+    "recommendation_id": "f9939197",
+    "verified_savings_kgco2e": 0.000471,
+    "ci_lower": 0.000191,
+    "ci_upper": 0.000751,
+    "verification_status": "confirmed",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-Y2wP7eTqj12XAspzu2y0bzr1xaM01jqiE38cVJa4HOeO2DJDemWqRPX02MeoFCgW",
+          "region": "eu-west-1",
+          "started_at": "2025-01-01 23:24:29.506830",
+          "vcpus": 8,
+          "gpu_count": 0,
+          "duration_hours": 0.056
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-02 03:24:29.506830"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (8 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 0.056h = 0.002464 kWh",
+        "data": {
+          "total_power_kw": 0.044,
+          "energy_kwh": 0.002464
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.002464 kWh \u00d7 188.3 gCO\u2082/kWh = 0.46 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-02 03:24:29.506830",
+          "grid_intensity_gco2_kwh": 188.3,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.000464
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.002464 kWh \u00d7 379.5 gCO\u2082/kWh = 0.94 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-01 23:24:29.506830",
+          "grid_intensity_gco2_kwh": 379.5,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.000935
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 0.94 - 0.46 = 0.47 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.000471,
+          "ci_90_lower": 0.000191,
+          "ci_90_upper": 0.000751,
+          "verification_status": "confirmed"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "f8ba027b6bbbc4c5",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "aef4e174",
+    "recommendation_id": "1b8b94bd",
+    "verified_savings_kgco2e": 0.00659,
+    "ci_lower": 0.00064,
+    "ci_upper": 0.012544,
+    "verification_status": "confirmed",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-Zg/oXquHCVU0oYOThyEWFmYnqtTo3sL4lpoIPIAq29sQ9Mor+vmZmNLQme+Qm1ht",
+          "region": "eu-west-1",
+          "started_at": "2025-01-02 00:34:30.479278",
+          "vcpus": 2,
+          "gpu_count": 0,
+          "duration_hours": 4.376
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-02 04:34:30.479278"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (2 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 4.376h = 0.048136 kWh",
+        "data": {
+          "total_power_kw": 0.011,
+          "energy_kwh": 0.048136
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.048136 kWh \u00d7 240.6 gCO\u2082/kWh = 11.58 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-02 04:34:30.479278",
+          "grid_intensity_gco2_kwh": 240.6,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.011582
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.048136 kWh \u00d7 377.5 gCO\u2082/kWh = 18.17 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-02 00:34:30.479278",
+          "grid_intensity_gco2_kwh": 377.5,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.018171
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 18.17 - 11.58 = 6.59 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.00659,
+          "ci_90_lower": 0.00064,
+          "ci_90_upper": 0.012544,
+          "verification_status": "confirmed"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "6dd58586ef931faa",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "88b2ce9b",
+    "recommendation_id": "3935d0e2",
+    "verified_savings_kgco2e": 0.000368,
+    "ci_lower": 0.000121,
+    "ci_upper": 0.000614,
+    "verification_status": "confirmed",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-tcQINAmSm6h6uhPpV8RlGrc7vKmTcdYHVQPZv/3rmEAovYDji/RexsYcDAceW+8b",
+          "region": "eu-west-1",
+          "started_at": "2025-01-03 22:02:38.369993",
+          "vcpus": 2,
+          "gpu_count": 0,
+          "duration_hours": 0.181
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-04 02:02:38.369993"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (2 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 0.181h = 0.001991 kWh",
+        "data": {
+          "total_power_kw": 0.011,
+          "energy_kwh": 0.001991
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.001991 kWh \u00d7 217.0 gCO\u2082/kWh = 0.43 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-04 02:02:38.369993",
+          "grid_intensity_gco2_kwh": 217.0,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.000432
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.001991 kWh \u00d7 401.7 gCO\u2082/kWh = 0.80 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-03 22:02:38.369993",
+          "grid_intensity_gco2_kwh": 401.7,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.0008
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 0.80 - 0.43 = 0.37 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.000368,
+          "ci_90_lower": 0.000121,
+          "ci_90_upper": 0.000614,
+          "verification_status": "confirmed"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "2356d49c6ab4f30e",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "918b6bfc",
+    "recommendation_id": "5618c5e7",
+    "verified_savings_kgco2e": 6.5e-05,
+    "ci_lower": -1.3e-05,
+    "ci_upper": 0.000143,
+    "verification_status": "partial",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-b+rhTZDdxyn/T6f8iKJa50AAx+7pRMhzsDSxWoUydysEM7mWdUBevSddgz3CWQZF",
+          "region": "eu-west-1",
+          "started_at": "2025-01-05 06:28:55.401713",
+          "vcpus": 2,
+          "gpu_count": 0,
+          "duration_hours": 0.069
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-05 10:28:55.401713"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (2 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 0.069h = 0.000759 kWh",
+        "data": {
+          "total_power_kw": 0.011,
+          "energy_kwh": 0.000759
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.000759 kWh \u00d7 213.1 gCO\u2082/kWh = 0.16 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-05 10:28:55.401713",
+          "grid_intensity_gco2_kwh": 213.1,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.000162
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.000759 kWh \u00d7 298.9 gCO\u2082/kWh = 0.23 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-05 06:28:55.401713",
+          "grid_intensity_gco2_kwh": 298.9,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.000227
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 0.23 - 0.16 = 0.07 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 6.5e-05,
+          "ci_90_lower": -1.3e-05,
+          "ci_90_upper": 0.000143,
+          "verification_status": "partial"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "dc221b605f3b5dc5",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "7b6b6207",
+    "recommendation_id": "9ccd5424",
+    "verified_savings_kgco2e": 0.026517,
+    "ci_lower": 0.023192,
+    "ci_upper": 0.029849,
+    "verification_status": "confirmed",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-2zwXrN4hJh5KTu2OGE4DE6XXmFm33lZOyKf0qUowY6tgFmf17gvSZ8D1Z3xv8x93",
+          "region": "us-east-1",
+          "started_at": "2025-01-03 22:56:49.122482",
+          "vcpus": 24,
+          "gpu_count": 0,
+          "duration_hours": 0.556
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "us-west-2",
+          "started_at": "2025-01-03 22:56:49.122482"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (24 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 0.556h = 0.073392 kWh",
+        "data": {
+          "total_power_kw": 0.132,
+          "energy_kwh": 0.073392
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.073392 kWh \u00d7 46.0 gCO\u2082/kWh = 3.38 gCO\u2082e",
+        "data": {
+          "region": "us-west-2",
+          "timestamp": "2025-01-03 22:56:49.122482",
+          "grid_intensity_gco2_kwh": 46.0,
+          "source": "EIA API \u2014 BPAT",
+          "kgco2e": 0.003376
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.073392 kWh \u00d7 407.3 gCO\u2082/kWh = 29.89 gCO\u2082e",
+        "data": {
+          "region": "us-east-1",
+          "timestamp": "2025-01-03 22:56:49.122482",
+          "grid_intensity_gco2_kwh": 407.3,
+          "source": "EIA API \u2014 PJM",
+          "kgco2e": 0.029893
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 29.89 - 3.38 = 26.52 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.026517,
+          "ci_90_lower": 0.023192,
+          "ci_90_upper": 0.029849,
+          "verification_status": "confirmed"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "9fe06b39d9820375",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "4dd997e9",
+    "recommendation_id": "21b42ae7",
+    "verified_savings_kgco2e": 1.9e-05,
+    "ci_lower": -2.1e-05,
+    "ci_upper": 6e-05,
+    "verification_status": "partial",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-8PgF3bA10Q1RUsM36Rek6zl2AXXxTMpEkQ4JhOqEDQo7ZKkhEG+aV17vVc9RcbH7",
+          "region": "us-east-1",
+          "started_at": "2025-01-05 23:57:29.965270",
+          "vcpus": 2,
+          "gpu_count": 0,
+          "duration_hours": 0.033
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "us-east-1",
+          "started_at": "2025-01-06 03:57:29.965270"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (2 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 0.033h = 0.000363 kWh",
+        "data": {
+          "total_power_kw": 0.011,
+          "energy_kwh": 0.000363
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.000363 kWh \u00d7 350.0 gCO\u2082/kWh = 0.13 gCO\u2082e",
+        "data": {
+          "region": "us-east-1",
+          "timestamp": "2025-01-06 03:57:29.965270",
+          "grid_intensity_gco2_kwh": 350,
+          "source": "EPA eGRID 2022 \u2014 PJM region (fallback \u2014 no exact match)",
+          "kgco2e": 0.000127
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.000363 kWh \u00d7 403.6 gCO\u2082/kWh = 0.15 gCO\u2082e",
+        "data": {
+          "region": "us-east-1",
+          "timestamp": "2025-01-05 23:57:29.965270",
+          "grid_intensity_gco2_kwh": 403.6,
+          "source": "EIA API \u2014 PJM",
+          "kgco2e": 0.000147
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 0.15 - 0.13 = 0.02 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 1.9e-05,
+          "ci_90_lower": -2.1e-05,
+          "ci_90_upper": 6e-05,
+          "verification_status": "partial"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "9d43a57bc080b3b0",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "03c86c83",
+    "recommendation_id": "90ed0b1f",
+    "verified_savings_kgco2e": 3.1e-05,
+    "ci_lower": -4.8e-05,
+    "ci_upper": 0.00011,
+    "verification_status": "partial",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-kj5rextHQMNqo/4mrRjXSvYjrri3K2G4JdL+zlZr5+jNSjC1uyBFKgEnObKQBU1M",
+          "region": "us-east-1",
+          "started_at": "2025-01-05 22:36:38.842325",
+          "vcpus": 4,
+          "gpu_count": 0,
+          "duration_hours": 0.033
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "us-east-1",
+          "started_at": "2025-01-06 02:36:38.842325"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (4 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 0.033h = 0.000726 kWh",
+        "data": {
+          "total_power_kw": 0.022,
+          "energy_kwh": 0.000726
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.000726 kWh \u00d7 350.0 gCO\u2082/kWh = 0.25 gCO\u2082e",
+        "data": {
+          "region": "us-east-1",
+          "timestamp": "2025-01-06 02:36:38.842325",
+          "grid_intensity_gco2_kwh": 350,
+          "source": "EPA eGRID 2022 \u2014 PJM region (fallback \u2014 no exact match)",
+          "kgco2e": 0.000254
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.000726 kWh \u00d7 392.9 gCO\u2082/kWh = 0.29 gCO\u2082e",
+        "data": {
+          "region": "us-east-1",
+          "timestamp": "2025-01-05 22:36:38.842325",
+          "grid_intensity_gco2_kwh": 392.9,
+          "source": "EIA API \u2014 PJM",
+          "kgco2e": 0.000285
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 0.29 - 0.25 = 0.03 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 3.1e-05,
+          "ci_90_lower": -4.8e-05,
+          "ci_90_upper": 0.00011,
+          "verification_status": "partial"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "e98e386c2e95d241",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "ca9653e5",
+    "recommendation_id": "52ce731c",
+    "verified_savings_kgco2e": 0.748704,
+    "ci_lower": 0.567336,
+    "ci_upper": 0.930336,
+    "verification_status": "confirmed",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-r4bCvePoKVirF+yu3i3Dt4gQLH6qqMce7TMlQwFpRc+yy6QWduabjAmIBXexfuXB",
+          "region": "eu-west-1",
+          "started_at": "2025-01-01 00:00:00",
+          "vcpus": 4,
+          "gpu_count": 0,
+          "duration_hours": 120.0
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "us-west-2",
+          "started_at": "2025-01-01 04:00:00"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (4 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 120.0h = 2.640000 kWh",
+        "data": {
+          "total_power_kw": 0.022,
+          "energy_kwh": 2.64
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 2.640000 kWh \u00d7 40.0 gCO\u2082/kWh = 105.60 gCO\u2082e",
+        "data": {
+          "region": "us-west-2",
+          "timestamp": "2025-01-01 04:00:00",
+          "grid_intensity_gco2_kwh": 40.0,
+          "source": "EIA API \u2014 BPAT",
+          "kgco2e": 0.1056
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 2.640000 kWh \u00d7 323.6 gCO\u2082/kWh = 854.30 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-01 00:00:00",
+          "grid_intensity_gco2_kwh": 323.6,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.854304
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 854.30 - 105.60 = 748.70 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.748704,
+          "ci_90_lower": 0.567336,
+          "ci_90_upper": 0.930336,
+          "verification_status": "confirmed"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "8ffbd5ea64219e60",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "5c655aa0",
+    "recommendation_id": "96fdc220",
+    "verified_savings_kgco2e": 0.000973,
+    "ci_lower": 9.2e-05,
+    "ci_upper": 0.001853,
+    "verification_status": "confirmed",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-gCqB3/trGBArIWGQRcacgMxfUYhb5FEuFaWnB+Mub6iYxCESmIFNV+zf/Lzxtwh1",
+          "region": "eu-west-1",
+          "started_at": "2025-01-02 23:12:19.337810",
+          "vcpus": 24,
+          "gpu_count": 0,
+          "duration_hours": 0.056
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-03 03:12:19.337810"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (24 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 0.056h = 0.007392 kWh",
+        "data": {
+          "total_power_kw": 0.132,
+          "energy_kwh": 0.007392
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.007392 kWh \u00d7 231.9 gCO\u2082/kWh = 1.71 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-03 03:12:19.337810",
+          "grid_intensity_gco2_kwh": 231.9,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.001714
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.007392 kWh \u00d7 363.5 gCO\u2082/kWh = 2.69 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-02 23:12:19.337810",
+          "grid_intensity_gco2_kwh": 363.5,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.002687
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 2.69 - 1.71 = 0.97 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.000973,
+          "ci_90_lower": 9.2e-05,
+          "ci_90_upper": 0.001853,
+          "verification_status": "confirmed"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "89ed53de09f52a2b",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "27b4270e",
+    "recommendation_id": "774068f9",
+    "verified_savings_kgco2e": 3.5e-05,
+    "ci_lower": 1e-06,
+    "ci_upper": 6.9e-05,
+    "verification_status": "confirmed",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-Kljz62TImFQZHlHJiNYmofaNSl7eutR4VigU8PpCuo1L3VQ0OnEL73Q7n6nYyJd8",
+          "region": "eu-west-1",
+          "started_at": "2025-01-01 05:43:24.769623",
+          "vcpus": 4,
+          "gpu_count": 0,
+          "duration_hours": 0.033
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-01 09:43:24.769623"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (4 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 0.033h = 0.000726 kWh",
+        "data": {
+          "total_power_kw": 0.022,
+          "energy_kwh": 0.000726
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.000726 kWh \u00d7 93.7 gCO\u2082/kWh = 0.07 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-01 09:43:24.769623",
+          "grid_intensity_gco2_kwh": 93.7,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 6.8e-05
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.000726 kWh \u00d7 141.3 gCO\u2082/kWh = 0.10 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-01 05:43:24.769623",
+          "grid_intensity_gco2_kwh": 141.3,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.000103
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 0.10 - 0.07 = 0.03 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 3.5e-05,
+          "ci_90_lower": 1e-06,
+          "ci_90_upper": 6.9e-05,
+          "verification_status": "confirmed"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "6240ad99b5270ff2",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "4fa0e416",
+    "recommendation_id": "e47329d5",
+    "verified_savings_kgco2e": 0.000233,
+    "ci_lower": 9.5e-05,
+    "ci_upper": 0.000372,
+    "verification_status": "confirmed",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-XyZBFsxQ9SpszhmZv/57O5UUYQyEl+w8NumzC/lZz9SyIJln8sD24g+LX137e/Dv",
+          "region": "eu-west-1",
+          "started_at": "2025-01-01 23:11:09.321602",
+          "vcpus": 2,
+          "gpu_count": 0,
+          "duration_hours": 0.111
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-02 03:11:09.321602"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (2 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 0.111h = 0.001221 kWh",
+        "data": {
+          "total_power_kw": 0.011,
+          "energy_kwh": 0.001221
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.001221 kWh \u00d7 188.3 gCO\u2082/kWh = 0.23 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-02 03:11:09.321602",
+          "grid_intensity_gco2_kwh": 188.3,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.00023
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.001221 kWh \u00d7 379.5 gCO\u2082/kWh = 0.46 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-01 23:11:09.321602",
+          "grid_intensity_gco2_kwh": 379.5,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.000463
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 0.46 - 0.23 = 0.23 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.000233,
+          "ci_90_lower": 9.5e-05,
+          "ci_90_upper": 0.000372,
+          "verification_status": "confirmed"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "1dd9abbc31711189",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "b88c5d3f",
+    "recommendation_id": "2582f7d9",
+    "verified_savings_kgco2e": 0.001496,
+    "ci_lower": 0.001038,
+    "ci_upper": 0.001953,
+    "verification_status": "confirmed",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-KhEVPH/gvJs6XcEZQFrQbLtx4tJCw5NY36/ixYV3HwHvCFBZjoBO9JVlXb5uys5G",
+          "region": "eu-west-1",
+          "started_at": "2025-01-02 02:51:12.377865",
+          "vcpus": 4,
+          "gpu_count": 0,
+          "duration_hours": 0.417
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-02 06:51:12.377865"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (4 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 0.417h = 0.009174 kWh",
+        "data": {
+          "total_power_kw": 0.022,
+          "energy_kwh": 0.009174
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.009174 kWh \u00d7 43.2 gCO\u2082/kWh = 0.40 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-02 06:51:12.377865",
+          "grid_intensity_gco2_kwh": 43.2,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.000396
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.009174 kWh \u00d7 206.3 gCO\u2082/kWh = 1.89 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-02 02:51:12.377865",
+          "grid_intensity_gco2_kwh": 206.3,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.001893
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 1.89 - 0.40 = 1.50 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.001496,
+          "ci_90_lower": 0.001038,
+          "ci_90_upper": 0.001953,
+          "verification_status": "confirmed"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "a52f8441579f656e",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "a80334fb",
+    "recommendation_id": "62ff8ddf",
+    "verified_savings_kgco2e": 0.037296,
+    "ci_lower": 0.027805,
+    "ci_upper": 0.046804,
+    "verification_status": "confirmed",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-Wd4hVVoOTpNMWukP+TI1ejHFlJ0Xz5sfrkkV1xKUqW1Sy2sLmyic3+raYSz3FYYp",
+          "region": "eu-west-1",
+          "started_at": "2025-01-03 01:39:01.375318",
+          "vcpus": 8,
+          "gpu_count": 0,
+          "duration_hours": 3.987
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "us-west-2",
+          "started_at": "2025-01-03 05:39:01.375318"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (8 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 3.987h = 0.175428 kWh",
+        "data": {
+          "total_power_kw": 0.044,
+          "energy_kwh": 0.175428
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.175428 kWh \u00d7 38.7 gCO\u2082/kWh = 6.79 gCO\u2082e",
+        "data": {
+          "region": "us-west-2",
+          "timestamp": "2025-01-03 05:39:01.375318",
+          "grid_intensity_gco2_kwh": 38.7,
+          "source": "EIA API \u2014 BPAT",
+          "kgco2e": 0.006789
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.175428 kWh \u00d7 251.3 gCO\u2082/kWh = 44.09 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-03 01:39:01.375318",
+          "grid_intensity_gco2_kwh": 251.3,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.044085
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 44.09 - 6.79 = 37.30 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.037296,
+          "ci_90_lower": 0.027805,
+          "ci_90_upper": 0.046804,
+          "verification_status": "confirmed"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "c3ae668323155c8f",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "346dddc5",
+    "recommendation_id": "80a2906a",
+    "verified_savings_kgco2e": 0.0016,
+    "ci_lower": -0.000526,
+    "ci_upper": 0.003727,
+    "verification_status": "partial",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-BICYLCX7dWDR0r8xCEkFeeA1nERzlofX8wFg2HVa4P2poRqwSfqDWPzTrbiU34dH",
+          "region": "eu-west-1",
+          "started_at": "2025-01-04 19:52:06.557073",
+          "vcpus": 2,
+          "gpu_count": 0,
+          "duration_hours": 1.611
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-04 23:52:06.557073"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (2 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 1.611h = 0.017721 kWh",
+        "data": {
+          "total_power_kw": 0.011,
+          "energy_kwh": 0.017721
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.017721 kWh \u00d7 254.9 gCO\u2082/kWh = 4.52 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-04 23:52:06.557073",
+          "grid_intensity_gco2_kwh": 254.9,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.004517
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.017721 kWh \u00d7 345.2 gCO\u2082/kWh = 6.12 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-04 19:52:06.557073",
+          "grid_intensity_gco2_kwh": 345.2,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.006117
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 6.12 - 4.52 = 1.60 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.0016,
+          "ci_90_lower": -0.000526,
+          "ci_90_upper": 0.003727,
+          "verification_status": "partial"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "43110e2624cf838f",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "326e043d",
+    "recommendation_id": "c76ad876",
+    "verified_savings_kgco2e": 0.013409,
+    "ci_lower": 0.009298,
+    "ci_upper": 0.017503,
+    "verification_status": "confirmed",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-aLOA2WFHYfCNWmH57haSkMx9EvIAiirsD28MGoYKvpQ+OpH3o3x80SKdeemxeWaK",
+          "region": "eu-west-1",
+          "started_at": "2025-01-02 02:22:01.972679",
+          "vcpus": 2,
+          "gpu_count": 0,
+          "duration_hours": 7.474
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-02 06:22:01.972679"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (2 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 7.474h = 0.082214 kWh",
+        "data": {
+          "total_power_kw": 0.011,
+          "energy_kwh": 0.082214
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.082214 kWh \u00d7 43.2 gCO\u2082/kWh = 3.55 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-02 06:22:01.972679",
+          "grid_intensity_gco2_kwh": 43.2,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.003552
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.082214 kWh \u00d7 206.3 gCO\u2082/kWh = 16.96 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-02 02:22:01.972679",
+          "grid_intensity_gco2_kwh": 206.3,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.016961
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 16.96 - 3.55 = 13.41 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.013409,
+          "ci_90_lower": 0.009298,
+          "ci_90_upper": 0.017503,
+          "verification_status": "confirmed"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "c0e720fa386509af",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  },
+  {
+    "verification_id": "813762ae",
+    "recommendation_id": "c57c2f00",
+    "verified_savings_kgco2e": 0.000785,
+    "ci_lower": 1.2e-05,
+    "ci_upper": 0.001563,
+    "verification_status": "confirmed",
+    "sla_compliant": true,
+    "evidence_chain": [
+      {
+        "step": "input_activity",
+        "description": "Original job configuration",
+        "data": {
+          "job_id": "az-2c/uM9B0FpsYTWLRbMpOOpeG3KgMmP2zx5EV53+w2HauX+db/OlfphyVi3xnrgqp",
+          "region": "eu-west-1",
+          "started_at": "2025-01-01 05:00:04.167631",
+          "vcpus": 2,
+          "gpu_count": 0,
+          "duration_hours": 1.5
+        }
+      },
+      {
+        "step": "executed_config",
+        "description": "Executed (optimized) job configuration",
+        "data": {
+          "region": "eu-west-1",
+          "started_at": "2025-01-01 09:00:04.167631"
+        }
+      },
+      {
+        "step": "energy_computation",
+        "description": "Energy = (2 \u00d7 0.005 + 0 \u00d7 0.3) \u00d7 1.1 \u00d7 1.5h = 0.016500 kWh",
+        "data": {
+          "total_power_kw": 0.011,
+          "energy_kwh": 0.0165
+        }
+      },
+      {
+        "step": "actual_emissions",
+        "description": "Actual: 0.016500 kWh \u00d7 93.7 gCO\u2082/kWh = 1.55 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-01 09:00:04.167631",
+          "grid_intensity_gco2_kwh": 93.7,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.001546
+        }
+      },
+      {
+        "step": "counterfactual_emissions",
+        "description": "Counterfactual: 0.016500 kWh \u00d7 141.3 gCO\u2082/kWh = 2.33 gCO\u2082e",
+        "data": {
+          "region": "eu-west-1",
+          "timestamp": "2025-01-01 05:00:04.167631",
+          "grid_intensity_gco2_kwh": 141.3,
+          "source": "EirGrid 2023 data (synthetic fallback)",
+          "kgco2e": 0.002331
+        }
+      },
+      {
+        "step": "savings_computation",
+        "description": "Savings: 2.33 - 1.55 = 0.79 gCO\u2082e",
+        "data": {
+          "verified_savings_kgco2e": 0.000785,
+          "ci_90_lower": 1.2e-05,
+          "ci_90_upper": 0.001563,
+          "verification_status": "confirmed"
+        }
+      },
+      {
+        "step": "integrity",
+        "description": "Input hash for tamper detection",
+        "data": {
+          "input_hash_sha256": "f48ba3ae035a10c5",
+          "methodology": "counterfactual_diff_v1",
+          "uncertainty_method": "interval_arithmetic"
+        }
+      }
+    ]
+  }
+]

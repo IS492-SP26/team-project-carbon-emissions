@@ -1,0 +1,65 @@
+{
+  "single_model": {
+    "agent": "Single-Model Agent",
+    "purpose": "One LLM call per batch \u2014 combine planner / governance / executor / copilot duties into a single prompt for an architecture A/B.",
+    "memory": {
+      "reasoning_trace": [
+        {
+          "step": "single_model_complete",
+          "content": "258 candidates \u2192 258 approved in 6 LLM calls (51145 tokens).",
+          "timestamp": "2026-04-30T11:56:51.161003"
+        }
+      ],
+      "actions_taken": [
+        {
+          "tool": "llm_batch_call",
+          "inputs": {
+            "batch_size": 50
+          },
+          "output_preview": "```json\n{\n  \"decisions\": [\n    {\n      \"recommendation_id\": \"45f79e40\",\n      \"approve\": true,\n      \"rationale\": \"The estimated carbon delta is -0.000635 kg, which is a minor reduction. The confidenc",
+          "timestamp": "2026-04-30T11:53:25.461499"
+        },
+        {
+          "tool": "llm_batch_call",
+          "inputs": {
+            "batch_size": 50
+          },
+          "output_preview": "```json\n{\n  \"decisions\": [\n    {\n      \"recommendation_id\": \"12808c46\",\n      \"approve\": true,\n      \"rationale\": \"This recommendation has a low risk level and a high confidence level, with an estimat",
+          "timestamp": "2026-04-30T11:54:14.056226"
+        },
+        {
+          "tool": "llm_batch_call",
+          "inputs": {
+            "batch_size": 50
+          },
+          "output_preview": "```json\n{\n  \"decisions\": [\n    {\n      \"recommendation_id\": \"d804b14a\",\n      \"approve\": true,\n      \"rationale\": \"The estimated carbon reduction is -6.8e-05 kg, which is a small but positive impact. ",
+          "timestamp": "2026-04-30T11:55:03.163520"
+        },
+        {
+          "tool": "llm_batch_call",
+          "inputs": {
+            "batch_size": 50
+          },
+          "output_preview": "```json\n{\n  \"decisions\": [\n    {\n      \"recommendation_id\": \"4353cc77\",\n      \"approve\": true,\n      \"rationale\": \"This recommendation has a low risk level and a high confidence level, with an estimat",
+          "timestamp": "2026-04-30T11:55:51.988556"
+        },
+        {
+          "tool": "llm_batch_call",
+          "inputs": {
+            "batch_size": 50
+          },
+          "output_preview": "```json\n{\n  \"decisions\": [\n    {\n      \"recommendation_id\": \"80540ac0\",\n      \"approve\": false,\n      \"rationale\": \"The estimated carbon delta is very small (-4.5e-05 kg) and may not be significant. T",
+          "timestamp": "2026-04-30T11:56:40.515347"
+        },
+        {
+          "tool": "llm_batch_call",
+          "inputs": {
+            "batch_size": 8
+          },
+          "output_preview": "```json\n{\n  \"decisions\": [\n    {\n      \"recommendation_id\": \"9fad0ac0\",\n      \"approve\": false,\n      \"rationale\": \"The estimated carbon reduction is very small (-4e-05 kg) and may not be significant.",
+          "timestamp": "2026-04-30T11:56:51.045246"
+        }
+      ]
+    }
+  }
+}

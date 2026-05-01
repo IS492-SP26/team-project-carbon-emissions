@@ -1,0 +1,13 @@
+entry_id,team_id,recommendation_id,verification_id,points,kgco2e_saved,reason,awarded_at
+47b56b68,platform,557319b3,e1848da1,20,0.200112,single_model:confirmed,2026-04-30 13:20:03.878250
+b96ca654,eu-backend,6a37781d,6e2ef3f6,10,0.10109,single_model:confirmed,2026-04-30 13:20:03.878283
+cf36f954,platform,2a1b64e6,c5199b70,37,0.374352,single_model:confirmed,2026-04-30 13:20:03.878301
+44768a4d,ml-team,dd5b63a9,ada2157b,37,0.374352,single_model:confirmed,2026-04-30 13:20:03.878311
+fddc4f9b,eu-frontend,8c0d9fa2,455d6191,3,0.061516,single_model:partial,2026-04-30 13:20:03.878324
+73af574a,eu-backend,f79d76e2,ef164af3,37,0.374352,single_model:confirmed,2026-04-30 13:20:03.878333
+27fabb4c,devops,1f06e3d8,1ffb2700,20,0.200112,single_model:confirmed,2026-04-30 13:20:03.878340
+96a48f29,devops,6d48e9fa,6a40f491,149,1.497408,single_model:confirmed,2026-04-30 13:20:03.878347
+83213631,backend-api,9ccd5424,7b6b6207,2,0.026517,single_model:confirmed,2026-04-30 13:20:03.878362
+be95a955,eu-backend,52ce731c,ca9653e5,74,0.748704,single_model:confirmed,2026-04-30 13:20:03.878375
+6f07649c,eu-backend,62ff8ddf,a80334fb,3,0.037296,single_model:confirmed,2026-04-30 13:20:03.878384
+215a1e93,frontend,c76ad876,326e043d,1,0.013409,single_model:confirmed,2026-04-30 13:20:03.878392
