@@ -227,7 +227,7 @@ Trust correlated with technical background. Participant 2 (SUS 90) and Participa
 
 **Frustrations:**
 
-The most consistent frustration across all four participants was the CLI setup requirement before the dashboard populates. Participant 1 stated *"if someone outside this class tried to run this, they'd give up before they got to the dashboard."* Derek was additionally confused by the 10-tab dashboard with no clear starting point. Participant 3's primary reservation was the absence of real AWS/GCP data integration: *"Until this connects to real AWS data, it's a simulator, not a tool."*
+The most consistent frustration across all four participants was the CLI setup requirement before the dashboard populates. Participant 1 stated *"if someone outside this class tried to run this, they'd give up before they got to the dashboard."* Participant 4 was additionally confused by the 10-tab dashboard with no clear starting point. Participant 3's primary reservation was the absence of real AWS/GCP data integration: *"Until this connects to real AWS data, it's a simulator, not a tool."*
 
 ---
 
@@ -245,7 +245,7 @@ Our result (16.6% verified reduction, 62 kgCO₂e over 30 days on a simulated wo
 
 The multi-objective result is particularly noteworthy: cost decreased by 3.6% alongside the carbon reduction. This challenges the common assumption that carbon optimization necessarily conflicts with cost optimization. The key insight, consistent with CarbonScaler, is that the cleanest regions are often also cheaper (Pacific Northwest hydro in the US, Nordic hydro in Europe), so shifting to cleaner regions frequently reduces both emissions and cost simultaneously.
 
-The 32-point spread in SUS scores (Participant 2 90, Participant 4 58) reflects the system's current optimization for technically literate users. The Evidence Explorer, consistently praised by Participant 1, Participant 2, and Participant 3 presupposes familiarity with concepts like carbon intensity and counterfactual reasoning. Derek's lower score and incomplete task set (he missed the Ask the Agent task entirely) suggests onboarding improvements are a higher priority than feature additions for broadening the user base.
+The 32-point spread in SUS scores (Participant 2 90, Participant 4 58) reflects the system's current optimization for technically literate users. The Evidence Explorer, consistently praised by Participant 1, Participant 2, and Participant 3 presupposes familiarity with concepts like carbon intensity and counterfactual reasoning. Participant 4's lower score and incomplete task set (he missed the Ask the Agent task entirely) suggests onboarding improvements are a higher priority than feature additions for broadening the user base.
 
 ### 6.3 User Study Interpretation
 
