@@ -245,6 +245,8 @@ Our result (16.6% verified reduction, 62 kgCO₂e over 30 days on a simulated wo
 
 The multi-objective result is particularly noteworthy: cost decreased by 3.6% alongside the carbon reduction. This challenges the common assumption that carbon optimization necessarily conflicts with cost optimization. The key insight, consistent with CarbonScaler, is that the cleanest regions are often also cheaper (Pacific Northwest hydro in the US, Nordic hydro in Europe), so shifting to cleaner regions frequently reduces both emissions and cost simultaneously.
 
+The 32-point spread in SUS scores (Matt Berry 90, Derek 58) reflects the system's current optimization for technically literate users. The Evidence Explorer — consistently praised by Dr. Burke, Matt, and Vinit — presupposes familiarity with concepts like carbon intensity and counterfactual reasoning. Derek's lower score and incomplete task set (he missed the Ask the Agent task entirely) suggests onboarding improvements are a higher priority than feature additions for broadening the user base.
+
 ### 6.3 User Study Interpretation
 
 The UMUX-Lite score of 76.4 is promising for a research prototype with no prior UX iteration. The gap in trust between technical and non-technical users (4.4 vs. 3.6) suggests that the system's primary value proposition — verifiable, auditable savings — resonates most strongly with users who can evaluate the underlying methodology. For broader adoption, particularly among sustainability officers who may lack cloud engineering backgrounds, clearer in-dashboard explanations of the AI+determinism boundary would improve trust.
