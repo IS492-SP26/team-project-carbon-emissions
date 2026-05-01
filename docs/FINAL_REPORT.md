@@ -207,25 +207,27 @@ Inter-rater reliability (Cohen's κ) was 0.71, indicating substantial agreement.
 
 ### 5.4 User Study Results
 
-*Note: The following results are based on our user study conducted with participants from the target user groups. Participant counts and specific statistics should be updated with actual collected data before final submission.*
+| Participant         | Role              | SUS Score |
+|--------------------|-------------------|----------|
+| Dr. Martin Burke   | Faculty           | 84       |
+| Matt Berry         | UIUC/NCSA         | 90       |
+| Vinit              | Industry Engineer | 71       |
+| Derek              | Classmate         | 58       |
+| **Mean**           |                   | **75.75 ≈ 76** |
 
-**Task performance:**
-- T1 (Navigation): 100% success, median time 42s
-- T2 (Analysis): 87% success, median time 1m 53s — the most common error was confusing carbon intensity with total emissions
-- T3 (Evidence Explorer): 81% success, median time 2m 28s — participants found the click-to-expand pattern intuitive but some struggled to identify counterfactual vs. actual columns
-- T4 (Ask the Agent): 94% success, median time 58s
-- T5 (Trust rating): Mean trust score 4.1/5; participants with cloud engineering backgrounds rated higher (4.4) than non-technical participants (3.6)
+### Qualitative Insights
 
-**UMUX-Lite:**
-- Mean score: 76.4 (out of 100) — above the SUS "good" threshold of 71.4
+**Usefulness:**
 
-**Qualitative themes from exit interviews:**
+Dr. Burke noted the counterfactual verification was the most rigorous feature — *"Most student projects just say they saved carbon with no proof. You actually show the math."* Matt Berry appreciated the agent role separation and asked whether the Governance approval could be exposed as a REST API for integration with NCSA's HPC schedulers. Vinit confirmed the multi-objective framing was critical for industry adoption: *"Your tool answers whether it costs more and whether it breaks anything — which is actually more than I expected."*
 
-*Usefulness:* Participants consistently cited the Evidence Explorer as the most valuable feature. Multiple participants noted they had never seen a sustainability tool that showed its work. One participant (cloud engineer): "I can actually take this to my manager. It's not just a dashboard number — there's math behind it."
+**Trust in AI rationales:**
 
-*Trust in AI rationales:* Trust was generally high when the rationale cited specific numbers (carbon savings, cost delta, confidence interval) and lower when it used general language. Participants with less technical background expressed uncertainty about whether the AI "made up" the numbers — addressed post-session by pointing to the AI+determinism boundary in the README.
+Trust correlated with technical background. Matt (SUS 90) and Dr. Burke (SUS 84) both explored the Evidence Explorer in depth and expressed high trust. Vinit noted the LLM rationales sounded *"too polished"* — *"If it sounded more like a Jira ticket I'd trust it more."* Derek did not engage with the rationales at all, which we attribute to low prior familiarity with carbon accounting rather than a trust issue per se.
 
-*Frustrations:* The most common frustration was the requirement to run `python run_pipeline.py` before the dashboard populates. Several participants suggested an in-dashboard "Run Pipeline" button as a high-priority improvement. A secondary frustration was the lack of a real cloud provider integration — participants wanted to connect to their actual AWS or GCP accounts.
+**Frustrations:**
+
+The most consistent frustration across all four participants was the CLI setup requirement before the dashboard populates. Dr. Burke stated *"if someone outside this class tried to run this, they'd give up before they got to the dashboard."* Derek was additionally confused by the 10-tab dashboard with no clear starting point. Vinit's primary reservation was the absence of real AWS/GCP data integration: *"Until this connects to real AWS data, it's a simulator, not a tool."*
 
 ---
 
