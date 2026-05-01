@@ -18,7 +18,7 @@ Cloud computing infrastructure now accounts for approximately 1% of global elect
 
 ### 1.1 Motivation
 
-Data centers consumed roughly 205 TWh of electricity globally in 2018 — approximately 1% of total world consumption — and that figure is growing faster than efficiency improvements can offset it, driven largely by AI training and inference workloads (Masanet et al., 2020). The environmental stakes are significant, but so are the regulatory ones: the European Union's Corporate Sustainability Reporting Directive (CSRD), which began phased enforcement in 2024, now legally requires approximately 50,000 companies to disclose Scope 1, 2, and 3 emissions — including emissions attributable to cloud use. Carbon reporting has shifted from a voluntary sustainability gesture to a legal obligation with audit requirements.
+Data centers consumed roughly 205 TWh of electricity globally in 2018 — approximately 1% of total world consumption — and that figure is growing faster than efficiency improvements can offset it, driven largely by AI training and inference workloads (Masanet et al., 2020). The environmental stakes are significant, but so are the regulatory ones: the European Union's Corporate Sustainability Reporting Directive (CSRD), which began phased enforcement in 2024, now legally requires approximately 50,000 companies to disclose Scope 1, 2, and 3 emissions, including emissions attributable to cloud use. Carbon reporting has shifted from a voluntary sustainability gesture to a legal obligation with audit requirements.
 
 The technical challenge is not simply measurement. Google's research on carbon-aware computing demonstrated that shifting flexible workloads temporally and spatially can reduce emissions by 10–40% without degrading service quality (Radovanović et al., 2022). CarbonScaler showed 51% carbon savings over carbon-agnostic execution in production-like workloads (Hanafy et al., 2023). The problem is that while the opportunity is well-documented in the literature, no production tool available to enterprises today closes the full loop: measuring emissions, recommending changes, executing those changes, and then verifying the savings with auditable evidence.
 
@@ -28,13 +28,13 @@ We identify three gaps in existing tools:
 
 1. **The action gap.** AWS Carbon Footprint Tool, Google Cloud Carbon Footprint, and Thoughtworks' Cloud Carbon Footprint all measure and some recommend, but none execute. Engineers still must manually interpret recommendations and implement changes.
 
-2. **The verification gap.** No tool provides post-hoc verification that an intervention actually reduced emissions. Without counterfactual analysis, claimed savings are unauditable — a significant liability under CSRD.
+2. **The verification gap.** No tool provides post-hoc verification that an intervention actually reduced emissions. Without counterfactual analysis, claimed savings are unauditable, a significant liability under CSRD.
 
 3. **The multi-objective gap.** Carbon-only optimization can cause 2–3× cost spikes (Hanafy et al., 2023). Real-world deployments must balance carbon, cost, and latency together.
 
 ### 1.3 Contribution
 
-sust-AI-naible addresses all three gaps with a closed-loop, multi-agent architecture that: (1) ingests real-time carbon intensity data, (2) generates multi-objective optimization recommendations, (3) routes those recommendations through a governance approval step, (4) executes approved changes, and (5) verifies savings using counterfactual MRV with confidence intervals. The LLM layer handles communication and rationale generation exclusively — all numerical calculations are deterministic, ensuring reproducibility and auditability.
+sust-AI-naible addresses all three gaps with a closed-loop, multi-agent architecture that: (1) ingests real-time carbon intensity data, (2) generates multi-objective optimization recommendations, (3) routes those recommendations through a governance approval step, (4) executes approved changes, and (5) verifies savings using counterfactual MRV with confidence intervals. The LLM layer handles communication and rationale generation exclusively, all numerical calculations are deterministic, ensuring reproducibility and auditability.
 
 ---
 
@@ -193,7 +193,7 @@ Running the full pipeline on 30 days of Azure Public Dataset VM Traces 2019 with
 | Single-model (Groq) | 81.6% | 49.3 | 112,450 | 34.8 |
 | Frontier (Claude) | 96.8% | 61.4 | 71,200 | 22.0 |
 
-The multi-agent architecture outperformed the single-model baseline on approval rate (+12.6 percentage points) and verified savings (+9.4 kgCO₂e) while using fewer tokens. The frontier model (Claude) produced marginally better results but at comparable token efficiency, suggesting the multi-agent specialization itself — not just model quality — drives much of the improvement.
+The multi-agent architecture outperformed the single-model baseline on approval rate (+12.6 percentage points) and verified savings (+9.4 kgCO₂e) while using fewer tokens. The frontier model (Claude) produced marginally better results but at comparable token efficiency, suggesting the multi-agent specialization itself, not just model quality, drives much of the improvement.
 
 ### 5.3 Prompt Ablation
 
