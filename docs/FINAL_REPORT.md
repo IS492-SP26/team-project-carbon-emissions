@@ -3,7 +3,6 @@
 **Course:** IS492 — AI Application Development  
 **Semester:** Spring 2026  
 **Team:** Sarthak Chandarana, Pooja Sahu, Josue Torres
-
 **Repository:** github.com/team-project-carbon-emissions  
 **Deployed Dashboard:** https://sustainable-demo.streamlit.app
 
