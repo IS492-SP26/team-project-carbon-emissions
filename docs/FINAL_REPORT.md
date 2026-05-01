@@ -211,8 +211,8 @@ Inter-rater reliability (Cohen's κ) was 0.71, indicating substantial agreement.
 |--------------------|-------------------|----------|
 | Dr. Martin Burke   | Faculty           | 84       |
 | Matt Berry         | UIUC/NCSA         | 90       |
-| Vinit              | Industry Engineer | 71       |
-| Derek              | Classmate         | 58       |
+| Vinit Agraharkar   | Industry Engineer | 71       |
+| Derek Hoiem        | Classmate         | 58       |
 | **Mean**           |                   | **75.75 ≈ 76** |
 
 ### Qualitative Insights
